@@ -2,28 +2,64 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>WUZA</title>
+    
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/wuza.css" rel="stylesheet">
+    
   </head>
   
   <body>
     
-    <h1><?php echo $this->_['blog_title']; ?></h1>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand visible-md visible-lg no-padding no-margin" href="#">
+            <img id="logo" src="img/WuzaLogo.png" alt="<?php echo $this->_['blog_title']; ?>">
+          </a>
+          <a class="navbar-brand visible-xs visible-sm" href="#">
+            <?php echo $this->_['blog_title']; ?>
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <?php
+            foreach($this->_['blog_menu'] as $menu){
+              $active_class = $this->_['active_view'] == $menu['file'] ? "active" : "";
+            ?>
+            <li class="<?php echo $active_class ?>"><a href="?view=<?php echo $menu['file'] ?>"><?php echo $menu['title']; ?></a></li>
+            <?php
+            }
+            ?>
+          </ul>
+      </div>
+    </nav>
     
-    <div>
-        <?php
-        foreach($this->_['blog_menu'] as $menu){
-        ?>
-        <a href="?view=<?php echo $menu['file'] ?>"><?php echo $menu['title']; ?></a>
-        <?php
-        }
-        ?>
+    <div class="main">
+      <div class="container">
+        <?php echo $this->_['blog_content']; ?>
+      </div>
+      
+      <!--
+      <?php echo $this->_['blog_footer']; ?>
+      -->
+    
     </div>
     
-    <?php echo $this->_['blog_content']; ?>
-    <hr />
-    <?php echo $this->_['blog_footer']; ?>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wuza.js"></script>
+    
+    </div>
+    
   </body>
 </html>

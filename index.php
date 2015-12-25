@@ -4,9 +4,9 @@
 require "classes/less/lessc.inc.php";
 $less = new lessc;
 try {
-  $less->checkedCompile("templates/css/less/wuza.less", "templates/css/wuza.css");
+  $less->checkedCompile("css/less/wuza.less", "css/wuza.css");
 } catch (exception $e) {
-  // echo "fatal error: " . $e->getMessage();
+   echo "fatal error: " . $e->getMessage();
 }
 
 // incude classes
