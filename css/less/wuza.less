@@ -1,6 +1,6 @@
 .no-padding { padding: 0; }
 .no-margin { margin: 0; }
-
+    
 html {
     background-color: #c4c4c4;
     background-image: url('../img/bg.jpg'); 
@@ -46,10 +46,7 @@ div {
     }
     
     #logo {
-        width: 200px;
-        position: absolute;
-        margin-top: -80px;
-        margin-left: -30px
+        padding-top: 5px; 
     }
     
 }
@@ -57,7 +54,7 @@ div {
 .main {
     background-color: #eee;
     border-radius: 0 0 15px 15px;
-    padding: 30px;
+    padding: 40px;
     @media (max-width: 768px) {
         padding: 0;
     }
@@ -68,5 +65,22 @@ div {
     border-bottom: 2px solid #ccc;
     border-radius: 5px;
     padding: 0.5em 5% 2em;
+}
+
+@media (max-width: 768px) {
+    html {
+        background-color: #fff;
+        background-image: none;
+    }
+    .container {
+        border: 0; 
+    }
+    .main {
+        background-color: #fff;
+    }
+    .navbar-inverse {
+        border-radius: 0; 
+    }
+    
 }
 

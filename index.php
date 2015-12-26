@@ -14,8 +14,11 @@ include('classes/controller.php');
 include('classes/model.php');
 include('classes/view.php');
 
-// $_GET and $_POST - no $_COOKIE
-$request = array_merge($_GET, $_POST);
+// get config file
+$config = parse_ini_file('conf/config.ini');
+
+// $_GET and $_POST - no $_COOKIE but config values
+$request = array_merge($_GET, $_POST, $config);
 $controller = new Controller($request);
 echo $controller->display();
 

@@ -44,6 +44,7 @@ class Controller{
 		$this->view->assign('blog_title', 'WUZA');
 		$this->view->assign('blog_footer', 'by /mh');
 		$this->view->assign('active_view', $this->request['view']);
+		$this->view->assign('version', $this->request['version']);
 		$this->view->assign('blog_menu', Model::getMenu());
 		$this->view->assign('blog_content', $view->loadTemplate());
 		return $this->view->loadTemplate();
