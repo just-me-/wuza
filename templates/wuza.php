@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand visible-xs visible-sm visible-md visible-lg no-padding no-margin" href="#">
+          <a class="navbar-brand visible-xs visible-sm visible-md visible-lg no-padding no-margin" href="?view=default">
             <img id="logo" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="<?php echo $this->_['blog_title']; ?>">
           </a>
         </div>
