@@ -4,6 +4,9 @@
 # config
 config.ini
 
+# komodo
+WUZA.komodoproject
+
 # Xcode
 #
 build/
