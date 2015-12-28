@@ -7,6 +7,9 @@ config.ini
 # komodo
 WUZA.komodoproject
 
+# img
+img/me_*
+
 # Xcode
 #
 build/
