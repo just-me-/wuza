@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>WUZA</title>
+    <title><?php echo $this->_['header_titel']; ?></title>
     
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-touch-icon-57x57.png">
@@ -31,7 +31,13 @@
     <!-- end favicon -->
     
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bxslider.css" rel="stylesheet">
     <link href="css/wuza.css?version="<?php echo $this->_['version']; ?>" rel="stylesheet">
+    
+    <!-- tmp hardcoded -->
+    <meta name="description" content="Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess.">
+    <meta name="keywords" content="wuza, marcel, hess">
+    <meta http-equiv="content-language" content="de">
     
   </head>
   
@@ -59,37 +65,77 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand visible-xs visible-sm visible-md visible-lg no-padding no-margin" href="?view=default">
-          <img id="logo" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="<?php echo $this->_['blog_title']; ?>">
+        <a class="navbar-brand no-padding no-margin" href="?view=default">
+          <img id="logo" class="visible-sm visible-md visible-lg" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
+          <img id="logo" class="visible-xs" src="img/WuzaLogo_clean.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
         </a>
+        
       </div>
       <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <?php
-            foreach($this->_['blog_menu'] as $menu){
+            foreach($this->_['menu'] as $menu){
               $active_class = $this->_['active_view'] == $menu['file'] ? "active" : "";
+              $titel = $this->_['locales'][$menu['file']]['de']; // 2do: en or de?
             ?>
-            <li class="<?php echo $active_class ?>"><a href="?view=<?php echo $menu['file'] ?>"><?php echo $menu['title']; ?></a></li>
+            <li class="<?php echo $active_class ?>"><a href="?view=<?php echo $menu['file'] ?>"><?php echo $titel; ?></a></li>
             <?php
             }
             ?>
           </ul>
+          
+          <ul class="nav navbar-nav navbar-right none">
+            <li><a <?php echo 'href="?view='.$this->_['active_view'].'&lang=de"' ?> class="language">DE</a></li>
+            <li><a <?php echo 'href="?view='.$this->_['active_view'].'&lang=en"' ?> class="language">EN</a></li>
+          </ul>
+          
+          <?php
+          if($this->_['debug_mode']){
+          ?>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a <?php echo 'href="?view='.$this->_['active_view'].'&XDEBUG_SESSION_START=1"' ?>><b>DEBUG</b></a></li>
+          </ul>
+          <?php
+          }
+          ?>
+          
       </div>
+      
     </nav>
     
+    <?php
+      if(!$this->_['js']) {
+        print '
+        <div class="test-js text-warning bg-warning small-padding">
+          Bitte aktivieren Sie <b>JavaScript</b> für <b>wuza.ch</b>, um alle Funktionen dieser Seite vorgesehen nutzen zu können. 
+        </div>
+        ';
+      }
+    ?>
+    
     <div class="main">
+      
       <div class="container">
-        <?php echo $this->_['blog_content']; ?>
+        <?php echo $this->_['content']; ?>
       </div>
       
       <!--
-      <?php echo $this->_['blog_footer']; ?>
+      <?php echo "by /mh"; ?>
       -->
+      
+      <div class="footer">
+        <div class="right">Letzte Aktualisierung am <?php echo $this->_['last_update']; ?></div>
+        <div class="left">Von Marcel Hess</div>
+      </div>
       
     </div>
     
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bxslider.min.js"></script>
     <script src="js/wuza.js?version="<?php echo $this->_['version']; ?>"></script>
+    
+    <input id="js" type="hidden" name="js" value="<?php echo $this->_['js']; ?>">
+    <input id="lang" type="hidden" name="lang" value="<?php echo $this->_['lang']; ?>">
     
   </body>
 </html>

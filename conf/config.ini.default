@@ -1,6 +1,12 @@
 ; Version fuer Bilder, CSS etc
 version=1.0.0-0001
 
+; Footer Info
+last_update=12.12.2015
+
+; Dev
+debug_mode=0
+
 ; Datenbankzugriff
 [db]
 user=benutzer

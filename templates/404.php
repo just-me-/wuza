@@ -1,7 +1,7 @@
 <div id="main_404">
     
     <div id="header">
-        <h1>Gone To Heaven, Won't Be Back<span>404 - Seite nicht gefunden</span></h1>
+        <h1>Gone&nbsp;To&nbsp;Heaven,&nbsp;Won't&nbsp;Be&nbsp;Back<span>404 - Seite nicht gefunden</span></h1>
     </div>
     
     <div id="content">

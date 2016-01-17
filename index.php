@@ -3,10 +3,11 @@
 // build css if there is a newer less version
 require "classes/less/lessc.inc.php";
 $less = new lessc;
+$less->setFormatter("compressed");
 try {
   $less->checkedCompile("css/less/wuza.less", "css/wuza.css");
 } catch (exception $e) {
-   echo "fatal error: " . $e->getMessage();
+   echo '<div class="text-danger bg-danger small-padding">fatal error: ' . $e->getMessage() . '</div>';
 }
 
 // incude classes
@@ -15,11 +16,16 @@ include('classes/model.php');
 include('classes/view.php');
 
 // get config file
-$config = parse_ini_file('conf/config.ini');
+$config = parse_ini_file('conf/config.ini', TRUE);
 
-// $_GET and $_POST - no $_COOKIE but config values
-$request = array_merge($_GET, $_POST, $config);
+session_start();
+
+// $_SESSION, $_GET and $_POST - no $_COOKIE but config values
+$request = array_merge($_SESSION, $_GET, $_POST, $config);
 $controller = new Controller($request);
+
 echo $controller->display();
+
+$controller->update_session();
 
 ?>

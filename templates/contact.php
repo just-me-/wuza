@@ -7,7 +7,7 @@
     <span class="overlay"></span>
   </div>
   
-  <p class="blocktext">
+  <p class="text-justify">
     Hallo! Ich freue mich, dass Du auf meiner Webseite vorbeischaust
     und offenbar etwas mehr über mich und meine Person erfahren möchtest.
     Mein Name ist Marcel, ich bin schon seit einiger Zeit über das 20. Lebensjahr hinweg gealtert,
