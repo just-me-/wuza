@@ -7,6 +7,9 @@ last_update=12.12.2015
 ; Dev
 debug_mode=0
 
+; SSL => redirect to https
+ssl=0
+
 ; Datenbankzugriff
 [db]
 user=benutzer

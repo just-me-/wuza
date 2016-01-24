@@ -1,5 +1,15 @@
 <?php
 
+// get config file
+$config = parse_ini_file('conf/config.ini', TRUE);
+
+// check for ssl
+if($_SERVER['HTTPS'] != "on" && $config['ssl'] == 1){
+    $redirect = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: $redirect");
+}
+
 // build css if there is a newer less version
 require "classes/less/lessc.inc.php";
 $less = new lessc;
@@ -14,9 +24,6 @@ try {
 include('classes/controller.php');
 include('classes/model.php');
 include('classes/view.php');
-
-// get config file
-$config = parse_ini_file('conf/config.ini', TRUE);
 
 session_start();
 
