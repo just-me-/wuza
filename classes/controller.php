@@ -64,6 +64,9 @@ class Controller{
 		}
 		
 		$this->view->assign('header_titel', $header_titel);
+		// tmp fix for every page
+		$this->view->assign('header_description', 'Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess.');
+		$this->view->assign('header_keywords', 'wuza, marcel, hess, wusa');
 		$this->view->setTemplate('wuza');
 		
 		$this->view->assign('active_view', $this->request['view']);

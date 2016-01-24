@@ -34,10 +34,14 @@
     <link href="css/bxslider.css" rel="stylesheet">
     <link href="css/wuza.css?version="<?php echo $this->_['version']; ?>" rel="stylesheet">
     
-    <!-- tmp hardcoded -->
-    <meta name="description" content="Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess.">
-    <meta name="keywords" content="wuza, marcel, hess">
-    <meta http-equiv="content-language" content="de">
+    <meta name="description" content="<?php echo $this->_['header_description']; ?>">
+    <meta name="keywords" content="<?php echo $this->_['header_keywords']; ?>">
+    <meta http-equiv="content-language" content="<?php echo $this->_['lang']; ?>">
+    
+    <!-- for social-media-links -->
+    <meta property="og:title" content="<?php echo $this->_['header_titel']; ?>" />
+    <meta property="og:description" content="<?php echo $this->_['header_description']; ?>" />
+    <meta property="og:image" content="img/WuzaIcon.png" />
     
   </head>
   
@@ -132,6 +136,7 @@
     
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bxslider.min.js"></script>
+    <!--<script src="js/jGravity-min.js"></script>-->
     <script src="js/wuza.js?version="<?php echo $this->_['version']; ?>"></script>
     
     <input id="js" type="hidden" name="js" value="<?php echo $this->_['js']; ?>">

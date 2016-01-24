@@ -9,13 +9,13 @@ class Model{
 	);
 	private static $projects = array(
 		array("template" =>"build_tool",	"title"=>"Build Tool - das WBB Plugin",
-			  "content"=>"WBB steht für \"WoltLab Burning Board\". Ein kleines Tool - einst für Gw2 - derweilen für ESO."),
+			"content"=>"WBB steht für \"WoltLab Burning Board\". Ein kleines Tool - einst für Gw2 - derweilen für ESO."),
 		array("template" =>"ios_started", 	"title"=>"iOS - AppQuest und FlappyBird", "content"=>""),
-		array("template" =>"js_mario", 		"title"=>"JS - Mario neu erfunden", "content"=>""),
-		array("template" =>"ipa", 			"title"=>"Meine IPA",
-			  "content"=>"IPA steht für individuelle praktische Arbeit.
-			  Mein Thema war der vollautomatische Registrierungsprozess für die Cloud ERP-Lösung \"SQL-Ledger\"."),
-		array("template" =>"wuza", 			"title"=>"WUZA - das Webprojekt", "content"=>"")
+		array("template" =>"js_mario", 	"title"=>"JS - Mario neu erfunden", "content"=>""),
+		array("template" =>"ipa", 	"title"=>"Meine IPA",
+			"content"=>"IPA steht für individuelle praktische Arbeit.
+			 Mein Thema war der vollautomatische Registrierungsprozess für die Cloud ERP-Lösung \"SQL-Ledger\"."),
+		array("template" =>"wuza", 	"title"=>"WUZA - das Webprojekt", "content"=>"")
 	);
 	private static $songs = array(
 		array("title"=>"Song 1", "artist"=>"Muster Max", "youtube_link"=>"http://youtube.com/hjdhf", "applemusic_link"=>"http://apple.com"),
@@ -33,17 +33,19 @@ class Model{
 		array("file"=>"stories"),
 		array("file"=>"projects"),
 		array("file"=>"contact"),
+		array("file"=>"social"),
 		array("file"=>"impressum"),
 	);
 	
 	// translations
 	private static $locales = array(
 		// menu
-		'default'			=> array("de"=>"Home", 			"en"=>"Home"),
-		'music'				=> array("de"=>"Musik", 		"en"=>"Music"),
-		'stories'			=> array("de"=>"Stories", 		"en"=>"Stories"),
-		'projects'			=> array("de"=>"Projekte", 		"en"=>"Projects"),
+		'default'			=> array("de"=>"Home", 	"en"=>"Home"),
+		'music'			=> array("de"=>"Musik", 	"en"=>"Music"),
+		'stories'			=> array("de"=>"Stories", 	"en"=>"Stories"),
+		'projects'			=> array("de"=>"Projekte", 	"en"=>"Projects"),
 		'contact'			=> array("de"=>"Über mich", 	"en"=>"About Me"),
+		'social'			=> array("de"=>"Soziales", 	"en"=>"Social"),
 		'impressum'			=> array("de"=>"Impressum", 	"en"=>"Impressum"),
 		// projects
 		'project_build_tool'	=> array("de"=>"Build Tool", 	"en"=>"Build Tool"),
