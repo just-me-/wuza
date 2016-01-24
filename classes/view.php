@@ -62,6 +62,15 @@ class View{
 		return $this->language;
 	}
 	
+	/**
+	 * @param String default date "dd.mm.jjjj"
+	 * @return string
+	 */
+	public function getLastUpdate($default_date){
+		$file_time = filemtime($this->path . DIRECTORY_SEPARATOR . $this->template . '.php'); 
+		$file_date = date ("d.m.Y", $file_time);
+		return $file_time ? $file_date : $default_date;
+	}
 	
 	/**
 	 * @param string $tpl name of template file - if not alrdy set via setTemplate()

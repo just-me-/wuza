@@ -68,7 +68,7 @@ class Controller{
 		
 		$this->view->assign('active_view', $this->request['view']);
 		$this->view->assign('version', $this->request['version']);
-		$this->view->assign('last_update', $this->request['last_update']);
+		$this->view->assign('last_update', $view->getLastUpdate($this->request['last_update']));
 		$this->view->assign('menu', Model::getMenu());
 		$this->view->assign('locales', Model::getLocales());
 		$this->view->assign('content', $view->loadTemplate());
