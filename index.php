@@ -25,6 +25,8 @@ include('classes/controller.php');
 include('classes/model.php');
 include('classes/view.php');
 
+// allow GZIP Compression
+ob_start("ob_gzhandler");
 session_start();
 
 // $_SESSION, $_GET and $_POST - no $_COOKIE but config values
