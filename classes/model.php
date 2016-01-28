@@ -30,7 +30,8 @@ class Model{
 	private static $menu = array(
 		array("file"=>"default"),
 		array("file"=>"music"),
-		array("file"=>"stories"),
+		// array("file"=>"stories"),
+		// array("file"=>"farsi"),
 		array("file"=>"projects"),
 		array("file"=>"contact"),
 		array("file"=>"social"),
@@ -43,6 +44,7 @@ class Model{
 		'default'			=> array("de"=>"Home", 	"en"=>"Home"),
 		'music'			=> array("de"=>"Musik", 	"en"=>"Music"),
 		'stories'			=> array("de"=>"Stories", 	"en"=>"Stories"),
+		'farsi'			=> array("de"=>"Farsi", 	"en"=>"Farsi"),
 		'projects'			=> array("de"=>"Projekte", 	"en"=>"Projects"),
 		'contact'			=> array("de"=>"Über mich", 	"en"=>"About Me"),
 		'social'			=> array("de"=>"Soziales", 	"en"=>"Social"),

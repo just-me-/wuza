@@ -67,9 +67,11 @@
         der letzten Aktualisierungen finden. Frohes Suchen!
     </p>
     
+    <!-- 2Do: loop -->
     <h3>Die letzten Aktualisierungen</h3>
     <div class="hover-list">
         <ul>
+            <li><a href="">Easter Egg &laquo;Gravity Troll&raquo; <span>- Hinweis: Trolle einen Troll und er trollt dich zurück!</span></a></li>
             <li><a href="?view=project_build_tool">Projekt Build Tool <span>- ein  Projekt wurde auf WUZA neu erfasst</span></a></li>
             <li><a href="?view=contact">Vorstellung <span>- die Seite "Über mich" enthält nun einen Steckbrief von mir</span></a></li>
             <li><a href="?view=impressum">Rechtliches <span>- das Impressum wurde hochgeladen</span></a></li>
@@ -79,14 +81,14 @@
     <h3>Die Wird-ASAP-Erledigt-Liste</h3>
     <div class="hover-list">
         <ul>
-            <li>Weitere Erfassungen der bisherigen Projekte <span>- da fehlt noch eine ganze Liste; vorerst das Wichtigste</span></li>
-            <li>Musikprojekt implementieren <span>- ein neues Projekt, welches OnTheFly mit WUZA aufgezogen wird</span></li>
-            <li>SEO <span>- bisher ist das Google-Ranking nicht nicht gepusht worden</span></li>
-            <li>Backend <span>- ein bisschen Konfort für mich ;-)</span></li>
-            <li>Falsche Zitate <span>- das Zitatarchiv implementieren um Stöbern zu ermöglichen</span></li>
-            <li>Mehr Easter Eggs <span>- man darf sich freuen :-)</span></li>
-            <li>Spracherweiterung <span>- zumindest mal um Englisch</span></li>
-            <li>Weitere Funktionen und Bereiche <span>- alles soll ja nicht gespoilert werden, oder? ;-)</span></li>
+            <li><a class="blocked" href="">Weitere Erfassungen der bisherigen Projekte <span>- da fehlt noch eine ganze Liste; vorerst das Wichtigste</span></a></li>
+            <li><a class="blocked" href="">Musikprojekt implementieren <span>- ein neues Projekt, welches OnTheFly mit WUZA aufgezogen wird</span></a></li>
+            <li><a class="blocked" href="">SEO <span>- bisher ist das Google-Ranking nicht nicht gepusht worden</span></a></li>
+            <li><a class="blocked" href="">Backend <span>- ein bisschen Konfort für mich ;-)</span></a></li>
+            <li><a class="blocked" href="">Falsche Zitate <span>- das Zitatarchiv implementieren um Stöbern zu ermöglichen</span></a></li>
+            <li><a class="blocked" href="">Mehr Easter Eggs <span>- man darf sich freuen :-)</span></a></li>
+            <li><a class="blocked" href="">Spracherweiterung <span>- zumindest mal um Englisch</span></a></li>
+            <li><a class="blocked" href="">Weitere Funktionen und Bereiche <span>- alles soll ja nicht gespoilert werden, oder? ;-)</span></a></li>
         </ul>
     </div>
     

@@ -2,7 +2,7 @@
     
     <h1>Social Media - WUZA ist auf Twitter!</h1>
     
-    <a width="100%" class="twitter-timeline" href="https://twitter.com/_wuza" data-widget-id="691359130787958784">Tweets von WUZA</a>
+    <a class="twitter-timeline" href="https://twitter.com/_wuza" data-widget-id="691359130787958784">Tweets von WUZA</a>
     <script>
         !function(d,s,id){
             var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';

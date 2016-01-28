@@ -24,14 +24,12 @@ class View{
 		}
 	}
 	
-	
 	/**
 	 * @param string $key string $value
 	 */
 	public function assign($key, $value){
 		$this->_[$key] = $value;
 	}
-
 
 	/**
 	 * @param String $template name of template

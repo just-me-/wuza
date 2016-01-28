@@ -64,14 +64,14 @@
     <nav class="navbar navbar-inverse">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand no-padding no-margin" href="?view=default">
-          <img id="logo" class="visible-sm visible-md visible-lg" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
-          <img id="logo" class="visible-xs" src="img/WuzaLogo_clean.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
+          <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
+          <img id="logo_small" class="logo visible-xs" src="img/WuzaLogo_clean.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
         </a>
         
       </div>
@@ -136,7 +136,7 @@
     
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bxslider.min.js"></script>
-    <!--<script src="js/jGravity-min.js"></script>-->
+    <script src="js/jGravity-min.js"></script>
     <script src="js/wuza.js?version="<?php echo $this->_['version']; ?>"></script>
     
     <input id="js" type="hidden" name="js" value="<?php echo $this->_['js']; ?>">
