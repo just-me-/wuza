@@ -27,6 +27,15 @@ $(document).ready(function(){
         speed: 500,
         captions: true
     });
+	
+	// show cookie info
+	window.cookieconsent_options = {
+	  "message":"WUZA verwendet Cookies, um Deinen Besuch optimal zu gestalten. <br/>",
+	  "dismiss":"Alles klar und akzeptiert!",
+	  "learnMore":"Erfahre hier mehr dazu.",
+	  "link":"?view=impressum",
+	  "theme":"css/cookieconsent.css"
+	};
     
 });
 

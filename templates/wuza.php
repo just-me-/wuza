@@ -70,8 +70,8 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand no-padding no-margin" href="?view=default">
-          <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
-          <img id="logo_small" class="logo visible-xs" src="img/WuzaLogo_clean.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA">
+          <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA"  height="45px" weight="160px">
+          <img id="logo_small" class="logo visible-xs" src="img/WuzaLogo_clean.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA" height="45px" weight="160px">
         </a>
         
       </div>
@@ -136,6 +136,7 @@
     
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bxslider.min.js"></script>
+    <script src="js/cookieconsent.min.js"></script>
     <script src="js/jGravity-min.js"></script>
     <script src="js/wuza.js?version="<?php echo $this->_['version']; ?>"></script>
     
