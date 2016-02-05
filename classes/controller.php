@@ -3,7 +3,7 @@ class Controller{
 
 	private $request = null;
 	private $template = '';
-	private $view = null;
+ 	private $view = null;
 
 	/**
 	 * @param Array $request Array from $_GET & $_POST.
@@ -79,7 +79,7 @@ class Controller{
 	}
 	
 	public function update_session(){
-		$_SESSION["js"] 	= $this->view->getJS();
+		$_SESSION["js"] 	= $this->request['js'];
 		$_SESSION["lang"] 	= $this->view->getLang();
 	}
 }

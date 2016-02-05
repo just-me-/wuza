@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="<?php echo $this->_['lang']; ?>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" href="<?php echo $this->_['url']; ?>icon/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="<?php echo $this->_['url']; ?>icon/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="<?php echo $this->_['url']; ?>icon/manifest.json">
-    <link rel="mask-icon" href="<?php echo $this->_['url']; ?>icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="<?php echo $this->_['url']; ?>icon/safari-pinned-tab.svg">
     <link rel="shortcut icon" href="<?php echo $this->_['url']; ?>icon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="<?php echo $this->_['url']; ?>icon/mstile-144x144.png">
@@ -32,11 +32,10 @@
     
     <link href="<?php echo $this->_['url']; ?>css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/bxslider.css" rel="stylesheet">
-    <link href="<?php echo $this->_['url']; ?>css/wuza.css?version=&quot;<?php echo $this->_['version']; ?>&quot;" rel="stylesheet">
+    <link href="<?php echo $this->_['url']; ?>css/wuza.css?version=%22<?php echo $this->_['version']; ?>%22" rel="stylesheet">
     
     <meta name="description" content="<?php echo $this->_['header_description']; ?>">
     <meta name="keywords" content="<?php echo $this->_['header_keywords']; ?>">
-    <meta http-equiv="content-language" content="<?php echo $this->_['lang']; ?>">
     
     <!-- for social-media-links -->
     <meta property="og:title" content="<?php echo $this->_['header_titel']; ?>" />
@@ -70,8 +69,8 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand no-padding no-margin" href="<?php echo $this->_['url']; ?>">
-          <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="<?php echo $this->_['url']; ?>img/WuzaLogo.png?version=&quot;<?php echo $this->_['version']; ?>&quot;" alt="WUZA"  height="45px" weight="160px">
-          <img id="logo_small" class="logo visible-xs" src="<?php echo $this->_['url']; ?>img/WuzaLogo_clean.png?version=&quot;<?php echo $this->_['version']; ?>&quot;" alt="WUZA" height="45px" weight="160px">
+          <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="<?php echo $this->_['url']; ?>img/WuzaLogo.png?version=%22;<?php echo $this->_['version']; ?>%22" alt="WUZA"  height="45" weight="160">
+          <img id="logo_small" class="logo visible-xs" src="<?php echo $this->_['url']; ?>img/WuzaLogo_clean.png?version=%22<?php echo $this->_['version']; ?>%22" alt="WUZA" height="45" weight="160">
         </a>
         
       </div>
@@ -138,7 +137,7 @@
     <script src="<?php echo $this->_['url']; ?>js/bxslider.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/cookieconsent.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/jGravity-min.js"></script>
-    <script src="<?php echo $this->_['url']; ?>js/wuza.js?version=&quot;<?php echo $this->_['version']; ?>&quot;"></script>
+    <script src="<?php echo $this->_['url']; ?>js/wuza.js?version=%22<?php echo $this->_['version']; ?>%22"></script>
     
     <input id="js" type="hidden" name="js" value="<?php echo $this->_['js']; ?>">
     <input id="lang" type="hidden" name="lang" value="<?php echo $this->_['lang']; ?>">

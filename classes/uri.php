@@ -1,5 +1,4 @@
 <?php
-
 class URI {
 	private $uri;
 	private $uriParts = array();
@@ -52,6 +51,21 @@ class URI {
 	* @param string $value */
 	public function setVar($varName, $value) {
 		$this->data[$varName] = $value;
+	}
+	
+	/**
+	* @param string $needed Name of needed param
+	* if there are params but not the needed one you should show page 404
+	* @param bool you should, you should not */
+	public function shouldShow404($needed) {
+		$keys = array_keys($this->data);
+		if( ($keys[0]) && (!($this->getVar($needed))) ) {
+			// get params but the needed one is not set or empty 
+			return TRUE; 
+		} else {
+			// get no params at all or get all whats needed
+			return FALSE; 
+		}
 	}
 	
 	/**
