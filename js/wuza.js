@@ -29,13 +29,23 @@ $(document).ready(function(){
     });
 	
 	// show cookie info
+	var url = getInputValue("#url"); 
 	window.cookieconsent_options = {
 	  "message":"WUZA verwendet Cookies, um Deinen Besuch optimal zu gestalten. <br/>",
 	  "dismiss":"Alles klar und akzeptiert!",
 	  "learnMore":"Erfahre hier mehr dazu.",
-	  "link":"?view=impressum",
-	  "theme":"css/cookieconsent.css"
+	  "link":url+"view/impressum",
+	  "theme":url+"css/cookieconsent.css"
 	};
+	
+	// for intern links; just in case
+	var url = getInputValue("#url"); 
+	$('a.getHard, .getHard a').each(function() {
+		var href = $( this ).attr("href");
+		if ((!(href.match(/^[http|#]/i))) && (typeof href != 'undefined' && href)) {
+			$( this ).attr("href", url+href);
+		}
+	});
     
 });
 
@@ -107,3 +117,10 @@ $('a.blocked').bind('click', function(){
 function changeQuoteVisibility(quote_id) {
     $('#quote_' + quote_id + '_help').slideToggle("slow");
 }
+
+// get value of a (hidden) input
+function getInputValue(selector) {
+	return $(selector).val();
+}
+
+

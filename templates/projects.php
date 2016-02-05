@@ -11,7 +11,7 @@
     foreach($this->_['projects'] as $project){
     ?>
     
-    <h2><a href="?view=project_<?php echo $project['template'] ?>"><?php echo $project['title']; ?></a></h2>
+    <h2><a class="getHard" href="view/project_<?php echo $project['template'] ?>"><?php echo $project['title']; ?></a></h2>
     <p><?php echo $project['content']; ?></p>
     
     <?php

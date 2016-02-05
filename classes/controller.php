@@ -9,8 +9,7 @@ class Controller{
 	 * @param Array $request Array from $_GET & $_POST.
 	 */
 	public function __construct($request){
-		$this->view = new View($request['lang'], $request['js']);
-		$this->view->assign('debug_mode', $request['debug_mode']);
+		$this->view = new View($request);
 		
 		$this->request = $request;
 		$this->template = !empty($request['view']) ? $request['view'] : 'default';
@@ -20,7 +19,7 @@ class Controller{
 	 * @return String Content
 	 */
 	public function display(){
-		$view = new View();
+		$view = new View($this->request);
 		$header_titel = "WUZA";
 		
 		switch($this->template){
@@ -64,8 +63,8 @@ class Controller{
 		}
 		
 		$this->view->assign('header_titel', $header_titel);
-		// tmp fix for every page
-		$this->view->assign('header_description', 'Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess.');
+		// tmp - fix coded for every page
+		$this->view->assign('header_description', 'Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess. Auf WUZA findest Du Diverses bezüglich Code, Musik und vielem mehr.');
 		$this->view->assign('header_keywords', 'wuza, marcel, hess, wusa');
 		$this->view->setTemplate('wuza');
 		

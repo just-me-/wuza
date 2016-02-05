@@ -24,6 +24,7 @@ try {
 include('classes/controller.php');
 include('classes/model.php');
 include('classes/view.php');
+include('classes/uri.php');
 
 // allow GZIP Compression
 ob_start("ob_gzhandler");
@@ -31,6 +32,12 @@ session_start();
 
 // $_SESSION, $_GET and $_POST - no $_COOKIE but config values
 $request = array_merge($_SESSION, $_GET, $_POST, $config);
+
+// add values from fancy url
+$url=new URI("wuza");
+$request["view"] = strtolower($url->getVar("view"));
+
+// create controller
 $controller = new Controller($request);
 
 echo $controller->display();

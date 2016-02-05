@@ -3,9 +3,7 @@ class View{
 
 	private $path = 'templates';
 	private $template = 'default';
-	
 	private $language = 'de';
-	private $js_active = null;
 
 	/**
 	 * includes all varis for template 
@@ -15,12 +13,16 @@ class View{
 	/**
 	 * @param string $lang, string $js
 	 */
-	public function __construct($lang, $js){
-		if (!empty($lang)){
-			 $this->language = $lang;
+	public function __construct($request){
+		
+		$this->assign('url', $request['link']."/");		
+		if (!empty($request['lang'])){
+			 $this->language = $request['lang'];
 		}
-		if (!empty($js)){
-			 $this->js_active = $js;
+		$this->assign("lang", $this->language);
+		
+		foreach (array("debug_mode", "js") as $key) {
+			$this->assign($key, $request[$key]);
 		}
 	}
 	
@@ -49,13 +51,6 @@ class View{
 	/**
 	 * @return string
 	 */
-	public function getJS(){
-		return $this->js_active;
-	}
-	
-	/**
-	 * @return string
-	 */
 	public function getLang(){
 		return $this->language;
 	}
@@ -75,8 +70,6 @@ class View{
 	 * @return string Der Output des Templates.
 	 */
 	public function loadTemplate(){
-		$this->prepareTemplate();
-		
 		$tpl = $this->template;
 		$file = $this->path . DIRECTORY_SEPARATOR . $tpl . '.php';
 		$exists = file_exists($file);
@@ -97,9 +90,5 @@ class View{
 		return $output;
 	}
 	
-	private function prepareTemplate(){
-		$this->assign("lang", $this->language);
-		$this->assign("js", $this->js_active);
-	}
 }
 ?>

@@ -8,31 +8,31 @@
     <title><?php echo $this->_['header_titel']; ?></title>
     
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="icon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="icon/manifest.json">
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="<?php echo $this->_['url']; ?>icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php echo $this->_['url']; ?>icon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="<?php echo $this->_['url']; ?>icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="<?php echo $this->_['url']; ?>icon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="<?php echo $this->_['url']; ?>icon/manifest.json">
+    <link rel="mask-icon" href="<?php echo $this->_['url']; ?>icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="<?php echo $this->_['url']; ?>icon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="icon/mstile-144x144.png">
-    <meta name="msapplication-config" content="icon/browserconfig.xml">
+    <meta name="msapplication-TileImage" content="<?php echo $this->_['url']; ?>icon/mstile-144x144.png">
+    <meta name="msapplication-config" content="<?php echo $this->_['url']; ?>icon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- end favicon -->
     
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bxslider.css" rel="stylesheet">
-    <link href="css/wuza.css?version="<?php echo $this->_['version']; ?>" rel="stylesheet">
+    <link href="<?php echo $this->_['url']; ?>css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $this->_['url']; ?>css/bxslider.css" rel="stylesheet">
+    <link href="<?php echo $this->_['url']; ?>css/wuza.css?version=&quot;<?php echo $this->_['version']; ?>&quot;" rel="stylesheet">
     
     <meta name="description" content="<?php echo $this->_['header_description']; ?>">
     <meta name="keywords" content="<?php echo $this->_['header_keywords']; ?>">
@@ -41,7 +41,7 @@
     <!-- for social-media-links -->
     <meta property="og:title" content="<?php echo $this->_['header_titel']; ?>" />
     <meta property="og:description" content="<?php echo $this->_['header_description']; ?>" />
-    <meta property="og:image" content="img/WuzaIcon.png" />
+    <meta property="og:image" content="<?php echo $this->_['url']; ?>img/WuzaIcon.png" />
     
   </head>
   
@@ -69,9 +69,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand no-padding no-margin" href="?view=default">
-          <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="img/WuzaLogo.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA"  height="45px" weight="160px">
-          <img id="logo_small" class="logo visible-xs" src="img/WuzaLogo_clean.png?version='<?php echo $this->_['version']; ?>'" alt="WUZA" height="45px" weight="160px">
+        <a class="navbar-brand no-padding no-margin" href="<?php echo $this->_['url']; ?>">
+          <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="<?php echo $this->_['url']; ?>img/WuzaLogo.png?version=&quot;<?php echo $this->_['version']; ?>&quot;" alt="WUZA"  height="45px" weight="160px">
+          <img id="logo_small" class="logo visible-xs" src="<?php echo $this->_['url']; ?>img/WuzaLogo_clean.png?version=&quot;<?php echo $this->_['version']; ?>&quot;" alt="WUZA" height="45px" weight="160px">
         </a>
         
       </div>
@@ -82,15 +82,15 @@
               $active_class = $this->_['active_view'] == $menu['file'] ? "active" : "";
               $titel = $this->_['locales'][$menu['file']]['de']; // 2do: en or de?
             ?>
-            <li class="<?php echo $active_class ?>"><a href="?view=<?php echo $menu['file'] ?>"><?php echo $titel; ?></a></li>
+            <li class="<?php echo $active_class ?>"><a href="<?php echo $this->_['url']; ?>view/<?php echo $menu['file'] ?>"><?php echo $titel; ?></a></li>
             <?php
             }
             ?>
           </ul>
           
           <ul class="nav navbar-nav navbar-right none">
-            <li><a <?php echo 'href="?view='.$this->_['active_view'].'&lang=de"' ?> class="language">DE</a></li>
-            <li><a <?php echo 'href="?view='.$this->_['active_view'].'&lang=en"' ?> class="language">EN</a></li>
+            <li><a <?php echo 'href="?lang=de"' ?> class="language">DE</a></li>
+            <li><a <?php echo 'href="?lang=en"' ?> class="language">EN</a></li>
           </ul>
           
           <?php
@@ -134,14 +134,15 @@
       
     </div>
     
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bxslider.min.js"></script>
-    <script src="js/cookieconsent.min.js"></script>
-    <script src="js/jGravity-min.js"></script>
-    <script src="js/wuza.js?version="<?php echo $this->_['version']; ?>"></script>
+    <script src="<?php echo $this->_['url']; ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/bxslider.min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/cookieconsent.min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/jGravity-min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/wuza.js?version=&quot;<?php echo $this->_['version']; ?>&quot;"></script>
     
     <input id="js" type="hidden" name="js" value="<?php echo $this->_['js']; ?>">
     <input id="lang" type="hidden" name="lang" value="<?php echo $this->_['lang']; ?>">
+    <input id="url" type="hidden" name="url" value="<?php echo $this->_['url']; ?>">
     
   </body>
 </html>

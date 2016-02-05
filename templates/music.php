@@ -16,13 +16,13 @@
     
         <div class="opacity_logo applemusic right <?php echo $applemusic_visible; ?>">
             <a target=_blank <?php echo 'href="'.$song['applemusic_link'].'"'; ?>>
-                <img src="img/applemusic_icon.png" alt="AppleMusic">
+                <img src="<?php echo $this->_['url']; ?>img/applemusic_icon.png" alt="AppleMusic">
             </a>
         </div>
     
         <div class="opacity_logo youtube right <?php echo $youtube_visible; ?>">
             <a target=_blank <?php echo 'href="'.$song['youtube_link'].'"'; ?>>
-                <img src="img/youtube_icon.png" alt="YouTube">
+                <img src="<?php echo $this->_['url']; ?>img/youtube_icon.png" alt="YouTube">
             </a>
         </div>
 

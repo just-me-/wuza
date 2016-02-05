@@ -3,7 +3,7 @@
   <h1>Über mich</h1>
   
   <div id="ich_area" class="rounded right blocked_img small-margin-left small-margin-bottom">
-    <img id="ich" class="rounded" src="img/me_pixelated.png" alt="Ich">
+    <img id="ich" class="rounded" src="<?php echo $this->_['url']; ?>img/me_pixelated.png" alt="Marcel Hess">
     <span class="overlay"></span>
   </div>
   
@@ -66,16 +66,16 @@
 <script>
   // for img
   $('#ich_area').on('click touchstart',function(){
-    $("#ich").attr("src","img/me_clean.png");
+    $("#ich").attr("src","<?php echo $this->_['url']; ?>img/me_clean.png");
     setTimeout( function(){ 
-      $("#ich").attr("src","img/me_pixelated.png");
+      $("#ich").attr("src","<?php echo $this->_['url']; ?>img/me_pixelated.png");
     }  , 5000 );
   });
   $("#ich_area").mouseenter(function(){
-      $("#ich").attr("src","img/me_clean.png");
+      $("#ich").attr("src","<?php echo $this->_['url']; ?>img/me_clean.png");
   });
   $("#ich_area").mouseleave(function(){
-      $("#ich").attr("src","img/me_pixelated.png");
+      $("#ich").attr("src","<?php echo $this->_['url']; ?>img/me_pixelated.png");
   });
   // end img
 </script>
