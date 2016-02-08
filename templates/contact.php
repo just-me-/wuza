@@ -59,8 +59,8 @@
     Projektanfragen, sonstige Fragen, Kritik oder Lob - jegliches Feedback ist gerne gesehen und wird so bald als möglich beantwortet. 
   </p>
   
-  <iframe width="100%" height="300" frameborder="0" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184930.13937767685!2d8.92316905557091!3d47.61044417808263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479af24630fdb9b5%3A0x7860d485f4b7b4cf!2sSch%C3%BCtzlerweg+6%2C+8560+M%C3%A4rstetten!5e0!3m2!1sde!2sch!4v1451240672514"></iframe>
-
+  <iframe class="full-width no-border" height="300" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184930.13937767685!2d8.92316905557091!3d47.61044417808263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479af24630fdb9b5%3A0x7860d485f4b7b4cf!2sSch%C3%BCtzlerweg+6%2C+8560+M%C3%A4rstetten!5e0!3m2!1sde!2sch!4v1451240672514"></iframe>
+  
 </div>
 
 <script>

@@ -81,6 +81,7 @@ class View{
 		}
 		else {
 			// could not find template
+			header("HTTP/1.0 404 Not Found");
 			include $this->path . DIRECTORY_SEPARATOR . '404.php';
 		}
 			$output = ob_get_contents();
