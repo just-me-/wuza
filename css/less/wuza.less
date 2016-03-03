@@ -4,6 +4,9 @@
 @nav-bg-color-from:     #585858;
 @nav-bg-color-to:       #3d3d3d;
 @nav-bg-alpha:          0.85;
+@link-basic-color:		#003866;
+@link-soft-color:		#3389D2;
+@link-light-color:		#3A9CEF;	
 /* end varis*/
 
 /* for imgs */  
@@ -147,6 +150,33 @@ img.rounded { width: auto; }
 .clickable { cursor: pointer; }
 a.blocked { cursor: default; }
 div { max-width: 100%; }
+
+@-webkit-keyframes colours { 
+	0% {color: @link-basic-color;} 
+	25% {color: @link-soft-color;} 
+	50% {color: @link-light-color;} 
+	75% {color: @link-soft-color;} 
+	100% {color: @link-basic-color;} 
+} 
+@-moz-keyframes colours { 
+	0% {color: @link-basic-color;} 
+	25% {color: @link-soft-color;} 
+	50% {color: @link-light-color;} 
+	75% {color: @link-soft-color;} 
+	100% {color: @link-basic-color;} 
+} 
+p a, .colorful a, a.colorful, span.colorful { 
+    -webkit-animation-direction: normal; 
+    -webkit-animation-duration: 5s; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-name: colours; 
+    -webkit-animation-timing-function: ease; 
+    -moz-animation-direction: normal; 
+    -moz-animation-duration: 5s; 
+    -moz-animation-iteration-count: infinite; 
+    -moz-animation-name: colours; 
+    -moz-animation-timing-function: ease; 
+}
 
 .blocked_img {
     position: relative;

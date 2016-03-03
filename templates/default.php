@@ -72,9 +72,9 @@
     <div class="hover-list getHard">
         <ul>
             <li><a class="blocked" href="#">Easter Egg &laquo;Gravity Troll&raquo; <span>- Hinweis: Trolle einen Troll und er trollt dich zurück!</span></a></li>
-            <li><a href="view/project_build_tool">Projekt Build Tool <span>- ein  Projekt wurde auf WUZA neu erfasst</span></a></li>
-            <li><a href="view/contact">Vorstellung <span>- die Seite "Über mich" enthält nun einen Steckbrief von mir</span></a></li>
-            <li><a href="view/impressum">Rechtliches <span>- das Impressum wurde hochgeladen</span></a></li>
+            <li><a class="colorful" href="view/project_build_tool">Projekt Build Tool <span>- ein  Projekt wurde auf WUZA neu erfasst</span></a></li>
+            <li><a class="colorful" href="view/contact">Vorstellung <span>- die Seite "Über mich" enthält nun einen Steckbrief von mir</span></a></li>
+            <li><a class="colorful" href="view/impressum">Rechtliches <span>- das Impressum wurde hochgeladen</span></a></li>
         </ul>
     </div>
     

@@ -17,9 +17,10 @@
         $(document).ready(function() {
             twitterCheck = setInterval(function() {
                 var twitterFrame = $("#twitter-widget-0");
-                var twitterTimeline = twitterFrame.contents().find(".timeline");
+                var twitterTimeline = twitterFrame.contents().find(".timeline-Widget");
+                twitterFrame.contents().find(".timeline-Footer").hide();
                 if(twitterFrame.length && twitterTimeline.length && window.screen.availWidth > 375) {
-                    twitterTimeline.attr("style","max-width:100% !important;");
+                    twitterTimeline.attr("style","max-width:100% !important; width: 100% !important;");
                     twitterFrame.attr("style","max-width:100% !important; width: 100% !important;");
                     clearInterval(twitterCheck);
                 }
