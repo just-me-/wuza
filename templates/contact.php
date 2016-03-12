@@ -2,7 +2,7 @@
     
   <h1>Über mich</h1>
   
-  <div id="ich_area" class="rounded right blocked_img small-margin-left small-margin-bottom">
+  <div id="ich_area" class="rounded right blocked_img small-margin-left small-margin-bottom noselect">
     <img id="ich" class="rounded" src="<?php echo $this->_['url']; ?>img/me_pixelated.png" alt="Marcel Hess">
     <span class="overlay"></span>
   </div>
@@ -34,7 +34,7 @@
     In meiner Freizeit erweitere ich mein Wissen in anderen Bereichen - wie beispielsweise Swift-Applikationen für iOS 
     - oder baue bekanntes Wissen - zum Beispiel in meinen PHP Programmen - aus.
     Insofern Zeit vorhanden ist, arbeite ich an neuen Projekten oder erweitere meine bestehenden Codezeilen.
-    Weitere Informationen dazu findest Du <a href="?view=projects">hier, in dem Projektebereich</a> von wuza.ch. 
+    Weitere Informationen dazu findest Du <a class="getHard" href="view/projects">hier, in dem Projektebereich</a> von wuza.ch. 
   </p>
   
   <p>

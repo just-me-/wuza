@@ -71,6 +71,7 @@
     <h3>Die letzten Aktualisierungen</h3>
     <div class="hover-list getHard">
         <ul>
+            <li><a class="colorful" href="view/projects">Projektübersicht <span>- die ersten Projekte wurden in der Timeline erfasst</span></a></li>
             <li><a class="blocked" href="#">Easter Egg &laquo;Gravity Troll&raquo; <span>- Hinweis: Trolle einen Troll und er trollt dich zurück!</span></a></li>
             <li><a class="colorful" href="view/project_build_tool">Projekt Build Tool <span>- ein  Projekt wurde auf WUZA neu erfasst</span></a></li>
             <li><a class="colorful" href="view/contact">Vorstellung <span>- die Seite "Über mich" enthält nun einen Steckbrief von mir</span></a></li>
@@ -83,7 +84,7 @@
         <ul>
             <li><a class="blocked" href="">Weitere Erfassungen der bisherigen Projekte <span>- da fehlt noch eine ganze Liste; vorerst das Wichtigste</span></a></li>
             <li><a class="blocked" href="">Musikprojekt implementieren <span>- ein neues Projekt, welches OnTheFly mit WUZA aufgezogen wird</span></a></li>
-            <li><a class="blocked" href="">SEO <span>- bisher ist das Google-Ranking nicht nicht gepusht worden</span></a></li>
+            <li><a class="blocked" href="">SEO <span>- bisher ist das Google-Ranking noch nicht gross gepusht worden</span></a></li>
             <li><a class="blocked" href="">Backend <span>- ein bisschen Konfort für mich ;-)</span></a></li>
             <li><a class="blocked" href="">Falsche Zitate <span>- das Zitatarchiv implementieren um Stöbern zu ermöglichen</span></a></li>
             <li><a class="blocked" href="">Mehr Easter Eggs <span>- man darf sich freuen :-)</span></a></li>
@@ -92,17 +93,4 @@
         </ul>
     </div>
     
-    <!-- all entries -->
-    <!--
-    <?php
-    foreach($this->_['entries'] as $entry){
-    ?>
-    
-    <h2><a href="?view=entry&id=<?php echo $entry['id'] ?>"><?php echo $entry['title']; ?></a></h2>
-    <p><?php echo $entry['content']; ?></p>
-    
-    <?php
-    }
-    ?>
-    -->
 </div>

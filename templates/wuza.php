@@ -30,6 +30,10 @@
     <meta name="theme-color" content="#ffffff">
     <!-- end favicon -->
     
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- end fonts -->
+    
     <link href="<?php echo $this->_['url']; ?>css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/bxslider.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/wuza.css?version=%22<?php echo $this->_['version']; ?>%22" rel="stylesheet">
@@ -60,7 +64,7 @@
     <!-- end GoogleAnalytics -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse noselect">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Navigation</span>
@@ -81,7 +85,12 @@
               $active_class = $this->_['active_view'] == $menu['file'] ? "active" : "";
               $titel = $this->_['locales'][$menu['file']]['de']; // 2do: en or de?
             ?>
-            <li class="<?php echo $active_class ?>"><a href="<?php echo $this->_['url']; ?>view/<?php echo $menu['file'] ?>"><?php echo $titel; ?></a></li>
+            <li class="<?php echo $active_class ?>">
+              <a href="<?php echo $this->_['url']; ?>view/<?php echo $menu['file'] ?>">
+                <span class="material-icons md-14 middle hidden-sm"><?php echo $menu['icon'] ?></span>
+                <span class="menu_titel middle"><?php echo $titel; ?></span>
+              </a>
+            </li>
             <?php
             }
             ?>
@@ -96,7 +105,12 @@
           if($this->_['debug_mode']){
           ?>
           <ul class="nav navbar-nav navbar-right">
-            <li><a <?php echo 'href="?view='.$this->_['active_view'].'&XDEBUG_SESSION_START=1"' ?>><b>DEBUG</b></a></li>
+            <li>
+              <a <?php echo 'href="?view='.$this->_['active_view'].'&XDEBUG_SESSION_START=1"' ?>>
+                <span class="material-icons md-14 middle">bug_report</span>
+                <b class="middle">DEBUGG</b>
+              </a>
+            </li>
           </ul>
           <?php
           }
@@ -126,7 +140,7 @@
       <?php echo "by /mh"; ?>
       -->
       
-      <div class="footer">
+      <div class="footer noselect">
         <div class="right">Letzte Aktualisierung am <?php echo $this->_['last_update']; ?></div>
         <div class="left">Von Marcel Hess</div>
       </div>

@@ -9,11 +9,11 @@
     
     <div id="small_screens" class="right">
         <ul class="bxslider">
-            <li><img src="img/projects/build_tool_small_1.png" /></li>
-            <li><img src="img/projects/build_tool_small_2.png" /></li>
-            <li><img src="img/projects/build_tool_small_3.png" /></li>
-            <li><img src="img/projects/build_tool_small_4.png" /></li>
-            <li><img src="img/projects/build_tool_small_5.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_1.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_2.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_3.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_4.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_5.png" /></li>
         </ul>
     </div>
     
@@ -80,20 +80,20 @@
     
     <div id="big_screens">
         <ul class="bxslider">
-            <li><img src="img/projects/build_tool_big_1.png" title="test" /></li>
-            <li><img src="img/projects/build_tool_big_2.png" title="test" /></li>
-            <li><img src="img/projects/build_tool_big_3.png" title="test" /></li>
-            <li><img src="img/projects/build_tool_big_4.png" title="test" /></li>
-            <li><img src="img/projects/build_tool_big_5.png" title="test" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_1.png" title="test" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_2.png" title="test" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_3.png" title="test" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_4.png" title="test" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_5.png" title="test" /></li>
         </ul>
     </div>
     
     <div id="middle_screens" class="left">
         <ul class="bxslider">
-            <li><img src="img/projects/build_tool_middle_1.png" /></li>
-            <li><img src="img/projects/build_tool_middle_2.png" /></li>
-            <li><img src="img/projects/build_tool_middle_3.png" /></li>
-            <li><img src="img/projects/build_tool_middle_4.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_1.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_2.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_3.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_4.png" /></li>
         </ul>
     </div>
     

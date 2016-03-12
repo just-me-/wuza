@@ -109,7 +109,7 @@ class URI {
 			$this->uri = preg_replace("/\/$strip_vari/", '', $this->uri);
 		}
 			
-		if (preg_match('/\/index\.php\?/', $this->uri)) {
+		if (preg_match('/\/index\.php\?|\/\?/', $this->uri)) {
 			//only case where we can say for sure that its not a pretty url
 			$this->isPrettyUrl = false;
 			$this->parseQueryString();
