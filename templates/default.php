@@ -71,6 +71,7 @@
     <h3>Die letzten Aktualisierungen</h3>
     <div class="hover-list getHard">
         <ul>
+            <li><a class="colorful" href="view/quotes">Falschzitate <span>- hasst Du ein Zitat der Woche verpasst? Kein Problen!</span></a></li>
             <li><a class="colorful" href="view/projects">Projektübersicht <span>- die ersten Projekte wurden in der Timeline erfasst</span></a></li>
             <li><a class="blocked" href="#">Easter Egg &laquo;Gravity Troll&raquo; <span>- Hinweis: Trolle einen Troll und er trollt dich zurück!</span></a></li>
             <li><a class="colorful" href="view/project_build_tool">Projekt Build Tool <span>- ein  Projekt wurde auf WUZA neu erfasst</span></a></li>

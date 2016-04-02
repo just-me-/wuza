@@ -123,6 +123,13 @@ img.rounded { width: auto; }
 }
 /* end info error warning - rounded */
 
+/* tag blockquote as class */
+.blockquote {
+	padding: 5px 15px;
+	margin: 0 0 20px;
+	border-left: 5px solid #eeeeee;
+}
+
 /* general */
 .left{ float: left; }
 .right{ float: right; }
@@ -259,8 +266,13 @@ p a, .colorful a, a.colorful, span.colorful {
     }
     
     .logo {
-        padding-top: 5px; 
-    } 
+        margin-top: 4px; 
+    }
+	
+	/* jump fix on fast refresh */
+	span.material-icons {
+		max-width: 14px;
+	}
 }
 /* end menu */ 
 
@@ -657,7 +669,7 @@ body, .navbar-inverse {
 		margin-right: 0;
 		margin-top: 50px;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 769px) {
 		margin-top: -27px;
 		margin-right: -35px;
 	}
@@ -718,6 +730,11 @@ body, .navbar-inverse {
         #small_screens {
             max-width: 250px;
             min-width: 250px;
+			@media (max-width: 500px) {
+				float: none;
+				margin-left: auto; 
+				margin-right: auto; 
+			}
         }
         #middle_screens {
             width: 450px;

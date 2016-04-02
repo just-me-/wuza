@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     
     <title><?php echo $this->_['header_titel']; ?></title>
     
@@ -96,10 +96,12 @@
             ?>
           </ul>
           
+          <!--
           <ul class="nav navbar-nav navbar-right none">
             <li><a <?php echo 'href="?lang=de"' ?> class="language">DE</a></li>
             <li><a <?php echo 'href="?lang=en"' ?> class="language">EN</a></li>
           </ul>
+          -->
           
           <?php
           if($this->_['debug_mode']){

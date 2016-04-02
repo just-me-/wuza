@@ -21,7 +21,10 @@ class Controller{
 	public function display(){
 		$view = new View($this->request);
 		$header_titel = "WUZA";
+		$header_description = Model::getMeta("description", $this->template);
+		$header_keywords = Model::getMeta("keywords", $this->template);
 		
+		// 2Do: not 100x case...
 		switch($this->template){
 			case 'entry':
 				$view->setTemplate('entry');
@@ -34,22 +37,29 @@ class Controller{
 				
 			case 'default':
 				$entries = Model::getEntries();
-				$view->setTemplate('default');
+				$view->setTemplate($this->template);
 				$view->assign('entries', $entries);
 				break;
-			
+				
 			case 'projects':
+				$header_titel .= " - " . Model::getTranslation($this->template);
+				$view->setTemplate($this->template);
 				$projects = Model::getProjects();
-				$view->setTemplate('projects');
-				$view->assign('projects', $projects);
-				$header_titel .= " - " . Model::getTranslation("projects");
+				$view->assign($this->template, $projects);
+				break;
+			
+			case 'quotes':
+				$header_titel .= " - " . Model::getTranslation($this->template);
+				$view->setTemplate($this->template);
+				$projects = Model::getQuotes();
+				$view->assign($this->template, $projects);
 				break;
 			
 			case 'music':
+				$header_titel .= " - " . Model::getTranslation($this->template);
+				$view->setTemplate($this->template);
 				$songs = Model::getSongs();
-				$view->setTemplate('music');
 				$view->assign('songs', $songs);
-				$header_titel .= " - " . Model::getTranslation("music");
 				break;
 			
 			default:
@@ -63,9 +73,8 @@ class Controller{
 		}
 		
 		$this->view->assign('header_titel', $header_titel);
-		// tmp - fix coded for every page
-		$this->view->assign('header_description', 'Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess. Auf WUZA findest Du Diverses bezüglich Code, Musik und vielem mehr.');
-		$this->view->assign('header_keywords', 'wuza, marcel, hess, wusa');
+		$this->view->assign('header_description', $header_description);
+		$this->view->assign('header_keywords', $header_keywords);
 		$this->view->setTemplate('wuza');
 		
 		$this->view->assign('active_view', $this->request['view']);
