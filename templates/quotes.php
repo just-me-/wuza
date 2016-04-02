@@ -12,7 +12,7 @@
     <?php
     foreach($this->_['quotes'] as $quote){
     ?>
-        <div id="quote_<?php echo $quote['id']; ?>" class="quote bs-callout bs-callout-default">
+        <div id="quote_<?php echo $quote['id']; ?>" class="quote bs-callout bs-callout-default noselect">
             <h4 class="no-margin">Zitat vom <?php echo $quote['date']; ?></h4>
             <p class="no-margin">
                 &laquo;<?php echo $quote['quote']; ?>&raquo; &mdash; <?php echo $quote['author']; ?>

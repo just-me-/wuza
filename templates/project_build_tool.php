@@ -67,8 +67,8 @@
         
         <h4>CSS</h4>
         <p>
-            Zur Zeit ist das Tool noch in Gw2 Farben gehalten. Das kommt davon, dass ich es ursprünglich damals für eine Gw2-Community grob erstellt hatte. 
-            Die zur Zeit etwas hellen Farben im Vergleich zum restlichen Forum sollen etwas besser angegliedert werden - ein angepasstes Design eben.
+            Zurzeit ist das Tool noch in Gw2 Farben gehalten. Das kommt davon, dass ich es ursprünglich damals für eine Gw2-Community grob erstellt hatte. 
+            Die momentan etwas hellen Farben im Vergleich zum restlichen Forum sollen etwas besser angegliedert werden - ein angepasstes Design eben.
         </p>
         
         
@@ -85,21 +85,21 @@
         
         <h4>Mehr Optionen</h4>
         <p>
-            Zur Zeit sind Grundangaben möglich wie Klasse und Waffen. Je nach Feedback können weitere Kriterien wie "ist Vampir", Art der Rüstungsteile, Nahrung uns so weiter impelemtiert werden. 
+            Zurzeit sind Grundangaben möglich wie Klasse und Waffen. Je nach Feedback können weitere Kriterien wie "ist Vampir", Art der Rüstungsteile, Nahrung und so weiter implementiert werden. 
             Grundsätzlich können diese Informationen bereits in der Beschreibung weiter gegeben werden. Ausserdem sind sie auch im externen Buildplaner enthalten.
-            Es bleibt abzuwiegen, wie sinnvoll solche Erweiterungen wären wenn man den Gedanken beibehält, nicht als eigenständiges Tool auftreten zu wollen.
+            Es bleibt abzuwiegen, wie sinnvoll solche Erweiterungen wären, wenn man den Gedanken beibehält, nicht als eigenständiges Tool auftreten zu wollen.
         </p>
         
         <h4>Icons</h4>
         <p>
-            Zum einen sollen die Icons erneuert werden und zum andern sollen die vielen Selects durch Icons wo möglich abgelöst werden für eine höhere Benutzerfreundlichkeit. 
+            Zum einen sollen die Icons erneuert und zum andern sollen die vielen Selects durch Icons wo möglich abgelöst werden für eine höhere Benutzerfreundlichkeit. 
             Die meisten Gw2 Icons wurden jedoch bereits durch welche von ESO ersetzt. Allerdings sollten eigene erstellt werden, welche deren Platz in Zukunft einnehmen.
         </p>
         
         <h4>Teilen</h4>
         <p>
-            Damit Du Builds Freunden weiterempfehlen oder in einem Forumpost verlinken kannst, soll es eine Funktion geben, die durch einen Klick einen generierten Link in Deine Zwischenablage legt.
-            Wird dieser aufgerufen, wird automatisch das entsprechende Build geöffnet und fokusiert.
+            Damit Du Builds Freunden weiterempfehlen oder in einem Forenpost verlinken kannst, soll es eine Funktion geben, die durch einen Klick einen generierten Link in Deine Zwischenablage legt.
+            Wird dieser aufgerufen, wird automatisch das entsprechende Build geöffnet und fokussiert.
         </p>
     </div>
     
@@ -107,8 +107,8 @@
     <h2>Ausblick von heute</h2>
     <p>
         Es ist nicht in Planung, das Projekt demnächst für eine neue Community wieder zu erwecken oder Wiederbelebungsversuche für die alten Versionen zu tätigen.
-        Aufgrund des unbestimmten Aufschubs, stehen die beiden Versionen auf GitHub zur Einsicht zur Verfügug.
-        Falls Du planst eine der beiden Versionen zu forken, schreib mir doch bitte ein <a href="mailto:hallo@wuza.ch?subject=WUZA.ch%20Website">Mail</a>.
+        Aufgrund des unbestimmten Aufschubs stehen die beiden Versionen auf GitHub zur Einsicht zur Verfügung.
+        Falls Du planst, eine der beiden Versionen zu forken, schreib mir doch bitte ein <a href="mailto:hallo@wuza.ch?subject=WUZA.ch%20Website">Mail</a>.
         Ich empfehle mit der <a href="https://github.com/just-me-/buildtool/tree/BB4_ESO" target=_blank>ESO Version</a> zu starten und nicht jene von Gw2 weiter zu entwickeln. 
     </p>
     

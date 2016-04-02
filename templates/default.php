@@ -4,7 +4,7 @@
         Herzlich willkommen bei WUZA - einem Freizeitprojekt von Marcel Hess!
     </p>
     
-    <div id="quote_home" class="quote bs-callout bs-callout-default">
+    <div id="quote_home" class="quote bs-callout bs-callout-default noselect">
         <h4 class="no-margin">Falschzitat der Woche</h4>
         <p class="no-margin">
             &laquo;...und sie dreht sich doch!&raquo; &mdash; Harald Junke
@@ -13,7 +13,7 @@
         <p id="quote_home_help" class="light no-margin" style="display: none">
             Das Zitat wird (fälschlicher weise oft) Galileo Galilei zugeordnet, welcher bestätigte, dass sich die Erde
             um die Sonne dreht. Harald Junke war ein deutscher Entertainer, an dessen Alkoholkrankheit die
-            Öffentichkeit rege Anteil nahm.
+            Öffentlichkeit rege Anteil nahm.
         </p>
         <p class="light no-margin none"><a href=#>weiter zum Archiv der falsch zugeordneten Zitate</a></p>
         

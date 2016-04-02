@@ -44,15 +44,15 @@ class Model{
 			  "help"=>"Die Sozialdemokratie hält an einer <i>Überwindung des Kapitalismus</i> und an der Idee des <i>demokratischen Sozialismus</i> fest."),
 		array("id" => 9, "date" => "20.03.2016", "quote"=>"I kissed a girl and I liked it.", "author"=>"Silvio Berlusconi", "help"=>"Der italienische Politiker Berlusconi ist berühmt für die eine oder andere Affäre mit jungen Frauen."),
 		array("id" => 8, "date" => "12.03.2016", "quote"=>"Ein Freund ist einer, der alles von Dir weiss, und der Dich trotzdem liebt.", "author"=>"Mark Zuckerberg", "help"=>"Mark Zuckerberg ist Gründer und Vorstandsvorsitzender des Unternehmens Facebook Inc."),
-		array("id" => 7, "date" => "06.03.2016", "quote"=>"Traue keiner Statistik, die Du nicht selbst gefälscht hast.", "author"=>"Volkswagen", "help"=>"Volkswagen ist Ende 2015 in die Schlagzeilen gerückt wegen dem Abgasskandal."),
+		array("id" => 7, "date" => "06.03.2016", "quote"=>"Traue keiner Statistik, die Du nicht selbst gefälscht hast.", "author"=>"Volkswagen", "help"=>"Volkswagen ist Ende 2015 in die Schlagzeilen gerückt wegen des Abgasskandals."),
 		array("id" => 6, "date" => "28.02.2016", "quote"=>"Mit einem Wisch ist alles weg.", "author"=>"Gerichtsvollzieher", "help"=>""),
 		array("id" => 5, "date" => "12.02.2016", "quote"=>"Bad boys, bad boys... Whatcha gonna do? Whatcha gonna do when they come for you?", "author"=>"Unternehmensberatung", "help"=>""),
 		array("id" => 4, "date" => "30.01.2016", "quote"=>"Every breath you take, every move you make, every bond you break, every step you take, I'll be watching you. Every single day, every word you say, every game you play, I'll be watching you.",
 			  "author"=>"Google", "help"=>""),
-		array("id" => 3, "date" => "09.01.2016", "quote"=>"Hey Du, möchtest Du ein A kaufen?", "author"=>"Standard & Poor's", "help"=>"Standard & Poor’s Corporation ist eine bekannte (Kredit-)Ratingagentur. Ein A-Ranking git als eine sichere Anlage."),
+		array("id" => 3, "date" => "09.01.2016", "quote"=>"Hey Du, möchtest Du ein A kaufen?", "author"=>"Standard & Poor's", "help"=>"Standard & Poor’s Corporation ist eine bekannte (Kredit-)Ratingagentur. Ein A-Ranking gilt als eine sichere Anlage."),
 		array("id" => 2, "date" => "03.01.2016", "quote"=>"Es ist erstaunlich, was man alles erreichen kann, wenn man sich nicht darum kümmert.", "author"=>"Angela Merkel", "help"=>""),
 		array("id" => 1, "date" => "12.12.2015", "quote"=>"...und sie dreht sich doch!", "author"=>"Harald Junke", "help"=>"Das Zitat wird (fälschlicher weise oft) Galileo Galilei zugeordnet, welcher bestätigte, dass sich die Erde
-            um die Sonne dreht. Harald Junke war ein deutscher Entertainer, an dessen Alkoholkrankheit die Öffentichkeit rege Anteil nahm."),
+            um die Sonne dreht. Harald Junke war ein deutscher Entertainer, an dessen Alkoholkrankheit die Öffentlichkeit rege Anteil nahm."),
 	);
 	
 	// meta tags 
