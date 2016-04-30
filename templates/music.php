@@ -1,6 +1,6 @@
 <div id="main_projects">
     
-    <h1>Music</h2>
+    <h1>Music</h1>
     
     <!-- all songs -->
     <?php

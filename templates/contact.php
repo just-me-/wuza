@@ -38,6 +38,11 @@
   </p>
   
   <p>
+    Nebst Codezeilen schreibe ich auch gerne Textzeilen. Einzelne Auszüge meiner Arbeiten oder Kurzprojekte finden sich auch auf wuza.ch online.
+    Eines der jüngeren Kleinprojekte ist <a class="getHard" href="view/pdf/file/1">ein Kurztext über die Milizpolitik der Schweiz</a>.
+  </p>
+  
+  <p>
     Abschliessend sei noch am Rande erwähnt: Das Bild von mir, welches Dir auf der rechten Seite angezeigt wird,
     kannst Du über einen Klick oder ein Rollover-Event scharf stellen, falls Du einen genaueren Blick darauf werfen willst. ;-)
   </p>

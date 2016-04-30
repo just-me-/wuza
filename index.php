@@ -37,6 +37,11 @@ $request = array_merge($_SESSION, $_GET, $_POST, $config);
 $url=new URI("wuza");
 $request["view"] = $url->shouldShow404("view") ? "404" : strtolower($url->getVar("view"));
 
+// allowed url slash vars - but prefer get params if there are some
+foreach(array('file') as $vari) {
+    $request[$vari] = $name ?: $url->getVar($vari);
+}
+
 // create controller
 $controller = new Controller($request);
 

@@ -43,11 +43,11 @@
     
         <div id="small_screens" class="right small-margin-left noselect">
         <ul class="bxslider">
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_1.png" title="Smartphone Ansicht"/></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_2.png" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_3.png" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_4.png" title="Build Bearbeitung" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_5.png" title="Validierung" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_1.png" title="Smartphone Ansicht" alt="Build Tool Small View 1" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_2.png" alt="Build Tool Small View 2" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_3.png" alt="Build Tool Small View 3" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_4.png" title="Build Bearbeitung" alt="Build Tool Small View 4" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_5.png" title="Validierung" alt="Build Tool Small View 5" /></li>
         </ul>
     </div>
         
@@ -76,10 +76,10 @@
     
     <div id="middle_screens" class="left hidden-xs hidden-sm small-margin-right">
         <ul class="bxslider">
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_1.png" title="Tablet Ansicht" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_2.png" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_3.png" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_4.png" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_1.png" title="Tablet Ansicht" alt="Build Tool Middle View 1" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_2.png" alt="Build Tool Middle View 2" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_3.png" alt="Build Tool Middle View 3" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_4.png" alt="Build Tool Middle View 4" /></li>
         </ul>
     </div>
         
@@ -115,11 +115,11 @@
     
     <div id="big_screens">
         <ul class="bxslider">
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_1.png" title="Desktop Ansicht" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_2.png" title="Geöffnete Detailbeschreibung" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_3.png" title="Ansicht Build erfassen" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_4.png" title="Bearbeitung" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_5.png" title="" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_1.png" title="Desktop Ansicht" alt="Build Tool Big View 1" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_2.png" title="Geöffnete Detailbeschreibung" alt="Build Tool Big View 2" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_3.png" title="Ansicht Build erfassen" alt="Build Tool Big View 3" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_4.png" title="Bearbeitung" alt="Build Tool Big View 4" /></li>
+            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_5.png" title="" alt="Build Tool Big View 5" /></li>
         </ul>
     </div>
     

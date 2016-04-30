@@ -41,6 +41,19 @@ class Controller{
 				$view->assign('entries', $entries);
 				break;
 				
+			case 'pdf':
+				$header_titel .= " - " . Model::getTranslation($this->template);
+				$pdf = Model::getPDF($this->request['file']);
+				if($pdf){
+					$view->setTemplate($this->template);
+					foreach(array('description', 'background', 'source') as $vari) {
+						$view->assign($vari, $pdf[$vari]);
+					}
+				}else{
+					$view->setTemplate('404');
+				}
+				break;
+			
 			case 'projects':
 				$header_titel .= " - " . Model::getTranslation($this->template);
 				$view->setTemplate($this->template);
