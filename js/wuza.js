@@ -46,6 +46,11 @@ $(document).ready(function(){
 			$( this ).attr("href", url+href);
 		}
 	});
+	
+	// 2Do - fade effect + nojs support
+	// fade in effect
+	// $('body').addClass('has_js');
+	// $(".fadein").css( "opacity", "1" );
     
 });
 

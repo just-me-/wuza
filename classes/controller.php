@@ -46,7 +46,7 @@ class Controller{
 				$pdf = Model::getPDF($this->request['file']);
 				if($pdf){
 					$view->setTemplate($this->template);
-					foreach(array('description', 'background', 'source') as $vari) {
+					foreach(array('description', 'background', 'source', 'link') as $vari) {
 						$view->assign($vari, $pdf[$vari]);
 					}
 				}else{

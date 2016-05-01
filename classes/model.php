@@ -8,7 +8,7 @@ class Model{
 		array("id"=>2, "title"=>"Eintrag 3", "content"=>"Na dann bin ich die Nummer drei.")
 	);
 	private static $pdf_files = array(
-		array("id"=>1, "source"=>"sources/milizpolitik.pdf", "description"=>"Die Schweizer Milizpolitik", "background"=>"Mit einem Budget von drei Seiten durfte ich einen kleinen Artikel über eine Milizpolitikerin oder einen Milizpolitiker der Schweiz verfassen.
+		array("id"=>1, "link"=>1, "source"=>"sources/milizpolitik.pdf", "description"=>"Die Schweizer Milizpolitik", "background"=>"Mit einem Budget von drei Seiten durfte ich einen kleinen Artikel über eine Milizpolitikerin oder einen Milizpolitiker der Schweiz verfassen.
 			   Das Porträt fasst Edith Graf als Person und ihre Motivation, ein politisches Amt auszuüben. Die Zielgruppe der Arbeit betrifft Jugendliche und potenzielle Milizpolitiker der Zukunft."),
 	);
 	// tmp linked tag until all ref. templates are done 

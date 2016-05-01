@@ -3,15 +3,18 @@
     <h1><?php echo $this->_['description'] ? $this->_['description'] : 'PDF Anzeige'?></h1>
     
     <?php
+    $download_link = $this->_['link'] ? '<a href="' . $this->_['url'] . $this->_['source'] . '" target="_blank">Das Dokument als PDF herunterladen.</a>' : '';
     if($this->_['background']){
     ?>
     <div class="pdf_background blockquote text-justify">
         <h4>Hintergrund und Entstehung</h4>
-        <p>
-            <?php echo $this->_['background'] ?>
+        <p class="fadein">
+            <?php echo $this->_['background'] . '<br/>' . $download_link ?>
         </p>
     </div>
     <?php
+    } else {
+        echo '<p>' . $download_link . '</p>';
     }
     ?>
     
