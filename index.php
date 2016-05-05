@@ -39,7 +39,7 @@ $request["view"] = $url->shouldShow404("view") ? "404" : strtolower($url->getVar
 
 // allowed url slash vars - but prefer get params if there are some
 foreach(array('file') as $vari) {
-    $request[$vari] = $name ?: $url->getVar($vari);
+    $request[$vari] = $request[$vari] ?: $url->getVar($vari);
 }
 
 // create controller

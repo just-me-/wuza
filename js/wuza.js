@@ -12,6 +12,9 @@ $('.test-js').ready(function() {
 
 
 $(document).ready(function(){
+	
+	// to clean on noscript if necessary
+	$('body').addClass('has_js');
     
     // set "js is active" for directly hidding "js is required"-infobox
     if(!($('#js').val())) {
@@ -47,10 +50,18 @@ $(document).ready(function(){
 		}
 	});
 	
-	// 2Do - fade effect + nojs support
+	// bubble effect
+	$.each($(".bubbles"), function(){
+		var bubblecount = ($(this).width()/50)*10;
+		for(var i = 0; i <= bubblecount; i++) {
+		   var size = ($.rnd(40,80)/10);
+		   $(this).append('<span class="particle" style="top:' + $.rnd(20,80) + '%; left:' + $.rnd(0,95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
+		}
+	});
+	
+	
 	// fade in effect
-	// $('body').addClass('has_js');
-	// $(".fadein").css( "opacity", "1" );
+	$("body.has-jssession p").css( "opacity", "1" );
     
 });
 
@@ -126,6 +137,13 @@ function changeQuoteVisibility(quote_id) {
 // get value of a (hidden) input
 function getInputValue(selector) {
 	return $(selector).val();
+}
+
+// position for bubble effect
+jQuery.rnd = function(m,n) {
+      m = parseInt(m);
+      n = parseInt(n);
+      return Math.floor( Math.random() * (n - m + 1) ) + m;
 }
 
 

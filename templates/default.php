@@ -1,5 +1,5 @@
 <div id="main_default">
-    <h1><strong>WUZA</strong> - Stay&nbsp;Calm & Be&nbsp;Yourself</h1>
+    <h1><strong class="bubbles">WUZA</strong> - Stay&nbsp;Calm & Be&nbsp;Yourself</h1>
     <p>
         Herzlich willkommen bei WUZA - einem Freizeitprojekt von Marcel Hess!
     </p>

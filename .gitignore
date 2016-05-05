@@ -13,6 +13,9 @@ img/me_*
 # special things
 specials
 
+# see https://github.com/just-me-/phpmongodb
+wuzaadmin/phpmongodb
+
 # Xcode
 #
 build/

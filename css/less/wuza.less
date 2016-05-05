@@ -205,16 +205,39 @@ p a, .colorful a, a.colorful, span.colorful {
     }
 }
 
-/*
-body.has_js .fadein {
-	opacity: 0.2;
+body.has-jssession p {
+	opacity: 0.3;
 	-webkit-transition: opacity 1.5s ease-in-out;
 	-moz-transition: opactiy 1.5s ease-in-out;
 	-ms-transition: opacity 1.5s ease-in-out;
 	-o-transition: opacity 1.5s ease-in-out;
 	transition: opacity 1.5s ease-in-out;
 }
-*/
+
+.bubbles {
+	position: relative;
+	>.particle {
+		opacity:0;
+		position: absolute;
+		background-color:rgba(51, 51, 51, 0.4);
+		animation: bubbles 3s ease-in infinite;
+		border-radius:100%;
+	}
+}
+
+@keyframes bubbles {
+   0% {
+      opacity: 0;
+   }
+   20% { //show and hint at moving
+      opacity: 1;
+      transform:translate(0, -20%);
+   }
+   100% {
+      opacity: 0;
+      transform:translate(0, -1000%); //Big bubbles move faster
+   }
+}
 
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */

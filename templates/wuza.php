@@ -48,7 +48,7 @@
     
   </head>
   
-  <body>
+  <body class="<?php echo $this->_['js'] ? "has-jssession" : "hasnot-jssession"; ?>">
     
     <!-- GoogleAnalytics -->
     <script>
