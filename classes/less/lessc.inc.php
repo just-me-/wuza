@@ -2296,7 +2296,7 @@ class lessc_parser {
 	// regex string to match any of the operators
 	static protected $operatorString;
 
-	// these properties will supress division unless it's inside parenthases
+	// these properties will suppress division unless it's inside parenthases
 	static protected $supressDivisionProps =
 		array('/border-radius$/i', '/^font$/i');
 
