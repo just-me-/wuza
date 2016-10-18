@@ -28,7 +28,7 @@ class URI {
 	
 	/**
 	* @return string The full url of the current page is returned */
-	public function getCurrentURL(){
+	public function getCurrentURL() {
 		return $this->currentURL;
 	}
 	

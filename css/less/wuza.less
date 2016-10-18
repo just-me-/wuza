@@ -179,6 +179,20 @@ div { max-width: 100%; }
 	50% {color: @link-light-color;} 
 	75% {color: @link-soft-color;} 
 	100% {color: @link-basic-color;} 
+}
+@-webkit-keyframes bgcolours { 
+	0% {background: @link-basic-color;} 
+	25% {background: @link-soft-color;} 
+	50% {background: @link-light-color;} 
+	75% {background: @link-soft-color;} 
+	100% {background: @link-basic-color;} 
+} 
+@-moz-keyframes bgcolours { 
+	0% {background: @link-basic-color;} 
+	25% {background: @link-soft-color;} 
+	50% {background: @link-light-color;} 
+	75% {background: @link-soft-color;} 
+	100% {background: @link-basic-color;} 
 } 
 p a, .colorful a, a.colorful, span.colorful { 
     -webkit-animation-direction: normal; 
@@ -190,7 +204,36 @@ p a, .colorful a, a.colorful, span.colorful {
     -moz-animation-duration: 5s; 
     -moz-animation-iteration-count: infinite; 
     -moz-animation-name: colours; 
-    -moz-animation-timing-function: ease; 
+    -moz-animation-timing-function: ease;
+}
+p a {
+	display: inline-block;
+    &:hover {
+		text-decoration: none;
+	}
+	&::after {
+		content: '';
+		display: block;
+		position: relative;
+		margin-top: -2px;
+		width: 0;
+		height: 2px;
+		transition: width 0.3s;
+		
+		-webkit-animation-direction: normal; 
+		-webkit-animation-duration: 5s; 
+		-webkit-animation-iteration-count: infinite; 
+		-webkit-animation-name: bgcolours; 
+		-webkit-animation-timing-function: ease; 
+		-moz-animation-direction: normal; 
+		-moz-animation-duration: 5s; 
+		-moz-animation-iteration-count: infinite; 
+		-moz-animation-name: bgcolours; 
+		-moz-animation-timing-function: ease;
+	}
+	&:hover::after {
+		width: 100%;
+	}
 }
 
 .blocked_img {
@@ -205,13 +248,60 @@ p a, .colorful a, a.colorful, span.colorful {
     }
 }
 
-body.has-jssession p {
-	opacity: 0.3;
-	-webkit-transition: opacity 1.5s ease-in-out;
-	-moz-transition: opactiy 1.5s ease-in-out;
-	-ms-transition: opacity 1.5s ease-in-out;
-	-o-transition: opacity 1.5s ease-in-out;
-	transition: opacity 1.5s ease-in-out;
+
+
+
+// fade in effect
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-move-down {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-3rem);
+        transform: translateY(-3rem)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+@-webkit-keyframes fade-in-move-down {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-3rem);
+        transform: translateY(-3rem)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+h1, h2, h3, .fade-in-move-down {
+    -webkit-animation: fade-in-move-down 0.7s;
+    animation: fade-in-move-down 0.7s;
+}
+
+p, .fade-in {
+    -webkit-animation: fade-in 1.5s;
+    animation: fade-in 1.5s;
 }
 
 .bubbles {

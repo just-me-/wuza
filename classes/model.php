@@ -1,12 +1,10 @@
 <?php
 class Model{
+	
+	private $mongo  = null;
+	private $db 	= null;
 
-	// tmp zweidimensionale Arrays - werden nach Implementation des Adminbereiches in DB ausgelagert 
-	private static $entries = array(
-		array("id"=>0, "title"=>"Eintrag 1", "content"=>"Ich bin der erste Eintrag."),
-		array("id"=>1, "title"=>"Eintrag 2", "content"=>"Ich bin der ewige Zweite!"),
-		array("id"=>2, "title"=>"Eintrag 3", "content"=>"Na dann bin ich die Nummer drei.")
-	);
+	// tmp zweidimensionale Arrays - werden fortlaufend in DB ausgelagert 
 	private static $pdf_files = array(
 		array("id"=>1, "link"=>1, "source"=>"sources/milizpolitik.pdf", "description"=>"Die Schweizer Milizpolitik", "background"=>"Mit einem Budget von drei Seiten durfte ich einen kleinen Artikel über eine Milizpolitikerin oder einen Milizpolitiker der Schweiz verfassen.
 			   Das Porträt fasst Edith Graf als Person und ihre Motivation, ein politisches Amt auszuüben. Die Zielgruppe der Arbeit betrifft Jugendliche und potenzielle Milizpolitiker der Zukunft."),
@@ -40,6 +38,7 @@ class Model{
 		array("title"=>"Song 2", "artist"=>"Muster Hans", "youtube_link"=>"Hanna's & Petör", "applemusic_link"=>""),
 		array("title"=>"Song 3", "artist"=>"Muster Peter", "youtube_link"=>"", "applemusic_link"=>"http://apple.com", "description"=>"Ein Test.")
 	);
+	/*
 	// order by date - limit by 1 (home), 10 (public) or no limit (key)
 	private static $quotes = array(
 		// array("id" => 12, "date" => "15.04.2016", "quote"=>"Frage nicht, was Dein Land für Dich tun kann. Frage, was Du für Dein Land tun kannst.", "author"=>"Kim Jong-un", "help"=>""),
@@ -58,6 +57,7 @@ class Model{
 		array("id" => 1, "date" => "12.12.2015", "quote"=>"...und sie dreht sich doch!", "author"=>"Harald Junke", "help"=>"Das Zitat wird (fälschlicher weise oft) Galileo Galilei zugeordnet, welcher bestätigte, dass sich die Erde
             um die Sonne dreht. Harald Junke war ein deutscher Entertainer, an dessen Alkoholkrankheit die Öffentlichkeit rege Anteil nahm."),
 	);
+	*/
 	
 	// meta tags 
 	private static $metas = array(
@@ -100,12 +100,25 @@ class Model{
 		// other
 		'pdf'					=> array("de"=>"PDF Anzeige", 	"en"=>"Display PDF"),
 	);
-
+	
 	/**
-	 * @return Array Array
+	 * @param [optional via config] user password port
 	 */
-	public static function getEntries(){
-		return self::$entries;
+	public function __construct($request){
+		$host = "mongodb://localhost" + ($request['db']['port'] ? ":".$request['db']['port'] : "");
+		$options = array_filter(array(
+			'username' => $request['db']['user'],
+			'password' => $request['db']['password'],
+		));
+		
+		try {
+			$this->mongo = new MongoClient($host, $options);
+			$this->db	 = $this->mongo->$request['db']['dbname'];
+			
+		} catch (Exception $e) {
+			echo "Ups, ein Fehler ist unterlaufen. Es konnte keine Datenbankverbindung hergestellt werden. <b>Bitte versuche es später erneut.</b> <br/><i>",  $e->getMessage(), "</i><br/>";
+			exit;
+		}
 	}
 	
 	/**
@@ -158,14 +171,6 @@ class Model{
 	}
 	
 	/**
-	 * @param int $limit - limit by 1 (home), 10 (public) or no limit
-	 * @return Array Array - order by date
-	 */
-	public static function getQuotes($limit){
-		return self::$quotes;
-	}
-	
-	/**
 	 * @return Array Array
 	 */
 	public static function getSongs(){
@@ -195,5 +200,142 @@ class Model{
 	public static function getMenu(){
 		return self::$menu;
 	}
+	
+	// ######################################################################
+	// End of static functions - in progress 2 connect everything with the db
+	// ######################################################################
+	
+	/**
+	 * @param string $value - dd.mm.yyyy
+	 * @return MongoDate
+	 */
+	public function convertToDatabaseValue($value)
+    {
+        if ($value === null || $value instanceof MongoDate) {
+            return $value;
+        }
+		return new MongoDate(strtotime($value));
+    }
+	
+	/**
+	 * @param MongoDate $value
+	 * @return String dd.mm.yyyy
+	 */
+    public function convertToPHPValue($value){
+        if ($value === null) {
+            return null;
+        }
+        return date('d.m.Y', $value->sec); ;
+    }
+	
+	/**
+	 * @param Object $object
+	 * @return Array $object
+	 * function "getClassVars" is required in class that retruns all varis of the class
+	 * function "getVari" is required to acces private varis if given
+	 */
+	public function objectToArray($object)
+	{
+		$new = array();
+		foreach ($object->getClassVars() as $vari){
+			$objvar = $object->getVari($vari);
+			if(isset($vari, $objvar)){
+				$new[$vari] = $objvar;
+			}
+		}
+		return $new; 
+	}
+	
+	/**
+	 * @param String $collection, list $search_data, list $new_data
+	 * @return Boolean $result
+	 */
+	public function upsert($collection, $search_data, $new_data){
+		if(!isset($collection, $search_data, $new_data)){
+			return false;
+		}
+		
+		try {
+			$result = $this->db->$collection->update(
+				$search_data,
+				array(
+					'$set' => $new_data 
+				),
+				array('upsert' => true)
+			);
+		} catch (Exception $e) {
+			// msg for debug if needed
+			$msg = $e->getMessage();
+			return false; 
+		}
+		
+		return $result['ok'];
+	}
+	
+	/**
+	 * @param String $name of "auto_increment" collection/table 
+	 * @return int next number
+	 * replaces the missing auto_increment for counter fields
+	 * use in arrays like this:
+	 * $prep_array = array('id_field' => [Model::]getNextSequence("userid"), [...]);
+	 */
+	function getNextSequence($name){
+		if(!isset($name)){
+			return false;
+		}
+		$retval = $this->db->counter->findAndModify(
+			 array('_id' => $name),
+			 array('$inc' => array('seq'=> 1)),
+			 null,
+			 array(
+				'upsert' => true,
+				'new' => true,
+			)
+		);
+		return $retval['seq'];
+	}
+	
+	/**
+	 * @param String $collection, list $options
+	 * 	$options:
+	 * 		list $filter - eq array('name' => 'iwas')
+	 * 		list $sort - eq array('date' => -1)
+	 * 		list $dates - eq array('start', 'end')
+	 * 		int $limit
+	 * @return list $result
+	 */
+	public function find($collection, $option){
+		if(!isset($collection)){
+			return false;
+		}
+		try {
+			$result = $option['filter'] ? $this->db->$collection->find($option['filter']) : $this->db->$collection->find();
+			if($option['sort'] && $result){
+				$result->sort($option['sort']);
+			}
+			if($option['limit'] > 0 && $result){
+				$result->limit($option['limit']);
+			}
+			
+			// change to array 
+			$result = iterator_to_array($result);
+			
+			// format date fields
+			if($option['dates']){
+				foreach($result as &$document) {
+					foreach($option['dates'] as $datefield){
+						$document[$datefield] = $this->convertToPHPValue($document[$datefield]);
+					}
+				}
+			}
+		} catch (Exception $e) {
+			// msg for debug if needed
+			$msg = $e->getMessage();
+			return false; 
+		}
+		return $result;
+	}
+	
+	
 }
 ?>

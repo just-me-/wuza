@@ -1,12 +1,12 @@
 <div id="main_impressum">
     
   <h2>Kontaktadresse</h2>
-  <p>
+  <p class="fade-in-move-down">
     Marcel Hess<br/>
     Schützlerweg 6<br/>
     8560 Märstetten<br/>
   </p>
-  <p>
+  <p class="fade-in-move-down">
     E-Mail: <a href="mailto:hallo@wuza.ch?subject=WUZA.ch%20Website">hallo@wuza.ch</a>
   </p>
   

@@ -4,12 +4,14 @@ class Controller{
 	private $request = null;
 	private $template = '';
  	private $view = null;
+ 	private $model = null;
 
 	/**
 	 * @param Array $request Array from $_GET & $_POST.
 	 */
 	public function __construct($request){
 		$this->view = new View($request);
+		$this->model = new Model($request);
 		
 		$this->request = $request;
 		$this->template = !empty($request['view']) ? $request['view'] : 'default';
@@ -36,9 +38,18 @@ class Controller{
 				break;
 				
 			case 'default':
-				$entries = Model::getEntries();
 				$view->setTemplate($this->template);
-				$view->assign('entries', $entries);
+				$quotes = $this->model->find("quote", array(
+															"sort"=>array("date"=>-1),
+															"dates"=>array("date"),
+															"limit"=>1,
+															"filter"=>array(
+																			'date'=>array( '$lte'=>New Mongodate(time()) )
+																			)
+															)
+											 );
+				$test = array_shift(array_values($quotes)); 
+				$view->assign("quote", $test);
 				break;
 				
 			case 'pdf':
@@ -64,8 +75,16 @@ class Controller{
 			case 'quotes':
 				$header_titel .= " - " . Model::getTranslation($this->template);
 				$view->setTemplate($this->template);
-				$projects = Model::getQuotes();
-				$view->assign($this->template, $projects);
+				$quotes = $this->model->find("quote", array(
+															"sort"=>array("date"=>-1),
+															"dates"=>array("date"),
+															"limit"=>10,
+															"filter"=>array(
+																			'date'=>array( '$lte'=>New Mongodate(time()) )
+																			)
+															)
+											 );
+				$view->assign($this->template, $quotes);
 				break;
 			
 			case 'music':
@@ -98,6 +117,86 @@ class Controller{
 		$this->view->assign('content', $view->loadTemplate());
 		
 		return $this->view->loadTemplate();
+	}
+	
+	/**
+	 * @return String Content
+	 */
+	public function display_admin(){
+		
+		$show_backend = false; 
+		
+		if($_SESSION["wuzadmin"] === true){
+			// logged in - do actions
+			$show_backend = true; 
+			
+		} else{
+			// login infos to check?
+			if($this->request['username'] && $this->request['password']){
+				// strip
+				$username = $this->strip_strong($this->request['username']); 
+				$password = $this->strip_strong($this->request['password']);
+				// check 
+				if(($username == $this->request['backend']['user']) && ($password == $this->request['backend']['password'])){
+					// access granted
+					$_SESSION["wuzadmin"] = true;
+					$show_backend = true;
+				} else{
+					// show login again
+					$show_backend = false;
+				}
+			} else{
+				// show login form
+				$show_backend = false;
+			}
+		}
+		
+		if($show_backend == true && $this->request['action'] != 'logout') {
+			$view = new View($this->request);
+			
+			// show a page
+			$page = ($this->request['page']) ? "admin_" . $this->request['page'] : 'admin_home';
+			$view->setTemplate($page);
+			$view->setBackend(true);
+			
+			// do an action if requested
+			if($this->request['action']){
+				switch($this->request['action']){
+					case 'save_quote':
+						$quote = new Quote($this->request);
+						$status = ($quote->save($this->model)) ? "success" : "error"; 
+						$view->assign('saved', $status);
+						break;
+					case 'list_quotes':
+						$quotes = $this->model->find("quote", array("sort"=>array("date"=>-1), "dates"=>array("date")));
+						$view->assign('quotes', $quotes);
+						break;
+					default:
+						// do nothing at all
+				}
+			}
+			
+			$this->view->assign('admin_content', $view->loadTemplate());
+			$this->view->setTemplate('admin_wuza');
+
+		} else{
+			if($_SESSION["wuzadmin"] == true){
+				$_SESSION["wuzadmin"] = false;
+			}
+			$this->view->setTemplate('admin_login');
+		}
+		
+		$this->view->setBackend(true);
+		return $this->view->loadTemplate();
+	}
+	
+	/**
+	 * @param String $input
+	 * @return String - strong stripped
+	 */
+	private function strip_strong($input) {
+		$allowed_chars = "/[^0-9a-zA-Z-_\(\)\+]/";
+		return preg_replace($allowed_chars, "", strip_tags($input));
 	}
 	
 	public function update_session(){

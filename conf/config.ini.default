@@ -17,4 +17,10 @@ link=https://wuza.ch
 [db]
 user=benutzer
 password=geheim
+port=27017
+dbname=wuza
 
+; Backendzugriff
+[backend]
+user=admin
+password=geheim

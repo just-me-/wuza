@@ -4,6 +4,7 @@ class View{
 	private $path = 'templates';
 	private $template = 'default';
 	private $language = 'de';
+	private $backend = false;
 
 	/**
 	 * includes all varis for template 
@@ -33,6 +34,16 @@ class View{
 		$this->_[$key] = $value;
 	}
 
+	/**
+	 * @param Boolean $value - true
+	 * allow for admin backend templates
+	 */
+	public function setBackend($value){
+		if($value === true){
+			$this->backend = true;
+		}
+	}
+	
 	/**
 	 * @param String $template name of template
 	 * unless $template => $template eq 'default'
@@ -74,9 +85,15 @@ class View{
 		$file = $this->path . DIRECTORY_SEPARATOR . $tpl . '.php';
 		$exists = file_exists($file);
 		
+		// protect admin files 
+		$allowed = true;
+		if (preg_match("/^admin|admin_/i", $tpl) && $this->backend != true){
+			$allowed = false;	
+		}
+		
 		// activate output buffer
 		ob_start();
-		if ($exists){
+		if ($exists && $allowed){
 			include $file;
 		}
 		else {

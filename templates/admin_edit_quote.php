@@ -1,12 +1,7 @@
-<div id="main_quotes">
+<div id="edit_quote">
     
-    <h1>Falschzitate</h1>
+    <h1 class="page-header">Zitate</h1>
     
-    <p class="fade-in-move-down">
-    Du hast ein Zitat der Woche verpasst? Keine Sorge: Hier im Archiv kannst Du sie nachlesen!
-    In der öffentlichen Ansicht erhältst Du Zugriff auf die letzten zehn Einträge.
-    Falls zu weiter zurücklesen möchtest, sende mir doch eine kurze <a href="mailto:hallo@wuza.ch?subject=WUZA.ch%20Website">Anfrage per E-Mail</a>.
-    </p>
     
     <!-- all quotes -->
     <?php
@@ -31,12 +26,6 @@
     <?php
     }
     ?>
+        
     
-    <h2>Hintergund der falschen Zitate</h2>
-    
-    <p>
-    Die Idee der falsch zugeordneten Zitate stammt von dem Kleinkünstler Marc-Uwe Kling. Aus seinem Kalender &laquo;Der falsche Kalender&raquo; lassen sich hier auch einzelne Auszüge finden. Teils wurden sie aber auch abgeändert, um Hilfestellungen ergänzt oder
-    es wurden eigene Falschreferenzierungen mit sarkastischem Charakter kreiert. 
-    </p>
-  
 </div>

@@ -1,19 +1,24 @@
 <div id="main_default">
     <h1><strong class="bubbles">WUZA</strong> - Stay&nbsp;Calm & Be&nbsp;Yourself</h1>
-    <p>
+    <p class="fade-in-move-down">
         Herzlich willkommen bei WUZA - einem Freizeitprojekt von Marcel Hess!
     </p>
     
-    <div id="quote_home" class="quote bs-callout bs-callout-default noselect">
+    <div id="quote_home" class="quote bs-callout bs-callout-default noselect fade-in-move-down">
         <h4 class="no-margin">Falschzitat der Woche</h4>
         <p class="no-margin">
-            &laquo;...und sie dreht sich doch!&raquo; &mdash; Harald Junke
-            <span class="glyphicon glyphicon-question-sign clickable" aria-hidden="true" onclick="changeQuoteVisibility('home')"></span>
+            <?php
+            echo '&laquo;' . $this->_['quote']['quote'] . '&raquo; &mdash;'. $this->_['quote']['author'];
+            if($this->_['quote']['help']){
+            ?>
+            <span class="glyphicon glyphicon-question-sign clickable" aria-hidden="true" onclick="changeQuoteVisibility('home');"></span>
+            <?php
+            }
+            ?>
+            
         </p>
         <p id="quote_home_help" class="light no-margin" style="display: none">
-            Das Zitat wird (fälschlicher weise oft) Galileo Galilei zugeordnet, welcher bestätigte, dass sich die Erde
-            um die Sonne dreht. Harald Junke war ein deutscher Entertainer, an dessen Alkoholkrankheit die
-            Öffentlichkeit rege Anteil nahm.
+            <?php echo $this->_['quote']['help']; ?> 
         </p>
         <p class="light no-margin none"><a href=#>weiter zum Archiv der falsch zugeordneten Zitate</a></p>
         
@@ -71,7 +76,7 @@
     <h3>Die letzten Aktualisierungen</h3>
     <div class="hover-list getHard">
         <ul>
-            <li><a class="colorful" href="view/quotes">Falschzitate <span>- hasst Du ein Zitat der Woche verpasst? Kein Problen!</span></a></li>
+            <li><a class="colorful" href="view/quotes">Falschzitate <span>- hast Du ein Zitat der Woche verpasst? Kein Problen!</span></a></li>
             <li><a class="colorful" href="view/projects">Projektübersicht <span>- die ersten Projekte wurden in der Timeline erfasst</span></a></li>
             <li><a class="blocked" href="#">Easter Egg &laquo;Gravity Troll&raquo; <span>- Hinweis: Trolle einen Troll und er trollt dich zurück!</span></a></li>
             <li><a class="colorful" href="view/project_build_tool">Projekt Build Tool <span>- ein  Projekt wurde auf WUZA neu erfasst</span></a></li>
@@ -86,7 +91,7 @@
             <li><a class="blocked" href="">Weitere Erfassungen der bisherigen Projekte <span>- da fehlt noch eine ganze Liste; vorerst das Wichtigste</span></a></li>
             <li><a class="blocked" href="">Musikprojekt implementieren <span>- ein neues Projekt, welches OnTheFly mit WUZA aufgezogen wird</span></a></li>
             <li><a class="blocked" href="">SEO <span>- bisher ist das Google-Ranking noch nicht gross gepusht worden</span></a></li>
-            <li><a class="blocked" href="">Backend <span>- ein bisschen Konfort für mich ;-)</span></a></li>
+            <li><a class="blocked" href="">Backend <span>- ein bisschen Komfort für mich ;-)</span></a></li>
             <li><a class="blocked" href="">Falsche Zitate <span>- das Zitatarchiv implementieren um Stöbern zu ermöglichen</span></a></li>
             <li><a class="blocked" href="">Mehr Easter Eggs <span>- man darf sich freuen :-)</span></a></li>
             <li><a class="blocked" href="">Spracherweiterung <span>- zumindest mal um Englisch</span></a></li>

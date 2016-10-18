@@ -6,7 +6,7 @@
     
     <h1>Build Tool - das WBB Plugin</h1>
     
-    <p>
+    <p class="fade-in-move-down">
         WBB steht für "WoltLab Burning Board". Ein kleines (PHP) Tool - einst für Gw2 - derweilen für ESO.
     </p>
     

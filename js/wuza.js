@@ -42,7 +42,7 @@ $(document).ready(function(){
 	};
 	
 	// for intern links; just in case
-	var url = getInputValue("#url"); 
+	// var url = getInputValue("#url"); 
 	$('a.getHard, .getHard a').each(function() {
 		var href = $( this ).attr("href");
 		if ((!(href.match(/^[http|#]/i))) && (typeof href != 'undefined' && href)) {
@@ -58,10 +58,6 @@ $(document).ready(function(){
 		   $(this).append('<span class="particle" style="top:' + $.rnd(20,80) + '%; left:' + $.rnd(0,95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
 		}
 	});
-	
-	
-	// fade in effect
-	$("body.has-jssession p").css( "opacity", "1" );
     
 });
 
