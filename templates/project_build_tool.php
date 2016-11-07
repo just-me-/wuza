@@ -41,7 +41,7 @@
         Zusätzlich gibt es Bild-Slider der ESO-Version. Es sind jeweils für die Auflösungen Smartphone, Tablet (Slider auf kleinen Bildschirmen ausgeblendet) und Desktop Gruppierungen vorhanden.
     </p>
     
-        <div id="small_screens" class="right small-margin-left noselect">
+    <div id="small_screens" class="right small-margin-left noselect">
         <ul class="bxslider">
             <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_1.png" title="Smartphone Ansicht" alt="Build Tool Small View 1" /></li>
             <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_2.png" alt="Build Tool Small View 2" /></li>
@@ -72,16 +72,14 @@
         </p>
         
         
-    
-    
-    <div id="middle_screens" class="left hidden-xs hidden-sm small-margin-right">
-        <ul class="bxslider">
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_1.png" title="Tablet Ansicht" alt="Build Tool Middle View 1" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_2.png" alt="Build Tool Middle View 2" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_3.png" alt="Build Tool Middle View 3" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_4.png" alt="Build Tool Middle View 4" /></li>
-        </ul>
-    </div>
+        <div id="middle_screens" class="left hidden-xs hidden-sm small-margin-right noselect">
+            <ul class="bxslider">
+                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_1.png" title="Tablet Ansicht" alt="Build Tool Middle View 1" /></li>
+                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_2.png" alt="Build Tool Middle View 2" /></li>
+                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_3.png" alt="Build Tool Middle View 3" /></li>
+                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_4.png" alt="Build Tool Middle View 4" /></li>
+            </ul>
+        </div>
         
         <h4>Mehr Optionen</h4>
         <p>
@@ -113,7 +111,7 @@
     </p>
     
     
-    <div id="big_screens">
+    <div id="big_screens" class="noselect">
         <ul class="bxslider">
             <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_1.png" title="Desktop Ansicht" alt="Build Tool Big View 1" /></li>
             <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_2.png" title="Geöffnete Detailbeschreibung" alt="Build Tool Big View 2" /></li>

@@ -125,9 +125,11 @@
     <?php
       if(!$this->_['js']) {
         print '
-        <div class="test-js text-warning bg-warning small-padding">
-          Bitte aktivieren Sie <b>JavaScript</b> für <b>wuza.ch</b>, um alle Funktionen dieser Seite vorgesehen nutzen zu können. 
-        </div>
+        <noscript>
+          <div class="test-js text-warning bg-warning small-padding">
+            Bitte aktivieren Sie <b>JavaScript</b> für <b>wuza.ch</b>, um alle Funktionen dieser Seite vorgesehen nutzen zu können. 
+          </div>
+        </noscript>
         ';
       }
     ?>
@@ -152,6 +154,7 @@
     <script src="<?php echo $this->_['url']; ?>js/bootstrap.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/bxslider.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/cookieconsent.min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/raphael.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/jGravity-min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/wuza.js?version=%22<?php echo $this->_['version']; ?>%22"></script>
     

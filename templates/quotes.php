@@ -5,7 +5,7 @@
     <p class="fade-in-move-down">
     Du hast ein Zitat der Woche verpasst? Keine Sorge: Hier im Archiv kannst Du sie nachlesen!
     In der öffentlichen Ansicht erhältst Du Zugriff auf die letzten zehn Einträge.
-    Falls zu weiter zurücklesen möchtest, sende mir doch eine kurze <a href="mailto:hallo@wuza.ch?subject=WUZA.ch%20Website">Anfrage per E-Mail</a>.
+    Falls Du weiter zurücklesen möchtest, sende mir doch eine kurze <a href="mailto:hallo@wuza.ch?subject=WUZA.ch%20Website">Anfrage per E-Mail</a>.
     </p>
     
     <!-- all quotes -->

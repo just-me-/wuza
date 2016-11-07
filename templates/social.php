@@ -28,4 +28,10 @@
         });
     </script>
     
+    <h2>Und sonst so?</h2>
+    <p>
+        Ansonsten ist WUZA zurzeit nicht auf einer anderen Social Media Plattform aktiv vertreten.
+        Twitter ist durch seine Einfachheit der Posts (durch die Zeichenbeschränkung) und die Art der Selektion für WUZA besser geeignet, als Plattformen wie Facebook etc.
+    </p>
+    
 </div>

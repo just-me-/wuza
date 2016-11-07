@@ -82,6 +82,109 @@ img.rounded { width: auto; }
 }
 /* end hover list */
 
+/* material list */
+@icon-size = 1.3em; 
+ul.material {
+	list-style: none;
+	padding: 0;
+  &.mw li {
+	min-width: 125px;
+  }
+  li {
+	padding-left: @icon-size;
+  }
+  li:before {
+	content: "\E922"; 
+	font-family: "Material Icons";
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -@icon-size; 
+	width: @icon-size;
+  }
+}
+/* end material list */
+
+/* skillbar - does not touch the bs progressbar */
+.skillbar {
+	position: relative;
+	display: block;
+	margin-bottom: 7px;
+	width: 100%;
+	background: #eee;
+	height: 25px;
+	border-radius: 3px;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+}
+
+.skillbar-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffffff;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	
+	span {
+		display: block;
+		padding: 0 20px;
+		height: 25px;
+		line-height: 25px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+}
+
+.skillbar-bar {
+	height: 25px;
+	width: 0px;
+	background: #6adcfa;
+	border-radius: 3px;
+}
+
+.skill-bar-right {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 11px;
+	height: 25px;
+	line-height: 25px;
+	color: #ffffff;
+	color: rgba(0, 0, 0, 0.4);
+}
+.skillbar {
+	&.great {
+		.skillbar-bar {
+			background-color: #A0D468;
+		}
+		.skillbar-title {
+			background-color: #8CC152;
+		}
+	}
+	&.good {
+		.skillbar-bar {
+			background-color: #48CFAD;
+		}
+		.skillbar-title {
+			background-color: #37BC9B;
+		}
+	}
+	&.ok {
+		.skillbar-bar {
+			background-color: #4FC1E9;
+		}
+		.skillbar-title {
+			background-color: #3BAFDA;
+		}
+	}
+}
+/* end skillbar */
+
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
@@ -193,18 +296,14 @@ div { max-width: 100%; }
 	50% {background: @link-light-color;} 
 	75% {background: @link-soft-color;} 
 	100% {background: @link-basic-color;} 
-} 
-p a, .colorful a, a.colorful, span.colorful { 
-    -webkit-animation-direction: normal; 
-    -webkit-animation-duration: 5s; 
-    -webkit-animation-iteration-count: infinite; 
-    -webkit-animation-name: colours; 
-    -webkit-animation-timing-function: ease; 
-    -moz-animation-direction: normal; 
-    -moz-animation-duration: 5s; 
-    -moz-animation-iteration-count: infinite; 
-    -moz-animation-name: colours; 
-    -moz-animation-timing-function: ease;
+}
+@keyframes blur{
+	from{ text-shadow: 0px 0px 25px @link-soft-color; }
+	to { text-shadow: none; }
+}
+p a, .colorful a, a.colorful, span.colorful {
+	-webkit-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite; 
+    -moz-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite; 
 }
 p a {
 	display: inline-block;
@@ -220,16 +319,8 @@ p a {
 		height: 2px;
 		transition: width 0.3s;
 		
-		-webkit-animation-direction: normal; 
-		-webkit-animation-duration: 5s; 
-		-webkit-animation-iteration-count: infinite; 
-		-webkit-animation-name: bgcolours; 
-		-webkit-animation-timing-function: ease; 
-		-moz-animation-direction: normal; 
-		-moz-animation-duration: 5s; 
-		-moz-animation-iteration-count: infinite; 
-		-moz-animation-name: bgcolours; 
-		-moz-animation-timing-function: ease;
+		-webkit-animation: bgcolours 5s ease infinite normal;
+		-moz-animation: bgcolours 5s ease infinite normal;
 	}
 	&:hover::after {
 		width: 100%;
@@ -294,7 +385,7 @@ p a {
     }
 }
 
-h1, h2, h3, .fade-in-move-down {
+h1, h2, h3, h4, .fade-in-move-down {
     -webkit-animation: fade-in-move-down 0.7s;
     animation: fade-in-move-down 0.7s;
 }
@@ -533,6 +624,50 @@ body, .navbar-inverse {
     }
 }
 /* end music */
+
+/* contact */
+// legend for skill diagram
+.legend span {
+  white-space:nowrap;
+  display: inline-block;
+  width: 220px;
+  margin-right: 10px; 
+  
+  &:before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 10px;
+	margin-right: 5px;
+  }
+  
+  &.green:before {
+	background: #97BE0D;
+  }
+  &.purple:before {
+	background: #9575cd;
+	background: linear-gradient(to right, #9575cd, #673ab7);
+  }
+  &.blue:before {
+	background: #3486D3;
+	background: linear-gradient(to right, #3486D3, #88B8E6);
+  }
+  &.lightblue:before {
+	background: #ede7f6;
+	background: linear-gradient(to right, #ede7f6, #BEDBE9);
+  }
+  &.orange:before {
+	background: #f57c00;
+  }
+  &.red:before {
+	background: #ef5350;
+	background: linear-gradient(to right, #ef5350, #D84F5F);
+  }
+  &.grey:before {
+	background: #EDEBEE;
+  }
+}
+/* end contact */
 
 /* timeline */
 .timeline {
@@ -868,5 +1003,34 @@ body, .navbar-inverse {
         #middle_screens {
             width: 450px;
         }
+		// bugfix slider webkit
+		#small_screens .bx-wrapper .bx-viewport {
+			min-height: 369px;
+		}
+		#middle_screens .bx-wrapper .bx-viewport {
+			min-height: 368px;
+		}
+		#big_screens .bx-wrapper .bx-viewport {
+			min-height: 508px;
+			@media (max-width: 992px) {
+				min-height: 150px;
+			}
+		}
     }
+	
+	// ipa
+	#main_project_ipa {
+		#register_screen {
+			max-width: 340px;
+		}
+		
+	}
+	// wuza
+	#main_project_wuza {
+		#easteregg {
+			max-width: 400px;
+		}
+		
+	}
+	
 /* end projects */

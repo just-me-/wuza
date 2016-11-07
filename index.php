@@ -6,6 +6,16 @@ $config = parse_ini_file('conf/config.ini', TRUE);
 // check for ssl
 if($_SERVER['HTTPS'] != "on" && $config['ssl'] == 1){
     $redirect = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+}
+// remove trailing slash on end of url
+if(preg_match('/\/$/',$_SERVER['REQUEST_URI']) && !$redirect){
+    $redirect = ($config['ssl'] == 1) ? "https://" : "http://";
+    $redirect .= $_SERVER['HTTP_HOST'].preg_replace('/\/$/', '', $_SERVER['REQUEST_URI']);
+    if($config['link'] == $redirect){
+        unset($redirect);
+    }
+}
+if($redirect){
     header("HTTP/1.1 301 Moved Permanently");
     header("Location: $redirect");
 }

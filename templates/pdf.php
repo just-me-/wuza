@@ -8,7 +8,7 @@
     ?>
     <div class="pdf_background blockquote text-justify">
         <h4>Hintergrund und Entstehung</h4>
-        <p class="fadein">
+        <p class="fade-in-move-down">
             <?php echo $this->_['background'] . '<br/>' . $download_link ?>
         </p>
     </div>
@@ -19,7 +19,7 @@
     ?>
     
     <div class='a4pdf embed-responsive'>
-        <object data='<?php echo $this->_['url'] . $this->_['source'] ?>' type='application/pdf' width='100%' height='100%'>
+        <object data='<?php echo $this->_['url'] . $this->_['source'] . "?version=" . $this->_['version'] ?>' type='application/pdf' width='100%' height='100%'>
         <p>
             Es scheint so, als hätte Dein Browser kein verfügbares PDF Plugin,
             um das PDF anzuzeigen. <br/>
