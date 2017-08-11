@@ -1,8 +1,8 @@
 /* varis */
 @main-bg-color:         #eeeeee;
 @main-bg-alpha:         0.9;
-@nav-bg-color-from:     #585858;
-@nav-bg-color-to:       #3d3d3d;
+@nav-bg-color-from:     #303030;
+@nav-bg-color-to:       #303030;
 @nav-bg-alpha:          0.85;
 @link-basic-color:		#003866;
 @link-soft-color:		#3389D2;
@@ -463,6 +463,9 @@ p, .fade-in {
                     rgba(red(@nav-bg-color-from), green(@nav-bg-color-from), blue(@nav-bg-color-from), @nav-bg-alpha),
                     rgba(red(@nav-bg-color-to), green(@nav-bg-color-to), blue(@nav-bg-color-to), @nav-bg-alpha)
                 );
+    @media (max-width: 768px) {
+        background: @nav-bg-color-from;
+    }
     .navbar-nav > li > a {
         color: #fff;
         &:hover {
@@ -494,6 +497,143 @@ p, .fade-in {
 		max-width: 14px;
 	}
 }
+/* fancy wuza logo */
+@font-face {
+    font-family: 'WUZAfont';
+    src: url('../fonts/rawhide_raw_2012.eot') format('eot'), /* IE9 Compat Modes */
+    url('../fonts/rawhide_raw_2012.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/rawhide_raw_2012.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+.animated-logo {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font: 800 30px/1.5 'WUZAfont', Impact;
+    letter-spacing: 5px;
+    width: 160px;
+    height: 45px;
+    margin: 3px 3px 0 2px;
+    border-radius: 15px;
+}
+.animated-logo:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px purple, 15px 0px 10px 10px violet, 30px 0px 10px 10px teal, 45px 0px 10px 10px orangered, 60px 0px 10px 10px yellow,
+        75px 0px 10px 10px crimson, 100px 0px 10px 10px yellowgreen, 105px 0px 10px 10px orange, 135px 0px 10px 10px darkturquoise, 160px 0px 10px 10px pink,
+        0px 15px 10px 10px steelblue, 15px 15px 10px 10px turquoise, 30px 15px 10px 10px coral, 45px 15px 10px 10px skyblue, 60px 15px 10px 10px darkviolet,
+        75px 15px 10px 10px gold, 100px 15px 10px 10px purple, 105px 15px 10px 10px violet, 135px 15px 10px 10px teal, 160px 15px 10px 10px orangered,
+        0px 30px 10px 10px yellow, 15px 30px 10px 10px crimson, 30px 30px 10px 10px yellowgreen, 45px 30px 10px 10px orange, 60px 30px 10px 10px darkturquoise,
+        75px 30px 10px 10px pink, 100px 30px 10px 10px steelblue, 105px 30px 10px 10px turquoise, 135px 30px 10px 10px coral, 160px 30px 10px 10px skyblue,
+        0px 45px 10px 10px darkviolet, 15px 45px 10px 10px gold, 30px 45px 10px 10px darkslateblue, 45px 45px 10px 10px purple, 60px 45px 10px 10px violet,
+        75px 45px 10px 10px teal, 100px 45px 10px 10px orangered, 105px 45px 10px 10px yellow, 135px 45px 10px 10px crimson, 160px 45px 10px 10px yellowgreen,
+        0px 60px 10px 10px orange, 15px 60px 10px 10px darkturquoise, 30px 60px 10px 10px pink, 45px 60px 10px 10px steelblue, 60px 60px 10px 10px turquoise,
+        75px 60px 10px 10px coral, 100px 60px 10px 10px skyblue, 105px 60px 10px 10px darkviolet, 135px 60px 10px 10px gold, 160px 60px 10px 10px darkslateblue;
+    -webkit-animation: color-shadows 2.5s linear infinite;
+    animation: color-shadows 2.5s linear infinite; 
+    filter: blur(6px);
+}
+.animated-logo:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    display: block;
+}
+.logo-text {
+    position: relative;
+    display: block;
+    color: white;
+    mix-blend-mode: darken; 
+    padding-top: 4px;
+    background: rgba(48, 48, 48, 0.85);
+    @media (max-width: 768px) {
+        background: rgba(48, 48, 48, 1);
+    }
+}    
+@-webkit-keyframes color-shadows {
+    25% {
+        box-shadow: 0px 0px 10px 10px coral, 15px 0px 10px 10px skyblue, 30px 0px 10px 10px darkviolet, 45px 0px 10px 10px gold, 60px 0px 10px 10px purple,
+            75px 0px 10px 10px violet, 100px 0px 10px 10px teal, 105px 0px 10px 10px orangered, 135px 0px 10px 10px yellow, 160px 0px 10px 10px crimson,
+            0px 15px 10px 10px yellowgreen, 15px 15px 10px 10px orange, 30px 15px 10px 10px darkturquoise, 45px 15px 10px 10px pink, 60px 15px 10px 10px steelblue,
+            75px 15px 10px 10px turquoise, 100px 15px 10px 10px coral, 105px 15px 10px 10px skyblue, 135px 15px 10px 10px darkviolet, 160px 15px 10px 10px gold,
+            0px 30px 10px 10px darkslateblue, 15px 30px 10px 10px purple, 30px 30px 10px 10px violet, 45px 30px 10px 10px teal, 60px 30px 10px 10px orangered,
+            75px 30px 10px 10px yellow, 100px 30px 10px 10px crimson, 105px 30px 10px 10px yellowgreen, 135px 30px 10px 10px orange, 160px 30px 10px 10px darkturquoise,
+            0px 45px 10px 10px pink, 15px 45px 10px 10px steelblue, 30px 45px 10px 10px turquoise, 45px 45px 10px 10px coral, 60px 45px 10px 10px skyblue,
+            75px 45px 10px 10px darkviolet, 100px 45px 10px 10px gold, 105px 45px 10px 10px darkslateblue, 135px 45px 10px 10px purple, 160px 45px 10px 10px violet,
+            0px 60px 10px 10px teal, 15px 60px 10px 10px orangered, 30px 60px 10px 10px yellow, 45px 60px 10px 10px crimson, 60px 60px 10px 10px yellowgreen,
+            75px 60px 10px 10px orange, 100px 60px 10px 10px darkturquoise, 105px 60px 10px 10px pink, 135px 60px 10px 10px steelblue, 160px 60px 10px 10px turquoise;
+    }
+    45% {
+        box-shadow: 0px 0px 10px 10px yellowgreen, 15px 0px 10px 10px orange, 30px 0px 10px 10px darkturquoise, 45px 0px 10px 10px pink, 60px 0px 10px 10px steelblue,
+            75px 0px 10px 10px turquoise, 100px 0px 10px 10px coral, 105px 0px 10px 10px skyblue, 135px 0px 10px 10px darkviolet, 160px 0px 10px 10px gold,
+            0px 15px 10px 10px purple, 15px 15px 10px 10px violet, 30px 15px 10px 10px teal, 45px 15px 10px 10px orangered, 60px 15px 10px 10px yellow,
+            75px 15px 10px 10px crimson, 100px 15px 10px 10px yellowgreen, 105px 15px 10px 10px orange, 135px 15px 10px 10px darkturquoise, 160px 15px 10px 10px pink,
+            0px 30px 10px 10px steelblue, 15px 30px 10px 10px turquoise, 30px 30px 10px 10px coral, 45px 30px 10px 10px skyblue, 60px 30px 10px 10px darkviolet,
+            75px 30px 10px 10px gold, 100px 30px 10px 10px darkslateblue, 105px 30px 10px 10px purple, 135px 30px 10px 10px violet, 160px 30px 10px 10px teal,
+            0px 45px 10px 10px orangered, 15px 45px 10px 10px yellow, 30px 45px 10px 10px crimson, 45px 45px 10px 10px yellowgreen, 60px 45px 10px 10px orange,
+            75px 45px 10px 10px darkturquoise, 100px 45px 10px 10px pink, 105px 45px 10px 10px steelblue, 135px 45px 10px 10px turquoise, 160px 45px 10px 10px coral,
+            0px 60px 10px 10px skyblue, 15px 60px 10px 10px darkviolet, 30px 60px 10px 10px gold, 45px 60px 10px 10px darkslateblue, 60px 60px 10px 10px purple,
+            75px 60px 10px 10px violet, 100px 60px 10px 10px teal, 105px 60px 10px 10px orangered, 135px 60px 10px 10px yellow, 160px 60px 10px 10px crimson;
+    }
+    75% {
+        box-shadow: 0px 0px 10px 10px teal, 15px 0px 10px 10px orangered, 30px 0px 10px 10px yellow, 45px 0px 10px 10px crimson, 60px 0px 10px 10px yellowgreen,
+            75px 0px 10px 10px orange, 100px 0px 10px 10px darkturquoise, 105px 0px 10px 10px pink, 135px 0px 10px 10px steelblue, 160px 0px 10px 10px turquoise,
+            0px 15px 10px 10px coral, 15px 15px 10px 10px skyblue, 30px 15px 10px 10px darkviolet, 45px 15px 10px 10px gold, 60px 15px 10px 10px darkslateblue,
+            75px 15px 10px 10px purple, 100px 15px 10px 10px violet, 105px 15px 10px 10px teal, 135px 15px 10px 10px orangered, 160px 15px 10px 10px yellow,
+            0px 30px 10px 10px crimson, 15px 30px 10px 10px yellowgreen, 30px 30px 10px 10px orange, 45px 30px 10px 10px darkturquoise, 60px 30px 10px 10px pink,
+            75px 30px 10px 10px steelblue, 100px 30px 10px 10px turquoise, 105px 30px 10px 10px coral, 135px 30px 10px 10px skyblue, 160px 30px 10px 10px darkviolet,
+            0px 45px 10px 10px gold, 15px 45px 10px 10px darkslateblue, 30px 45px 10px 10px purple, 45px 45px 10px 10px violet, 60px 45px 10px 10px teal,
+            75px 45px 10px 10px orangered, 100px 45px 10px 10px yellow, 105px 45px 10px 10px crimson, 135px 45px 10px 10px yellowgreen, 160px 45px 10px 10px orange,
+            0px 60px 10px 10px darkturquoise, 15px 60px 10px 10px pink, 30px 60px 10px 10px steelblue, 45px 60px 10px 10px turquoise, 60px 60px 10px 10px coral,
+            75px 60px 10px 10px skyblue, 100px 60px 10px 10px darkviolet, 105px 60px 10px 10px gold, 135px 60px 10px 10px darkslateblue, 160px 60px 10px 10px purple;
+    }
+}
+@keyframes shadows-cells {
+    25% {
+        box-shadow: 0px 0px 10px 10px coral, 15px 0px 10px 10px skyblue, 30px 0px 10px 10px darkviolet, 45px 0px 10px 10px gold, 60px 0px 10px 10px purple,
+            75px 0px 10px 10px violet, 100px 0px 10px 10px teal, 105px 0px 10px 10px orangered, 135px 0px 10px 10px yellow, 160px 0px 10px 10px crimson,
+            0px 15px 10px 10px yellowgreen, 15px 15px 10px 10px orange, 30px 15px 10px 10px darkturquoise, 45px 15px 10px 10px pink, 60px 15px 10px 10px steelblue,
+            75px 15px 10px 10px turquoise, 100px 15px 10px 10px coral, 105px 15px 10px 10px skyblue, 135px 15px 10px 10px darkviolet, 160px 15px 10px 10px gold,
+            0px 30px 10px 10px darkslateblue, 15px 30px 10px 10px purple, 30px 30px 10px 10px violet, 45px 30px 10px 10px teal, 60px 30px 10px 10px orangered,
+            75px 30px 10px 10px yellow, 100px 30px 10px 10px crimson, 105px 30px 10px 10px yellowgreen, 135px 30px 10px 10px orange, 160px 30px 10px 10px darkturquoise,
+            0px 45px 10px 10px pink, 15px 45px 10px 10px steelblue, 30px 45px 10px 10px turquoise, 45px 45px 10px 10px coral, 60px 45px 10px 10px skyblue,
+            75px 45px 10px 10px darkviolet, 100px 45px 10px 10px gold, 105px 45px 10px 10px darkslateblue, 135px 45px 10px 10px purple, 160px 45px 10px 10px violet,
+            0px 60px 10px 10px teal, 15px 60px 10px 10px orangered, 30px 60px 10px 10px yellow, 45px 60px 10px 10px crimson, 60px 60px 10px 10px yellowgreen,
+            75px 60px 10px 10px orange, 100px 60px 10px 10px darkturquoise, 105px 60px 10px 10px pink, 135px 60px 10px 10px steelblue, 160px 60px 10px 10px turquoise;
+    }
+    45% {
+        box-shadow: 0px 0px 10px 10px yellowgreen, 15px 0px 10px 10px orange, 30px 0px 10px 10px darkturquoise, 45px 0px 10px 10px pink, 60px 0px 10px 10px steelblue,
+            75px 0px 10px 10px turquoise, 100px 0px 10px 10px coral, 105px 0px 10px 10px skyblue, 135px 0px 10px 10px darkviolet, 160px 0px 10px 10px gold,
+            0px 15px 10px 10px purple, 15px 15px 10px 10px violet, 30px 15px 10px 10px teal, 45px 15px 10px 10px orangered, 60px 15px 10px 10px yellow,
+            75px 15px 10px 10px crimson, 100px 15px 10px 10px yellowgreen, 105px 15px 10px 10px orange, 135px 15px 10px 10px darkturquoise, 160px 15px 10px 10px pink,
+            0px 30px 10px 10px steelblue, 15px 30px 10px 10px turquoise, 30px 30px 10px 10px coral, 45px 30px 10px 10px skyblue, 60px 30px 10px 10px darkviolet,
+            75px 30px 10px 10px gold, 100px 30px 10px 10px darkslateblue, 105px 30px 10px 10px purple, 135px 30px 10px 10px violet, 160px 30px 10px 10px teal,
+            0px 45px 10px 10px orangered, 15px 45px 10px 10px yellow, 30px 45px 10px 10px crimson, 45px 45px 10px 10px yellowgreen, 60px 45px 10px 10px orange,
+            75px 45px 10px 10px darkturquoise, 100px 45px 10px 10px pink, 105px 45px 10px 10px steelblue, 135px 45px 10px 10px turquoise, 160px 45px 10px 10px coral,
+            0px 60px 10px 10px skyblue, 15px 60px 10px 10px darkviolet, 30px 60px 10px 10px gold, 45px 60px 10px 10px darkslateblue, 60px 60px 10px 10px purple,
+            75px 60px 10px 10px violet, 100px 60px 10px 10px teal, 105px 60px 10px 10px orangered, 135px 60px 10px 10px yellow, 160px 60px 10px 10px crimson;
+    }
+    75% {
+        box-shadow: 0px 0px 10px 10px teal, 15px 0px 10px 10px orangered, 30px 0px 10px 10px yellow, 45px 0px 10px 10px crimson, 60px 0px 10px 10px yellowgreen,
+            75px 0px 10px 10px orange, 100px 0px 10px 10px darkturquoise, 105px 0px 10px 10px pink, 135px 0px 10px 10px steelblue, 160px 0px 10px 10px turquoise,
+            0px 15px 10px 10px coral, 15px 15px 10px 10px skyblue, 30px 15px 10px 10px darkviolet, 45px 15px 10px 10px gold, 60px 15px 10px 10px darkslateblue,
+            75px 15px 10px 10px purple, 100px 15px 10px 10px violet, 105px 15px 10px 10px teal, 135px 15px 10px 10px orangered, 160px 15px 10px 10px yellow,
+            0px 30px 10px 10px crimson, 15px 30px 10px 10px yellowgreen, 30px 30px 10px 10px orange, 45px 30px 10px 10px darkturquoise, 60px 30px 10px 10px pink,
+            75px 30px 10px 10px steelblue, 100px 30px 10px 10px turquoise, 105px 30px 10px 10px coral, 135px 30px 10px 10px skyblue, 160px 30px 10px 10px darkviolet,
+            0px 45px 10px 10px gold, 15px 45px 10px 10px darkslateblue, 30px 45px 10px 10px purple, 45px 45px 10px 10px violet, 60px 45px 10px 10px teal,
+            75px 45px 10px 10px orangered, 100px 45px 10px 10px yellow, 105px 45px 10px 10px crimson, 135px 45px 10px 10px yellowgreen, 160px 45px 10px 10px orange,
+            0px 60px 10px 10px darkturquoise, 15px 60px 10px 10px pink, 30px 60px 10px 10px steelblue, 45px 60px 10px 10px turquoise, 60px 60px 10px 10px coral,
+            75px 60px 10px 10px skyblue, 100px 60px 10px 10px darkviolet, 105px 60px 10px 10px gold, 135px 60px 10px 10px darkslateblue, 160px 60px 10px 10px purple;
+    }
+}
+/* end fancy wuza logo */
 /* end menu */ 
 
 /* layout */
