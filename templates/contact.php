@@ -146,6 +146,11 @@
       <input type="hidden" class="percent" value="85" />
       <input type="hidden" class="color" value="#BEDBE9" />
     </div>
+    <div class="arc">
+      <span class="text">WordPress</span>
+      <input type="hidden" class="percent" value="85" />
+      <input type="hidden" class="color" value="#BEDBE9" />
+    </div>
     
     <!--Native Apps-->
     <div class="arc">
@@ -245,14 +250,14 @@
       var width = $('#diagram').width();
       var height = (width < 600) ? width : 600;
       var r = Raphael('diagram', width, height),
-        rad = 73,
+        rad = 68,
         defaultText = 'Know-how',
         speed = 250;
       
-      r.circle(width/2, height/2, 80).attr({ stroke: 'none', fill: '#193340' });
+      r.circle(width/2, height/2, 72).attr({ stroke: 'none', fill: '#193340' });
       
       var title = r.text(width/2, height/2, defaultText).attr({
-        font: '20px Arial',
+        font: '18px Arial',
         fill: '#fff'
       }).toFront();
       
@@ -281,7 +286,7 @@
         var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': 12 });
         
         z.mouseover(function(){
-          this.animate({ 'stroke-width': 30, opacity: .75 }, 1000, 'elastic');
+          this.animate({ 'stroke-width': 17, opacity: .75 }, 1000, 'elastic');
           if(Raphael.type != 'VML') //solves IE problem
           this.toFront();
           title.stop().animate({ opacity: 0 }, speed, '>', function(){
