@@ -18,16 +18,23 @@
     in Fachrichtung Applikationsentwicklung gemeistert.
     <a href="https://pk19.ch/ipa-suchen/?action=show_ipa&id=11467" target=_blank>Meine Abschlussarbeit</a> 
     wurde sogar als eine der 10 besten Informatik-Praxisfacharbeiten der Schweiz ausgezeichnet.
-    Seither arbeite ich teilzeit weiterhin auf meinem Fachgebiet in Zürich
-    und absolviere Berufsbegleitend die technische Maturität. 
+    Anschliessend arbeitete ich teilzeit weiterhin auf meinem Fachgebiet in Zürich
+    und absolvierte berufsbegleitend die technische Maturität. Seither studiere ich nun an der HSR
+    in Rapperswil für den Abschluss <i>Bachelor of Science FHO in Informatik</i>.
   </p>
     
   <p>
-    Beruflich arbeite ich serverseitig primär mit den Sprachen Perl und PHP.
-    Die eingesetzten Datenbankverwaltungssysteme sind PostgreSQL sowie MySQL.
-    Zu Browser-Frontententwicklung gehören nebst den klassischen HTML und CSS/LESS Codierungen
+    Beruflich arbeitete ich bei meinem ersten Arbeitgeber in Zürich serverseitig primär mit den Sprachen Perl und PHP.
+    Die eingesetzten Datenbankverwaltungssysteme waren PostgreSQL sowie MySQL.
+    Zu Browser-Frontententwicklung gehörten nebst den klassischen HTML und CSS/LESS Codierungen
     auch das Framework Bootstrap und die JavaScript-Bibliothek jQuery.
-    Aber auch Templatearbeiten mit LaTeX gehören zu meinen Berufstätigkeiten.
+    Aber auch Templatearbeiten mit LaTeX gehörten zu meinen Berufstätigkeiten.
+  </p>
+  
+  <p>
+    Seitdem ich - weiterhin teilzeit - zu einem jungen Start-up in Winterthur gewechselt bin,
+    realisiere ich primär für Firmen moderne Webauftritte; aber auch diverse, kleinere Webapplikationen.
+    Die Web-Technologien setzen sich primär aus PHP, JS, HTML5 und CSS3 zusammen. 
   </p>
   
   <p>
@@ -51,7 +58,7 @@
   <h2>Fähigkeiten</h2>
   <p>
     Falls Du Hilfe für ein Projekt brauchst, kannst Du Dir nachfolgend einen Einblick verschaffen, in welchen Bereichen ich Fachwissen besitze.
-    Für genäuere Informationen, nimm doch am besten direkt Kontakt mit mir auf. 
+    Für genauere Informationen, nimm doch am besten direkt Kontakt mit mir auf. 
   </p>
   
   <h3>Sprachen</h3>
@@ -184,7 +191,7 @@
   
   <h4>Sonstiges</h4>
   
-  <p>Ansonsten gäbe es noch Folgendes zu erwähnen auf <i>Berufsschulniveau:</i></p>
+  <p>Ansonsten gibt es noch Folgendes zu erwähnen auf <i>Berufsschulniveau:</i></p>
   <ul class="material left mw fade-in-move-down">
     <li>Java</li>
     <li>C++</li>

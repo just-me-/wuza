@@ -90,7 +90,7 @@
         
         <h4>Icons</h4>
         <p>
-            Zum einen sollen die Icons erneuert und zum andern sollen die vielen Selects durch Icons wo möglich abgelöst werden für eine höhere Benutzerfreundlichkeit. 
+            Zum einen sollen die Icons erneuert und zum andern sollen die vielen Selects durch Icons abgelöst werden, für eine höhere Benutzerfreundlichkeit. 
             Die meisten Gw2 Icons wurden jedoch bereits durch welche von ESO ersetzt. Allerdings sollten eigene erstellt werden, welche deren Platz in Zukunft einnehmen.
         </p>
         
