@@ -12,6 +12,6 @@
         Für das Folgeprojekt entstanden leider Verzögerungen bei den Textinhalten, welche auf Dauer schliesslich zur vorläufigen Einstellung der Arbeiten führten. 
     </p>
 
-    <img class="img-responsive img-rounded blocked_img" src="<?php echo $this->_['url']; ?>img/projects/ibc_screen.png" alt="Bildschirmfoto IBC" />
+    <img class="img-responsive img-rounded blocked_img" src="<?php echo $this->_['url']; ?>img/projects/ibc_screen.jpg" alt="Bildschirmfoto IBC" />
     
 </div>
