@@ -265,6 +265,26 @@ class Model{
 	}
 	
 	/**
+	 * @param String $collection, list $search_data
+	 * @return Boolean $result
+	 */
+	public function delete($collection, $search_data){
+		if(!isset($collection, $search_data)){
+			return false;
+		}
+		
+		try {
+			$result = $this->db->$collection->remove($search_data);
+		} catch (Exception $e) {
+			// msg for debug if needed
+			$msg = $e->getMessage();
+			return false; 
+		}
+		
+		return $result['ok'];
+	}
+	
+	/**
 	 * @param String $name of "auto_increment" collection/table 
 	 * @return int next number
 	 * replaces the missing auto_increment for counter fields

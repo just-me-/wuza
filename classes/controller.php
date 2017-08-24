@@ -167,9 +167,18 @@ class Controller{
 						$status = ($quote->save($this->model)) ? "success" : "error"; 
 						$view->assign('saved', $status);
 						break;
+					case 'delete_quote':
+						$quote = new Quote($this->request);
+						$status = ($quote->delete($this->model)) ? "deleted" : "error"; 
+						$view->assign('saved', $status);
+						break;
 					case 'list_quotes':
 						$quotes = $this->model->find("quote", array("sort"=>array("date"=>-1), "dates"=>array("date")));
 						$view->assign('quotes', $quotes);
+						break;
+					case 'get_quote':
+						$quote = $this->model->find("quote", array("filter"=>array('user_id' => intval($this->request['user_id'])), "dates"=>array("date")));
+						$view->assign('quote', $quote);
 						break;
 					default:
 						// do nothing at all

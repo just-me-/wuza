@@ -15,6 +15,10 @@ class Quote {
 				$this->$vari = $request[$vari];
 			}
 		}
+		// int value
+		if($this->user_id) {
+			$this->user_id = intval($this->user_id);
+		}
 		
 	}
 	
@@ -36,6 +40,21 @@ class Quote {
 		$new_data = $model->objectToArray($this);
 		
 		return $model->upsert("quote", $search_data, $new_data);
+	}
+	
+		/**
+	 * @param Object $model - db ref
+	 * @return Boolean true if successful
+	 */
+	public function delete($model){
+		
+		// id is needed
+		if(!($this->user_id > 0)){
+			return false; 
+		}
+		$search_data = array('user_id'=>$this->user_id);
+		
+		return $model->delete("quote", $search_data);
 	}
 	
 	/**
