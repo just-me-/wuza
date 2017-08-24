@@ -44,6 +44,7 @@ class Model{
 	private static $metas = array(
 		'default'				=> array("description"=>"Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess. Auf WUZA findest Du Diverses bezüglich Code, Musik und vielem mehr.", "keywords"=>"wuza, marcel, hess, wusa"),
 		'quotes'				=> array("description"=>"Ein Zitat auf WUZA verpasst? Kein Problem! Hier findest Du das Archiv.", "keywords"=>"wuza, zitat, lustig, archiv, verpasst, alte, falschzitate"),
+		'recipes'				=> array("description"=>"Auf der Suche nach einer neuen Rezeptidee? Hier bist Du richtig!", "keywords"=>"wuza, rezept, idee"),
 		'projects'				=> array("description"=>"Neben WUZA gibts noch andere Projekte von Marcel Hess! Entdecke hier einige davon.", "keywords"=>"wuza, projekte, projektanfrage, ipa, wbb, ibc"),
 		'project_build_tool'	=> array("description"=>"WBB steht für WoltLab Burning Board. Ein kleines Tool - einst für Gw2 - derweilen für ESO.", "keywords"=>"wuza, build, tool, wbb, php, plugin"),
 		'project_ibc'			=> array("description"=>"Webauftritt für IBC Switzerland.", "keywords"=>"wuza, ibc, switzerland"),
@@ -58,7 +59,8 @@ class Model{
 	// menu names and linked files
 	private static $menu = array(
 		array("file"=>"default", 		"icon"=>"home"),
-		array("file"=>"music", 			"icon"=>"music_note"),
+		// array("file"=>"music", 		"icon"=>"music_note"),
+		array("file"=>"recipes", 		"icon"=>"restaurant"),
 		array("file"=>"quotes", 		"icon"=>"bookmark"),
 		// array("file"=>"stories"),
 		// array("file"=>"farsi"),
@@ -73,6 +75,7 @@ class Model{
 		// menu
 		'default'			=> array("de"=>"Home", 		"en"=>"Home"),
 		'music'				=> array("de"=>"Musik", 	"en"=>"Music"),
+		'recipes'			=> array("de"=>"Rezepte", 	"en"=>"Recipes"),
 		'quotes'			=> array("de"=>"Zitate", 	"en"=>"Quotes"),
 		'stories'			=> array("de"=>"Stories", 	"en"=>"Stories"),
 		'farsi'				=> array("de"=>"Farsi", 	"en"=>"Farsi"),
