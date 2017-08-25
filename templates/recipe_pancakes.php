@@ -3,7 +3,7 @@
     <h1><span class="bubbles">Pancakes</span></h1>
     
     <h2>Zutaten</h2>
-    <ul class="ingredients">
+    <ul class="ingredients checkable noselect">
         <li>180g Mehl</li>
         <li>1 EL Zucker</li>
         <li>1 TL Backpulver</li>

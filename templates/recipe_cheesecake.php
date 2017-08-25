@@ -3,14 +3,14 @@
     <h1><span class="bubbles">Cheesecake</span></h1>
     
     <h2>Zutaten für den Boden</h2>
-    <ul class="ingredients">
+    <ul class="ingredients checkable noselect">
         <li>100g Butterkekse</li>
         <li>45g Butter</li>
         <li>1 EL Zucker</li>
     </ul>
     
     <h2>Zutaten für den Belag</h2>
-    <ul class="ingredients">
+    <ul class="ingredients checkable noselect">
         <li>450 g Frischkäse (z.B. Philadelphia)</li>
         <li>300g Crème Fraîche</li>
         <li>4 Eier</li>

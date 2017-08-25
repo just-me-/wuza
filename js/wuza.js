@@ -129,6 +129,10 @@ $('a.blocked').bind('click', function(){
 	return false;
 });
 
+// checkable unordered lists
+$('ul.checkable li').bind('click', function(){
+	$(this).toggleClass('checked');
+});
 
 
 // *** F U N C T I O N S *** //

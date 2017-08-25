@@ -104,6 +104,24 @@ ul.material {
 }
 /* end material list */
 
+/* checkable list */
+ul.checkable {
+    list-style: none;
+    padding: 0;
+    li:hover {
+        cursor: pointer; 
+    }
+    li:before {
+        content: "\E836"; 
+        font-family: "Material Icons";
+        padding-right: 8px; 
+    }
+    li.checked:before {
+        content: "\E837";
+    }
+}
+/* end checkable list */
+
 /* skillbar - does not touch the bs progressbar */
 .skillbar {
 	position: relative;
@@ -1242,6 +1260,20 @@ body, .navbar-inverse {
             opacity: 1; 
         }
     }
+}
+
+/* ingredients list in recipes */
+.ingredients {
+    white-space: pre-line;
+    li {
+        border-bottom: 1px solid #CCC;
+        padding: 4px 0;
+        display: inline-block;
+        vertical-align: top;
+        min-width: 300px;
+        max-width: 100%; 
+    }
+    
 }
 
 /* end recipes */

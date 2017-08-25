@@ -3,7 +3,7 @@
     <h1><span class="bubbles">American Cookies</span></h1>
     
     <h2>Zutaten</h2>
-    <ul class="ingredients">
+    <ul class="ingredients checkable noselect">
         <li>110g Butter</li>
         <li>170g Zucker</li>
         <li>1 Päckchen Vanillezucker</li>

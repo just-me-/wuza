@@ -3,7 +3,7 @@
     <h1><span class="bubbles">Mojito</span></h1>
     
     <h2>Zutaten für einen Liter</h2>
-    <ul class="ingredients">
+    <ul class="ingredients checkable noselect">
         <li>4 TL Rohrzucker</li>
         <li>2 Limetten</li>
         <li>Frische Minze</li>

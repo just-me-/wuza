@@ -3,7 +3,7 @@
     <h1><span class="bubbles">Tomaten Poulet</span></h1>
     
     <h2>Zutaten</h2>
-    <ul class="ingredients">
+    <ul class="ingredients checkable noselect">
         <li></li>
     </ul>
     
