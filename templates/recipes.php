@@ -7,7 +7,7 @@
     </p>
     
     <div class="filtr-filters noselect small-margin-top">
-        <span data-filter="all" class="clickable"> Alle </span>
+        <span data-filter="all" class="clickable active"> Alle </span>
         <span data-filter="1" class="clickable"> Hauptspeise </span>
         <span data-filter="2" class="clickable"> Beilage </span>
         <span data-filter="3" class="clickable"> Dessert </span>
@@ -20,7 +20,7 @@
         foreach($this->_['recipes'] as $recipe){
         ?>
             <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="<?php echo $recipe['categories']; ?>" data-sort="value">
-                <a href="<?php echo $this->_['url']; ?>/view/recipe_<?php echo $recipe['template']; ?>">
+                <a href="<?php echo $this->_['url']; ?>view/recipe_<?php echo $recipe['template']; ?>">
                     <img class="max-100" src="<?php echo $this->_['url']; ?>img/recipes/<?php echo $recipe['img']; ?>" alt="<?php echo $recipe['name']; ?>">
                     <span class="item-desc"><?php echo $recipe['name']; ?></span>
                 </a>
