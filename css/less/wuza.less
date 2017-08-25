@@ -1204,7 +1204,11 @@ body, .navbar-inverse {
 .filtr-container {
     min-height: 350px; 
     img {
-        border-radius: 10px; 
+        border-radius: 10px;
+        filter: grayscale(30%);
+        opacity: 0.8;
+        transition: opacity 0.5s ease-out;
+        transition: grayscale 0.5s ease-out;
     }
     .item-desc {
         background-color: rgba(0, 0, 0, 0.5);
@@ -1220,6 +1224,18 @@ body, .navbar-inverse {
         padding: 8px;
         position: absolute;
         text-align: center;
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
+    }
+    a:hover {
+        text-decoration: none;
+        .item-desc {
+            opacity: 0;
+        }
+        img {
+            filter: grayscale(0%);
+            opacity: 1; 
+        }
     }
 }
 

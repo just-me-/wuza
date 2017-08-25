@@ -6,7 +6,7 @@
         Dann ist das genau der richtige Ort!
     </p>
     
-    <div class="filtr-filters noselect">
+    <div class="filtr-filters noselect small-margin-top">
         <span data-filter="all" class="clickable"> Alle </span>
         <span data-filter="1" class="clickable"> Hauptspeise </span>
         <span data-filter="2" class="clickable"> Beilage </span>
@@ -20,8 +20,10 @@
         foreach($this->_['recipes'] as $recipe){
         ?>
             <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="<?php echo $recipe['categories']; ?>" data-sort="value">
-               <img class="max-100" src="<?php echo $this->_['url']; ?>img/recipes/<?php echo $recipe['img']; ?>" alt="<?php echo $recipe['name']; ?>">
-               <span class="item-desc"><?php echo $recipe['name']; ?></span>
+                <a href="<?php echo $this->_['url']; ?>/view/recipe_<?php echo $recipe['template']; ?>">
+                    <img class="max-100" src="<?php echo $this->_['url']; ?>img/recipes/<?php echo $recipe['img']; ?>" alt="<?php echo $recipe['name']; ?>">
+                    <span class="item-desc"><?php echo $recipe['name']; ?></span>
+                </a>
             </div>
         <?php
         }
@@ -32,7 +34,6 @@
 
 <!-- not used yet for other sites -->
 <script src="<?php echo $this->_['url']; ?>js/jquery.filterizr.min.js"></script>
-<script src="<?php echo $this->_['url']; ?>js/jquery.flip.min.js"></script>
 
 <!-- filter setup -->
 <script>
@@ -46,10 +47,11 @@
         $('.filtr-filters span.shuffle').removeClass('active');
     });
     
-    
+    /*
     var interval = setInterval(function(){        
         fltr.filterizr('shuffle');
     }, 4500);
+    */
     
     // fix first load 
     $(function() {
