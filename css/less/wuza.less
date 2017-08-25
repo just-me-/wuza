@@ -248,6 +248,7 @@ ul.material {
 .fixed { position: fixed; }
 
 .full-width { width: 100%; }
+.max-100 { width: 100%; }
 .no-border { border: 0; }
 
 .no-padding { padding: 0; }
@@ -1174,3 +1175,52 @@ body, .navbar-inverse {
 	}
 	
 /* end projects */
+
+/* recipes */
+
+/* filter gallery */
+.filtr-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    span {
+        display: block;
+        line-height: 1; 
+        padding: 5px 10px;
+        margin: 0 auto 10px auto;
+        border-radius: 20px;
+        color: #ffffff; 
+        background-color: #585858;
+        &.shuffle {
+            padding: 6px 6px 4px 6px ;
+            background-color: #878787;
+        }
+        &.active,
+        &:hover {
+            background-color: #212121;
+        }
+    }
+}
+.filtr-container {
+    min-height: 350px; 
+    img {
+        border-radius: 10px; 
+    }
+    .item-desc {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        left: 15px;
+        right: 15px;
+        bottom: 20px;
+        color: white;
+        font-weight: 300;
+        display: block;
+        padding: 8px;
+        position: absolute;
+        text-align: center;
+    }
+}
+
+/* end recipes */

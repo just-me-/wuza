@@ -34,6 +34,21 @@ class Model{
 			  "content"=>"Die drei Jahrgangsbesten der Berufsschule in meiner Ausbildungszeit, wurden für ein Migrationsprojekt von der Schweizerischen Radio- und Fernsehgesellschaft (SRG SSR) angeworben.
 			  Über mehrere Samstage hinweg durften wir an dem Projekt teilnehmen und wertvolle Erfahrungen gewinnen."),
 	);
+	// tmp linked recipes templates
+	// 1-Hauptspeise, 2-Beilage, 3-Dessert, 4-Apéro
+	private static $recipes = array(
+		array("template" =>"mojito", 			"name"=>"Mojito",					"categories"=>"4", 		"img"=>"moijto_main.jpg" ),
+		array("template" =>"tomaten_poulet", 	"name"=>"Tomaten Poulet",			"categories"=>"1", 		"img"=>"tomaten_poulet_main.jpg" ),
+		array("template" =>"mandeln", 			"name"=>"Gebrannte Mandeln",		"categories"=>"3, 4", 	"img"=>"mandeln_main.jpg" ),
+		array("template" =>"pancakes", 			"name"=>"Pancakes",					"categories"=>"1, 3", 	"img"=>"pancakes_main.jpg" ),
+		array("template" =>"cookies", 			"name"=>"American Cookies",			"categories"=>"3, 4", 	"img"=>"cookies_main.jpg" ),
+		array("template" =>"cheesecake", 		"name"=>"Cheesecake",				"categories"=>"3", 		"img"=>"cheesecake_main.jpg" ),
+		array("template" =>"jelly_shots", 		"name"=>"Jelly Shots",				"categories"=>"4", 		"img"=>"jelly_shots_main.jpg" ),
+		array("template" =>"cupcakes", 			"name"=>"Cupcakes",					"categories"=>"3, 4", 	"img"=>"cupcakes_main.jpg" ),
+		array("template" =>"lebkuchen", 		"name"=>"Lebkuchen",				"categories"=>"3", 		"img"=>"lebkuchen_main.jpg" ),
+		array("template" =>"kuchen", 			"name"=>"Kuchen",					"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"reis", 				"name"=>"Persischer Reis",			"categories"=>"2", 		"img"=>"reis_main.jpg" ),
+	);
 	private static $songs = array(
 		array("title"=>"Song 1", "artist"=>"Muster Max", "youtube_link"=>"http://youtube.com/hjdhf", "applemusic_link"=>"http://apple.com"),
 		array("title"=>"Song 2", "artist"=>"Muster Hans", "youtube_link"=>"Hanna's & Petör", "applemusic_link"=>""),
@@ -160,6 +175,13 @@ class Model{
 	 */
 	public static function getProjects(){
 		return self::$projects;
+	}
+	
+	/**
+	 * @return Array Array
+	 */
+	public static function getRecipes(){
+		return self::$recipes;
 	}
 	
 	/**

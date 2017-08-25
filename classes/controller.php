@@ -72,6 +72,13 @@ class Controller{
 				$view->assign($this->template, $projects);
 				break;
 			
+			case 'recipes':
+				$header_titel .= " - " . Model::getTranslation($this->template);
+				$view->setTemplate($this->template);
+				$recipes = Model::getRecipes();
+				$view->assign($this->template, $recipes);
+				break;
+			
 			case 'quotes':
 				$header_titel .= " - " . Model::getTranslation($this->template);
 				$view->setTemplate($this->template);
