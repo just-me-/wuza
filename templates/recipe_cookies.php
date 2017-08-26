@@ -3,17 +3,27 @@
     <h1><span class="bubbles">American Cookies</span></h1>
     
     <h2>Zutaten</h2>
-    <ul class="ingredients checkable noselect">
-        <li>110g Butter</li>
-        <li>170g Zucker</li>
-        <li>1 Päckchen Vanillezucker</li>
-        <li>½ TL Salz</li>
-        <li>1 Ei</li>
-        <li>100g Milchschokolade</li>
-        <li>50g dunkle Schokoladenwürfelchen</li>
-        <li>165g Mehl</li>
-        <li>½ TL Backpulver</li>
-    </ul>
+    <div class="recip_wrapper">
+        <ul class="ingredients checkable noselect col-md-6">
+            <li>110g Butter</li>
+            <li>170g Zucker</li>
+            <li>1 Päckchen Vanillezucker</li>
+            <li>½ TL Salz</li>
+            <li>1 Ei</li>
+            <li>100g Milchschokolade</li>
+            <li>50g dunkle Schokoladenwürfelchen</li>
+            <li>165g Mehl</li>
+            <li>½ TL Backpulver</li>
+        </ul>
+        
+        <div id="main_recipe_slider" class="noselect col-md-6">
+            <ul class="bxslider-no-auto">
+                <li><img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" title="Tablet Ansicht" alt="Build Tool Middle View 1" /></li>
+                <li><img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" title="Tablet Ansicht" alt="Build Tool Middle View 1" /></li>
+                <li><img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" title="Tablet Ansicht" alt="Build Tool Middle View 1" /></li>
+            </ul>
+        </div>
+    </div>
     
     <h2>Zubereitung</h2>
     <ol class="steps noselect">

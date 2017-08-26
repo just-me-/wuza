@@ -30,6 +30,12 @@ $(document).ready(function(){
         speed: 500,
         captions: true
     });
+    $('.bxslider-no-auto').bxSlider({
+        auto: false,
+        autoControls: false,
+        speed: 500,
+        captions: true
+    });
 	
 	// show cookie info
 	var url = getInputValue("#url"); 
