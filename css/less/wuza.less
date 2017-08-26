@@ -6,7 +6,8 @@
 @nav-bg-alpha:          0.85;
 @link-basic-color:		#003866;
 @link-soft-color:		#3389D2;
-@link-light-color:		#3A9CEF;	
+@link-light-color:		#3A9CEF;
+@color-touch:           #fa8072; // used for recipes... yet
 /* end varis*/
 
 /* for imgs */  
@@ -121,6 +122,57 @@ ul.checkable {
     }
 }
 /* end checkable list */
+
+/* ordered list */
+ol.steps {
+    counter-reset: li; 
+    list-style: none;
+    padding-left: 2.5em;
+    
+    li {
+        position: relative;
+        display: block;
+        padding: 5px 10px;
+        margin: 10px 0;
+        background: #ddd;
+    }
+
+    li:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute; 
+        left: -2.5em;
+        top: 50%;
+        margin-top: -1em;
+        background: @color-touch;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+    li:after{
+        position: absolute; 
+        content: '';
+        border: .5em solid transparent;
+        left: -1em;
+        top: 50%;
+        margin-top: -.5em;
+        transition: all .3s ease-out;
+        
+        -webkit-animation-name: slide;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+    }
+    li.arrow:after,
+    li:hover:after {
+        left: -.5em;
+        border-left-color: @color-touch; 
+    }
+}
+/* end ordered list */
 
 /* skillbar - does not touch the bs progressbar */
 .skillbar {
@@ -1266,14 +1318,31 @@ body, .navbar-inverse {
 .ingredients {
     white-space: pre-line;
     li {
-        border-bottom: 1px solid #CCC;
-        padding: 4px 0;
+        border-bottom: 1px solid rgba(red(@color-touch), green(@color-touch), blue(@color-touch), 0.4);
+        padding: 4px 0 2px 0;
         display: inline-block;
         vertical-align: top;
         min-width: 300px;
         max-width: 100%; 
     }
-    
+    li:before {
+        color: @color-touch;
+    }
+}
+
+/* make recipe pages a little more colorful */
+[id^=main_recipe_] {
+    h1, h2, h3 {
+        color: @color-touch;
+    }
+    .bubbles {
+        >.particle {
+            background-color: rgba(red(@color-touch), green(@color-touch), blue(@color-touch), 0.4);
+        }
+    }
+    .highlight {
+        text-shadow: 1px -1px 1px rgba(253, 241, 255, 1);
+    }
 }
 
 /* end recipes */

@@ -16,7 +16,7 @@
     </ul>
     
     <h2>Zubereitung</h2>
-    <ol class="steps">
+    <ol class="steps noselect">
         <li><span class="highlight">Butter</span> grob mixen. Dann <span class="highlight">Zucker, Vanillezucker, Salz und Eier</span> dazugeben.</li>
         <li>Erst die <span class="highlight">Schokolade</span>, dann das <span class="highlight">Mehl und Backpulver</span> darunterrühren.</li>
         <li>Den Teig mit 2 Teelöffeln auf dem Blech anordnen. Mit nassen Fingern die Plätzchen etwas flach drücken.</li>

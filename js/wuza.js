@@ -66,6 +66,14 @@ $(document).ready(function(){
 		},4000);
 	});
 	
+    // ordered lists .steps => arrow animation
+    var time_for_one = 1500;
+    // trigger first one 
+    setClassStepByStep("ol.steps li", "arrow", time_for_one);
+    // add endless loop 
+    setInterval(function(){
+        setClassStepByStep("ol.steps li", "arrow", time_for_one);
+    }, time_for_one * $("ol.steps li").length)
     
 });
 
@@ -145,6 +153,20 @@ function changeQuoteVisibility(quote_id) {
 // get value of a (hidden) input
 function getInputValue(selector) {
 	return $(selector).val();
+}
+
+// loops through elements step by step - adds and removes class
+function setClassStepByStep(selector, classname, time_for_one) {
+	var li_element =[];
+    $(selector).each( function(index){
+        li_element[index] = $(this);
+        setTimeout( function () {
+           li_element[index].addClass(classname).delay(time_for_one).queue(function(next) {
+              li_element[index].removeClass(classname);
+              next();
+          });
+       }, index * time_for_one);
+    });
 }
 
 // position for bubble effect

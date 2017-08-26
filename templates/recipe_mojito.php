@@ -14,7 +14,7 @@
     </ul>
     
     <h2>Zubereitung</h2>
-    <ol class="steps">
+    <ol class="steps noselect">
         <li>Die <span class="highlight">Limetten</span> waschen, die Enden abschneiden und dann achteln. Mit dem <span class="highlight">Zucker und der Minze</span> in einen Behälter geben.</li>
         <li>Mit einem Mörser etwas zerdrücken - nicht zermatschen!</li>
         <li>Mit <span class="highlight">Rum und Wasser</span> ca 1:1 auffüllen. <span class="highlight">Eis</span> dazugeben zum kühlen.</li>

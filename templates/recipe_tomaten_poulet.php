@@ -8,7 +8,7 @@
     </ul>
     
     <h2>Zubereitung</h2>
-    <ol class="steps">
+    <ol class="steps noselect">
         <li></li>
     </ol>
     

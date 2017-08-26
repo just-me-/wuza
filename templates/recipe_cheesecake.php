@@ -22,7 +22,7 @@
     </ul>
     
     <h2>Zubereitung</h2>
-    <ol class="steps">
+    <ol class="steps noselect">
         <li>Kuchenform mit <span class="highlight">Butter</span> einstreichen und mit <span class="highlight">Mehl</span> bestäuben.</li>
         <li><span class="highlight">Butterkekse</span> zerbröseln. Die <span class="highlight">Butter</span> zerlassen. Kekse, Butter und <span class="highlight">Zucker</span> vermengen und in die Kuchenform als Boden hineindrücken.</li>
         <li>Die Zutaten für den Belag gut vermengen. Von der Zitrone die Schale sovie den Saft verwenden.</li>

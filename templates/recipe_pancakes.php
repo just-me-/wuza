@@ -17,7 +17,7 @@
     </ul>
     
     <h2>Zubereitung</h2>
-    <ol class="steps">
+    <ol class="steps noselect">
         <li>Die <span class="highlight">trockenen Zutaten</span> grob mischen, dann den <span class="highlight">Rest</span> dazugeben und gut umrühren.</li>
         <li>Etwas Butter in die Pfanne und dann Teigkreise bei mittlerer Kitze anbraten, bis sich Bläschien bilden. Dann wenden.</li>
     </ol>
