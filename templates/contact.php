@@ -34,7 +34,8 @@
   <p>
     Seitdem ich - weiterhin teilzeit - zu einem jungen Start-up in Winterthur gewechselt bin,
     realisiere ich primär für Firmen moderne Webauftritte; aber auch diverse, kleinere Webapplikationen.
-    Die Web-Technologien setzen sich primär aus PHP, JS, HTML5 und CSS3 zusammen. 
+    Die Web-Technologien setzen sich primär aus PHP, JS, HTML5 und CSS3 zusammen.
+    Für gewisse Anwendungsfälle werden Lösungen auch mit dem Full-Stack Framework &laquo;Meteor&raquo; realisiert. 
   </p>
   
   <p>
@@ -141,6 +142,11 @@
       <input type="hidden" class="percent" value="80" />
       <input type="hidden" class="color" value="#3486D3" />
     </div>
+    <div class="arc">
+      <span class="text">Meteor</span>
+      <input type="hidden" class="percent" value="60" />
+      <input type="hidden" class="color" value="#88B8E6" />
+    </div>
     
     <!--Content-Management-Systeme-->
     <div class="arc">
@@ -156,7 +162,7 @@
     <div class="arc">
       <span class="text">WordPress</span>
       <input type="hidden" class="percent" value="85" />
-      <input type="hidden" class="color" value="#BEDBE9" />
+      <input type="hidden" class="color" value="#ede7f6" />
     </div>
     
     <!--Native Apps-->
@@ -255,16 +261,16 @@
     },
     diagram: function(){
       var width = $('#diagram').width();
-      var height = (width < 600) ? width : 600;
+      var height = (width < 620) ? width : 620;
       var r = Raphael('diagram', width, height),
-        rad = 68,
+        rad = 59,
         defaultText = 'Know-how',
         speed = 250;
       
-      r.circle(width/2, height/2, 72).attr({ stroke: 'none', fill: '#193340' });
+      r.circle(width/2, height/2, 65).attr({ stroke: 'none', fill: '#193340' });
       
       var title = r.text(width/2, height/2, defaultText).attr({
-        font: '18px Arial',
+        font: '16px Arial',
         fill: '#fff'
       }).toFront();
       
@@ -293,7 +299,7 @@
         var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': 12 });
         
         z.mouseover(function(){
-          this.animate({ 'stroke-width': 17, opacity: .75 }, 1000, 'elastic');
+          this.animate({ 'stroke-width': 15, opacity: .75 }, 1000, 'elastic');
           if(Raphael.type != 'VML') //solves IE problem
           this.toFront();
           title.stop().animate({ opacity: 0 }, speed, '>', function(){
