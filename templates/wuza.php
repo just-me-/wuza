@@ -35,7 +35,7 @@
     <!-- end fonts -->
     
     <link href="<?php echo $this->_['url']; ?>css/bootstrap.css" rel="stylesheet">
-    <link href="<?php echo $this->_['url']; ?>css/bxslider.css" rel="stylesheet">
+    <link href="<?php echo $this->_['url']; ?>css/swiper.min.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/wuza.css?version=%22<?php echo $this->_['version']; ?>%22" rel="stylesheet">
     
     <meta name="description" content="<?php echo $this->_['header_description']; ?>">
@@ -157,7 +157,7 @@
     </div>
     
     <script src="<?php echo $this->_['url']; ?>js/bootstrap.min.js"></script>
-    <script src="<?php echo $this->_['url']; ?>js/bxslider.min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/swiper.jquery.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/cookieconsent.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/raphael.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/jGravity-min.js"></script>

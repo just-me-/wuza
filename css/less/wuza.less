@@ -174,6 +174,72 @@ ol.steps {
 }
 /* end ordered list */
 
+/* customized slider */
+.swiper-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    // frame
+    border-radius: 0px;
+    @media (min-width: 770px) {
+        box-sizing: border-box;
+        box-shadow: 0 0 5px #ccc;
+        border: 5px solid #fff;
+        background: #fff;
+        border-radius: 20px;
+    }
+    img {
+        width: 100%;
+        max-height: 100%;
+    }
+    span.title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(80, 80, 80, 0.75);
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        transition: opacity 1s ease-out;
+        opacity: 0;
+    }
+    .swiper-slide-active span.title {
+        opacity: 1;
+    }
+    // bullets outside and bigger
+    padding-bottom: 20px; 
+    .swiper-pagination-bullets {
+        bottom: -4px;
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+        }
+        .swiper-pagination-bullet-active {
+            background: #000;
+        }
+    }
+    // arrows
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 32px;
+        height: 32px;
+        transition: opacity .5s ease-out;
+        &.swiper-button-disabled {
+            opacity: 0;
+        }
+    }
+    .swiper-button-prev {
+        left: 10px;
+        background: url('../img/bxslider_controls.png') no-repeat 0 -32px;
+    }
+    .swiper-button-next {
+        right: 10px;
+        background: url('../img/bxslider_controls.png') no-repeat -43px -32px;
+    }
+}
+/* end slider */
+
 /* skillbar - does not touch the bs progressbar */
 .skillbar {
 	position: relative;
@@ -1209,7 +1275,6 @@ body, .navbar-inverse {
         // slider
         #small_screens {
             max-width: 250px;
-            min-width: 250px;
 			@media (max-width: 500px) {
 				float: none;
 				margin-left: auto; 
@@ -1217,21 +1282,8 @@ body, .navbar-inverse {
 			}
         }
         #middle_screens {
-            width: 450px;
+            max-width: 450px;
         }
-		// bugfix slider webkit
-		#small_screens .bx-wrapper .bx-viewport {
-			min-height: 369px;
-		}
-		#middle_screens .bx-wrapper .bx-viewport {
-			min-height: 368px;
-		}
-		#big_screens .bx-wrapper .bx-viewport {
-			min-height: 508px;
-			@media (max-width: 992px) {
-				min-height: 150px;
-			}
-		}
     }
 	
 	// ipa
@@ -1322,8 +1374,7 @@ body, .navbar-inverse {
         padding: 4px 0 2px 0;
         display: inline-block;
         vertical-align: top;
-        min-width: 300px;
-        max-width: 100%; 
+        width: 100%; 
     }
     li:before {
         color: @color-touch;
@@ -1349,16 +1400,12 @@ body, .navbar-inverse {
         overflow: hidden;
     }
     #main_recipe_slider {
-        max-width: 414px;
-        @media (max-width: 992px) {
-            margin: 30px auto 0 auto ;
-        }
-        .bx-wrapper .bx-viewport {
-            min-height: 281px;
+        max-width: 411px;
+        margin-top: 20px;
+        &.col-md-6 {
+            padding-left: 0;
+            padding-right: 0; 
         }
     }
 }
-
-
-
 /* end recipes */

@@ -41,14 +41,34 @@
         Zusätzlich gibt es Bild-Slider der ESO-Version. Es sind jeweils für die Auflösungen Smartphone, Tablet (Slider auf kleinen Bildschirmen ausgeblendet) und Desktop Gruppierungen vorhanden.
     </p>
     
-    <div id="small_screens" class="right small-margin-left noselect">
-        <ul class="bxslider">
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_1.jpg" title="Smartphone Ansicht" alt="Build Tool Small View 1" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_2.jpg" alt="Build Tool Small View 2" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_3.jpg" alt="Build Tool Small View 3" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_4.jpg" title="Build Bearbeitung" alt="Build Tool Small View 4" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_5.jpg" title="Validierung" alt="Build Tool Small View 5" /></li>
-        </ul>
+    <div id="small_screens" class="swiper-slider swiper-container right small-margin-left noselect">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_1.jpg" alt="Build Tool Small View 1" />
+                <span class="title">Smartphone Ansicht</span>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_2.jpg" alt="Build Tool Small View 2" />
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_3.jpg" alt="Build Tool Small View 3" />
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_4.jpg" alt="Build Tool Small View 4" />
+                <span class="title">Build Bearbeitung</span>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_small_5.jpg" alt="Build Tool Small View 5" />
+                <span class="title">Validierung</span>
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
         
     <div class="blockquote text-justify">
@@ -71,14 +91,29 @@
             Die momentan etwas hellen Farben im Vergleich zum restlichen Forum sollen etwas besser angegliedert werden - ein angepasstes Design eben.
         </p>
         
-        
-        <div id="middle_screens" class="left hidden-xs hidden-sm small-margin-right noselect">
-            <ul class="bxslider">
-                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_1.jpg" title="Tablet Ansicht" alt="Build Tool Middle View 1" /></li>
-                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_2.jpg" alt="Build Tool Middle View 2" /></li>
-                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_3.jpg" alt="Build Tool Middle View 3" /></li>
-                <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_4.jpg" alt="Build Tool Middle View 4" /></li>
-            </ul>
+        <div id="middle_screens" class="swiper-slider swiper-container left hidden-xs hidden-sm small-margin-right small-margin-bottom noselect">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_1.jpg" alt="Build Tool Middle View 1" />
+                    <span class="title">Tablet Ansicht</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_2.jpg" alt="Build Tool Middle View 2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_3.jpg" alt="Build Tool Middle View 3" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_middle_4.jpg" alt="Build Tool Middle View 4" />
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         
         <h4>Mehr Optionen</h4>
@@ -110,15 +145,35 @@
         Ich empfehle mit der <a href="https://github.com/just-me-/buildtool/tree/BB4_ESO" target=_blank>ESO Version</a> zu starten und nicht jene von Gw2 weiter zu entwickeln. 
     </p>
     
-    
-    <div id="big_screens" class="noselect">
-        <ul class="bxslider">
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_1.jpg" title="Desktop Ansicht" alt="Build Tool Big View 1" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_2.jpg" title="Geöffnete Detailbeschreibung" alt="Build Tool Big View 2" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_3.jpg" title="Ansicht Build erfassen" alt="Build Tool Big View 3" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_4.jpg" title="Bearbeitung" alt="Build Tool Big View 4" /></li>
-            <li><img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_5.jpg" title="" alt="Build Tool Big View 5" /></li>
-        </ul>
+    <div id="big_screens" class="swiper-slider swiper-container noselect">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_1.jpg" alt="Build Tool Big View 1" />
+                <span class="title">Desktop Ansicht</span>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_2.jpg" alt="Build Tool Big View 2" />
+                <span class="title">Geöffnete Detailbeschreibung</span>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_3.jpg" alt="Build Tool Big View 3" />
+                <span class="title">Ansicht Build erfassen</span>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_4.jpg" alt="Build Tool Big View 4" />
+                <span class="title">Bearbeitung</span>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/build_tool_big_5.jpg" alt="Build Tool Big View 4" />
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
     
     

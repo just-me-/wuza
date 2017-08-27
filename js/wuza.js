@@ -23,18 +23,31 @@ $(document).ready(function(){
     }
     
     // activate animated img slider
-    $('.bxslider').bxSlider({
-        auto: true,
-        autoControls: false,
-        autoHover: true,
+    var mySwiper = new Swiper ('.swiper-slider', {
+        // Optional parameters
         speed: 500,
-        captions: true
+        autoplay: 3500, 
+        
+        // If we need pagination
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        
+        // Navigation arrows
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
     });
-    $('.bxslider-no-auto').bxSlider({
-        auto: false,
-        autoControls: false,
+    var mySwiper = new Swiper ('.swiper-slider-no-auto', {
+        // Optional parameters
+        loop: false,
         speed: 500,
-        captions: true
+        
+        // If we need pagination
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        
+        // Navigation arrows
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
     });
 	
 	// show cookie info
