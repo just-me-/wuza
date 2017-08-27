@@ -4,23 +4,22 @@
     
     <div class="recip_wrapper">
         
-        <div class="col-md-6">
-        <h2>Zutaten</h2>
-        <ul class="ingredients checkable noselect">
-            <li>110g Butter</li>
-            <li>170g Zucker</li>
-            <li>1 Päckchen Vanillezucker</li>
-            <li>½ TL Salz</li>
-            <li>1 Ei</li>
-            <li>100g Milchschokolade</li>
-            <li>50g dunkle Schokoladenwürfelchen</li>
-            <li>165g Mehl</li>
-            <li>½ TL Backpulver</li>
-        </ul>
+        <div class="col-md-6 no-padding-left">
+            <h2>Zutaten</h2>
+            <ul class="ingredients checkable noselect">
+                <li>110g Butter</li>
+                <li>170g Zucker</li>
+                <li>1 Päckchen Vanillezucker</li>
+                <li>½ TL Salz</li>
+                <li>1 Ei</li>
+                <li>100g Milchschokolade</li>
+                <li>50g dunkle Schokoladenwürfelchen</li>
+                <li>165g Mehl</li>
+                <li>½ TL Backpulver</li>
+            </ul>
         </div>
         
-        
-        <div id="main_recipe_slider" class="swiper-container swiper-slider-no-auto col-md-6 noselect">
+        <div id="main_recipe_slider" class="swiper-container swiper-slider-no-auto col-md-6 no-padding-left no-padding-right noselect">
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">

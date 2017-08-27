@@ -389,7 +389,9 @@ ol.steps {
 
 .no-padding { padding: 0; }
 .no-padding-top { padding-top: 0; }
+.no-padding-right { padding-right: 0; }
 .no-padding-bottom { padding-bottom: 0; }
+.no-padding-left { padding-left: 0; }
 
 .small-padding { padding: 20px; }
 
@@ -1369,6 +1371,7 @@ body, .navbar-inverse {
 /* ingredients list in recipes */
 .ingredients {
     white-space: pre-line;
+    margin-top: -25px; 
     li {
         border-bottom: 1px solid rgba(red(@color-touch), green(@color-touch), blue(@color-touch), 0.4);
         padding: 4px 0 2px 0;
@@ -1378,6 +1381,9 @@ body, .navbar-inverse {
     }
     li:before {
         color: @color-touch;
+    }
+    li:hover:before {
+        text-shadow: 0px 0px 2px @color-touch;
     }
 }
 
@@ -1402,10 +1408,6 @@ body, .navbar-inverse {
     #main_recipe_slider {
         max-width: 411px;
         margin-top: 20px;
-        &.col-md-6 {
-            padding-left: 0;
-            padding-right: 0; 
-        }
     }
 }
 /* end recipes */
