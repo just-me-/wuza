@@ -23,14 +23,11 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" alt="Cookies Schritt 2" />
-                    <span class="title">Schritt 2</span>
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" alt="Cookies" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" title="Schritt 2" alt="Cookies Schritt 2" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" title="Schritt 2" alt="Cookies Schritt 2" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" alt="Cookies Schritt 1" />
+                    <span class="title">Schritt 1</span>
                 </div>
             </div>
             <!-- pagination -->

@@ -12,6 +12,18 @@ class Model{
 	);
 	// tmp linked tag until all ref. templates are done 
 	private static $projects = array(
+		array("template" =>"meteor", 			"title"=>"Meteor",  					"time"=>"seit August 2017",
+			  "content"=>"Erste Applikationen mit dem Full-Stack JavaScript-Framework sowie Pläne, gewisse WUZA-Projekte (wie WUZAlife) mit Meteor neu zu schreiben."),
+		
+		array("template" =>"teso_addons", 		"title"=>"TESO Add-ons",  				"time"=>"Februar 2017",
+			  "content"=>"Mittels LUA wurden mehrere Add-ons realisiert. So wurden die LUA-Kentnisse gefestigt und ausgebaut, aber auch die API von TESO habe ich besser kennengelernt und so allgemein weitere Erfahrung in der Add-on-Entwicklung gesammelt."),
+		
+		array("template" =>"wordpress", 		"title"=>"WordPress Sites",  			"time"=>"seit Ende 2016",
+			  "content"=>"Via BeeBase wurden mehrere Webauftritte von Kunden auf eine moderne Art umgesetzt."),
+		
+		array("template" =>"teso_map", 		"title"=>"TESO Map",  						"time"=>"Dezember 2016",
+			  "content"=>"Ein Kleinprojekt, bei welchem ich mich mit HTML5 Canvas animationstechnisch etwas ausgetobt habe. Dank Ajax und dem PS4-Browser-Support hat das Projekt aber auch einen praktischen Nutzen."),
+		
 		array("template" =>"event", 		"title"=>"Eventorganisation",  				"time"=>"Februar 2016",
 			  "content"=>"Klassische Postkarten als Einladungen für Events zu verschicken, ist nicht mehr zeitgemäss. Ein paar Codezeilen und die Webversion der interaktiven Einladung inklusive Ablaufsprogramm ist per Link für alle Gäste publiziert."),
 		
