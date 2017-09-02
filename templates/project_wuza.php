@@ -121,4 +121,29 @@
         über <a href="https://github.com/just-me-?tab=repositories" target=_blank>GitHub</a> verfolgen. Die meisten Projekte sind öffentlich einsehbar. 
     </p>
     
+    <div id="color_slider" class="swiper-slider swiper-container left small-margin-right noselect fade-in-move-down">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/wuza_website_maerstetten.jpg" alt="Website Märstetten" />
+                <span class="title">buerger-maerstetten.ch</span>
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/wuza_website_fahrlehrer.jpg" alt="Website Fahrlehrer" />
+                <span class="title">meinfahrlehrer.ch</span>
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <h2>Nice 2 know</h2>
+    <p>
+        WUZA ist nicht einfach eine statische Website, ganz im Gegenteil - lediglich ein paar Zeilen
+        in den Konfigurationsdateien müssen angepasst werden und der Webauftritt erhält einen ganz neuen Charakter!
+    </p>
+    
 </div>

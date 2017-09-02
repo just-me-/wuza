@@ -16,16 +16,16 @@ class Model{
 			  "content"=>"Erste Applikationen mit dem Full-Stack JavaScript-Framework sowie Pläne, gewisse WUZA-Projekte (wie WUZAlife) mit Meteor neu zu schreiben."),
 		
 		array("template" =>"teso_addons", 		"title"=>"TESO Add-ons",  				"time"=>"Februar 2017",
-			  "content"=>"Mittels LUA wurden mehrere Add-ons realisiert. So wurden die LUA-Kentnisse gefestigt und ausgebaut, aber auch die API von TESO habe ich besser kennengelernt und so allgemein weitere Erfahrung in der Add-on-Entwicklung gesammelt."),
+			  "content"=>"Mittels LUA wurden mehrere Add-ons realisiert. So wurden die LUA-Kentnisse gefestigt und ausgebaut, aber auch die API von TESO habe ich besser kennengelernt und so allgemein weitere Erfahrung in der Add-on-Entwicklung gesammelt.", "linked" => 1),
 		
 		array("template" =>"wordpress", 		"title"=>"WordPress Sites",  			"time"=>"seit Ende 2016",
-			  "content"=>"Via BeeBase wurden mehrere Webauftritte von Kunden auf eine moderne Art umgesetzt."),
+			  "content"=>"Via BeeBase wurden mehrere Webauftritte von Kunden auf eine moderne Art umgesetzt.", "linked" => 1),
 		
 		array("template" =>"teso_map", 		"title"=>"TESO Map",  						"time"=>"Dezember 2016",
-			  "content"=>"Ein Kleinprojekt, bei welchem ich mich mit HTML5 Canvas animationstechnisch etwas ausgetobt habe. Dank Ajax und dem PS4-Browser-Support hat das Projekt aber auch einen praktischen Nutzen."),
+			  "content"=>"Ein Kleinprojekt, bei welchem ich mich mit HTML5 Canvas animationstechnisch etwas ausgetobt habe. Dank Ajax und dem PS4-Browser-Support hat das Projekt aber auch einen praktischen Nutzen.", "linked" => 1),
 		
 		array("template" =>"event", 		"title"=>"Eventorganisation",  				"time"=>"Februar 2016",
-			  "content"=>"Klassische Postkarten als Einladungen für Events zu verschicken, ist nicht mehr zeitgemäss. Ein paar Codezeilen und die Webversion der interaktiven Einladung inklusive Ablaufsprogramm ist per Link für alle Gäste publiziert."),
+			  "content"=>"Klassische Postkarten als Einladungen für Events zu verschicken, ist nicht mehr zeitgemäss. Ein paar Codezeilen und die Webversion der interaktiven Einladung inklusive Ablaufsprogramm ist per Link für alle Gäste publiziert.", "linked" => 1),
 		
 		array("template" =>"wuza", 			"title"=>"WUZA - das Webprojekt", "content"=>"", "time"=>"seit Ende 2015",
 			  "content"=>"Um neue Bereiche zu erlernen, Bekanntes zu vertiefen und Erschaffenes zu publizieren, wurde das Projekt WUZA ins Rollen gebracht.", "linked" => 1),
@@ -72,12 +72,17 @@ class Model{
 		'default'				=> array("description"=>"Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess. Auf WUZA findest Du Diverses bezüglich Code, Musik und vielem mehr.", "keywords"=>"wuza, marcel, hess, wusa"),
 		'quotes'				=> array("description"=>"Ein Zitat auf WUZA verpasst? Kein Problem! Hier findest Du das Archiv.", "keywords"=>"wuza, zitat, lustig, archiv, verpasst, alte, falschzitate"),
 		'recipes'				=> array("description"=>"Auf der Suche nach einer neuen Rezeptidee? Hier bist Du richtig!", "keywords"=>"wuza, rezept, idee"),
+		// 2DO - alle Rezepte.. 
 		'projects'				=> array("description"=>"Neben WUZA gibts noch andere Projekte von Marcel Hess! Entdecke hier einige davon.", "keywords"=>"wuza, projekte, projektanfrage, ipa, wbb, ibc"),
 		'project_build_tool'	=> array("description"=>"WBB steht für WoltLab Burning Board. Ein kleines Tool - einst für Gw2 - derweilen für ESO.", "keywords"=>"wuza, build, tool, wbb, php, plugin"),
 		'project_ibc'			=> array("description"=>"Webauftritt für IBC Switzerland.", "keywords"=>"wuza, ibc, switzerland"),
 		'project_ipa'			=> array("description"=>"Die IPA von Marcel Hess: Vollautomatischer Registrierungsprozess für Cloud ERP-Lösung (SQL-Ledger)", "keywords"=>"wuza, "),
 		'project_js_mario'		=> array("description"=>"Ein JavaScript Spiel mit Potenzial.", "keywords"=>"wuza, spiel, game"),
 		'project_wuza'			=> array("description"=>"Über das WUZA Webprojekt im Detail.", "keywords"=>"wuza, webprojekt, backend, datenbank"),
+		'project_event'			=> array("description"=>"Moderne, interaktive Einladungskarten.", "keywords"=>"wuza, einladung, karte, modern, interaktiv"),
+		'project_teso_addons'	=> array("description"=>"LUA Add-ons für TESO.", "keywords"=>"wuza, lua, teso, addon, add-on"),
+		'project_teso_map'		=> array("description"=>"Eine animationsreiche Karte für die Himmelsscherben in TESO.", "keywords"=>"wuza, animationen, canvas, teso, himmelsscherben"),
+		'project_wordpress'		=> array("description"=>"Modernisierung von Webauftritten.", "keywords"=>"wuza, wordpress, website, webseite, firmen, firma"),
 		'contact'				=> array("description"=>"WUZA ist ein Projekt von Marcel Hess! Erfahre hier mehr über mich.", "keywords"=>"marcel, hess, wuza, mail, märstetten, über, beruf, bereiche"),
 		'social'				=> array("description"=>"WUZA ist sozial! Finde WUZA auf Social Media Plattformen - beispielsweise Twitter.", "keywords"=>"wuza, sozial, netzwerk, twitter, social media"),
 		'impressum'				=> array("description"=>"Das rechtliche Zeugs für WUZA. Auch findest Du hier die Kontaktadresse.", "keywords"=>"impressum, kontakt, kontaktadresse, wuza, marcel, hess"),
@@ -103,6 +108,7 @@ class Model{
 		'default'			=> array("de"=>"Home", 		"en"=>"Home"),
 		'music'				=> array("de"=>"Musik", 	"en"=>"Music"),
 		'recipes'			=> array("de"=>"Rezepte", 	"en"=>"Recipes"),
+		// 2Do - alle Rezepte 
 		'quotes'			=> array("de"=>"Zitate", 	"en"=>"Quotes"),
 		'stories'			=> array("de"=>"Stories", 	"en"=>"Stories"),
 		'farsi'				=> array("de"=>"Farsi", 	"en"=>"Farsi"),
@@ -116,6 +122,10 @@ class Model{
 		'project_ipa'			=> array("de"=>"IPA", 				"en"=>""),
 		'project_js_mario'		=> array("de"=>"JS Mario", 			"en"=>"JS Mario"),
 		'project_wuza'			=> array("de"=>"Webprojekt", 		"en"=>"Web Project"),
+		'project_event'			=> array("de"=>"Eventorganisation", "en"=>""),
+		'project_teso_addons'	=> array("de"=>"TESO Add-ons", 		"en"=>""),
+		'project_teso_map'		=> array("de"=>"TESO Map", 			"en"=>""),
+		'project_wordpress'		=> array("de"=>"WordPress Sites", 	"en"=>""),
 		// other
 		'pdf'					=> array("de"=>"PDF Anzeige", 	"en"=>"Display PDF"),
 	);

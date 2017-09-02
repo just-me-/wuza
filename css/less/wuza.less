@@ -442,7 +442,7 @@ div { max-width: 100%; }
 }
 p a, .colorful a, a.colorful, span.colorful {
 	-webkit-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite; 
-    -moz-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite; 
+    -moz-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite;
 }
 p a {
 	display: inline-block;
@@ -1302,7 +1302,8 @@ body, .navbar-inverse {
 		}
         #easteregg, 
         #wuza_slider,
-        #admin_slider {
+        #admin_slider,
+        #color_slider, {
             max-width: 340px;
             @media (max-width: 700px) {
 				float: none;
@@ -1310,8 +1311,47 @@ body, .navbar-inverse {
 				margin-right: auto; 
 			}
         }
-		
 	}
+    // event
+    #main_project_event {
+        #card_slider {
+            max-width: 440px;
+            @media (max-width: 770px) {
+				float: none;
+				margin-left: auto; 
+				margin-right: auto; 
+			}
+        }
+    }
+    // wordpress
+    #main_project_wordpress {
+        #website_slider {
+            max-width: 440px;
+            @media (max-width: 770px) {
+				float: none;
+				margin-left: auto; 
+				margin-right: auto; 
+			}
+        }
+    }
+    // addons
+    #rez_slider,
+    #raid_slider {
+        max-width: 400px; 
+    }
+    #heal_slider {
+        max-width: 310px; 
+    }
+    #rez_slider,
+    #heal_slider,
+    #raid_slider {
+        @media (max-width: 700px) {
+            max-width: 400px; 
+            float: none;
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+    }
 	
 /* end projects */
 
