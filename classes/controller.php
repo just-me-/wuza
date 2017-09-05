@@ -169,6 +169,16 @@ class Controller{
 			// do an action if requested
 			if($this->request['action']){
 				switch($this->request['action']){
+					case 'add_quote':
+						$quote = $this->model->find("quote", array(
+																	"sort"=>array("date"=>-1),
+																	"dates"=>array("date"),
+																	"limit"=>1
+																	)
+													 );
+						$latest_quote = array_shift(array_values($quote)); 
+						$view->assign("latest_quote", $latest_quote);
+						break;
 					case 'save_quote':
 						$quote = new Quote($this->request);
 						$status = ($quote->save($this->model)) ? "success" : "error"; 
@@ -184,8 +194,9 @@ class Controller{
 						$view->assign('quotes', $quotes);
 						break;
 					case 'get_quote':
-						$quote = $this->model->find("quote", array("filter"=>array('user_id' => intval($this->request['user_id'])), "dates"=>array("date")));
-						$view->assign('quote', $quote);
+						$quote = $this->model->find("quote", array("filter"=>array('user_id' => intval($this->request['user_id'])), "dates"=>array("date"), "limit"=>1));
+						$quote = array_shift(array_values($quote)); 
+						$view->assign("quote", $quote);
 						break;
 					default:
 						// do nothing at all

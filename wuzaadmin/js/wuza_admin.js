@@ -135,6 +135,14 @@ function validateDate(datefield, range) {
 	}
 }
 
+/* add x Days to date input */
+function addDays(target, days) {
+	var parts = $('#'+target).val().split('\.');
+	var date = new Date(parts[2],parts[1]-1,parts[0]); // jan = 0 - months start at 0
+	date.setDate(date.getDate() + 7);
+	$('#'+target).val(('0'+date.getDate()).slice(-2) +'.'+ ('0'+(date.getMonth()+1)).slice(-2)  +'.'+date.getFullYear());
+}
+
 
 /* E-Mail */
 function validateEmail(mail) {

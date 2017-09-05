@@ -91,7 +91,7 @@
                             <a href="#"><i class="fa fa-bookmark fa-fw"></i> Zitate<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="admin.php?page=add_quote">Neues Zitat erstellen</a>
+                                    <a href="admin.php?page=add_quote&action=add_quote">Neues Zitat erstellen</a>
                                 </li>
                                 <li>
                                     <a href="admin.php?page=edit_quote&action=list_quotes">Bestehende bearbeiten</a>
