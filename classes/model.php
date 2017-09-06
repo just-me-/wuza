@@ -60,11 +60,11 @@ class Model{
 		array("template" =>"lebkuchen", 		"name"=>"Lebkuchen",				"categories"=>"3", 		"img"=>"lebkuchen_main.jpg" ),
 		array("template" =>"kuchen", 			"name"=>"Kuchen",					"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
 		array("template" =>"reis", 				"name"=>"Persischer Reis",			"categories"=>"2", 		"img"=>"reis_main.jpg" ),
-		array("template" =>"indisches_brot", 	"name"=>"Indisches Fladenbrot",		"categories"=>"2", 		"img"=>"coming_soon.jpg" ),
-		array("template" =>"waffeln", 			"name"=>"Waffeln",					"categories"=>"1, 3", 	"img"=>"coming_soon.jpg" ),
-		array("template" =>"tiramisu", 			"name"=>"Tiramisu",					"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"indisches_brot", 	"name"=>"Indisches Fladenbrot",		"categories"=>"2", 		"img"=>"indisches_brot_main.jpg" ),
+		array("template" =>"waffeln", 			"name"=>"Waffeln",					"categories"=>"1, 3", 	"img"=>"waffeln_main.jpg" ),
+		array("template" =>"tiramisu", 			"name"=>"Tiramisu",					"categories"=>"3", 		"img"=>"tiramisu_main.jpg" ),
 		array("template" =>"schokoladenkuchen",	"name"=>"Schokoladenkuchen",		"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
-		array("template" =>"omlette",			"name"=>"Schweizer Omlette",		"categories"=>"1", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"omlette",			"name"=>"Schweizer Omlette",		"categories"=>"1", 		"img"=>"omlette_main.jpg" ),
 	);
 	private static $songs = array(
 		array("title"=>"Song 1", "artist"=>"Muster Max", "youtube_link"=>"http://youtube.com/hjdhf", "applemusic_link"=>"http://apple.com"),

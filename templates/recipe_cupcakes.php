@@ -17,6 +17,13 @@
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/cupcakes_main.jpg" alt="Cupcakes" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cupcakes_end.jpg" alt="Cupcakes Glasur" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cupcakes_end2.jpg" alt="Cupcakes Heidelbeeren" />
+                    <span class="title">Mit Heidelbeeren</span>
+                </div>
             </div>
             <!-- pagination -->
             <div class="swiper-pagination"></div>

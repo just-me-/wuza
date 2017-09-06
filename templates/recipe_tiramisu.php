@@ -11,7 +11,7 @@
                 <li>250g Léger Mascarpone</li>
                 <li>3 Eier</li>
                 <li>3 EL Zucker</li>
-                <li>450g Früchte (z.B. Himmberen)</li>
+                <li>450g Früchte (z.B. Himbeeren)</li>
                 <li>2 Pack Löffelbiskuit</li>
             </ul>
         </div>
@@ -20,7 +20,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/coming_soon.jpg" alt="Comming Soon" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tiramisu_main.jpg" alt="Tiramisu" />
                 </div>
             </div>
             <!-- pagination -->

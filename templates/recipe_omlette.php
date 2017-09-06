@@ -20,7 +20,22 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/coming_soon.jpg" alt="Comming Soon" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/omlette_main.jpg" alt="Omlette" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/omlette_step1.jpg" alt="Omlette anbraten" />
+                    <span class="title">Goldbraun anbraten</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/omlette_step2.jpg" alt="Omlette befüllen" />
+                    <span class="title">Nach Wunsch befüllen</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/omlette_step3.jpg" alt="Omlette zuklappen" />
+                    <span class="title">Zuklappen und servieren</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/omlette_end.jpg" alt="Omlette Pilze" />
                 </div>
             </div>
             <!-- pagination -->

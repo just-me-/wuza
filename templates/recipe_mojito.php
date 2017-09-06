@@ -21,7 +21,29 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_main.jpg" alt="Cookies" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_main.jpg" alt="Mojito" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_step1.jpg" alt="Mojito Step 1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_step2.jpg" alt="Mojito Step 2" />
+                    <span class="title">Schritt 1</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_step3.jpg" alt="Mojito Step 3" />
+                    <span class="title">Schritt 2</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_step4.jpg" alt="Mojito Step 4" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_step5.jpg" alt="Mojito Step 5" />
+                    <span class="title">Schritt 3</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mojito_step6.jpg" alt="Mojito Step 6" />
+                    <span class="title">Im Mixer oder mit dem Fleischklopfer</span>
                 </div>
             </div>
             <!-- pagination -->

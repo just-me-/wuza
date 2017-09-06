@@ -26,8 +26,23 @@
                     <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" alt="Cookies" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_main.jpg" alt="Cookies Schritt 1" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_step1.jpg" alt="Cookies Schritt 1" />
                     <span class="title">Schritt 1</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_step2.jpg" alt="Cookies Schritt 2" />
+                    <span class="title">Schritt 2</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_step3.jpg" alt="Cookies Schritt 2.2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_step4.jpg" alt="Cookies Schritt 3" />
+                    <span class="title">Schritt 3</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_step5.jpg" alt="Cookies Schritt 5" />
+                    <span class="title">Auseinanderschneiden falls verschmolzen</span>
                 </div>
             </div>
             <!-- pagination -->

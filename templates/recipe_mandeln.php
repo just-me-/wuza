@@ -21,6 +21,12 @@
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/mandeln_main.jpg" alt="Mandeln" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mandeln_step1.jpg" alt="Mandeln Schritt 1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/mandeln_step2.jpg" alt="Mandeln Schritt 2" />
+                </div>
             </div>
             <!-- pagination -->
             <div class="swiper-pagination"></div>

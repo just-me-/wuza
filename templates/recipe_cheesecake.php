@@ -31,6 +31,9 @@
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/cheesecake_main.jpg" alt="Cheesecake" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cheesecake_end.jpg" alt="Cheesecake geschnitten" />
+                </div>
             </div>
             <!-- pagination -->
             <div class="swiper-pagination"></div>

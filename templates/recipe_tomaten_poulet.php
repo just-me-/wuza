@@ -22,6 +22,35 @@
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_main.jpg" alt="Tomaten Poulet" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_step1.jpg" alt="Tomaten Poulet Step 1" />
+                    <span class="title">Schritt 1</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_step2.jpg" alt="Tomaten Poulet Step 2" />
+                    <span class="title">Schritt 2</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_step3.jpg" alt="Tomaten Poulet Step 3" />
+                    <span class="title">Schritt 3</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_step4.jpg" alt="Tomaten Poulet Step 4" />
+                    <span class="title">Schritt 5</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_step5.jpg" alt="Tomaten Poulet Step 5" />
+                    <span class="title">Mit Reis als Beilage servieren</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_end3.jpg" alt="Tomaten Poulet" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_end2.jpg" alt="Tomaten Poulet" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/tomaten_poulet_end.jpg" alt="Tomaten Poulet" />
+                </div>
             </div>
             <!-- pagination -->
             <div class="swiper-pagination"></div>
