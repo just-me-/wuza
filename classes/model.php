@@ -49,7 +49,7 @@ class Model{
 	// tmp linked recipes templates
 	// 1-Hauptspeise, 2-Beilage, 3-Dessert, 4-Apéro
 	private static $recipes = array(
-		array("template" =>"mojito", 			"name"=>"Mojito",					"categories"=>"4", 		"img"=>"moijto_main.jpg" ),
+		array("template" =>"mojito", 			"name"=>"Mojito",					"categories"=>"4", 		"img"=>"mojito_main.jpg" ),
 		array("template" =>"tomaten_poulet", 	"name"=>"Tomaten Poulet",			"categories"=>"1", 		"img"=>"tomaten_poulet_main.jpg" ),
 		array("template" =>"mandeln", 			"name"=>"Gebrannte Mandeln",		"categories"=>"3, 4", 	"img"=>"mandeln_main.jpg" ),
 		array("template" =>"pancakes", 			"name"=>"Pancakes",					"categories"=>"1, 3", 	"img"=>"pancakes_main.jpg" ),
@@ -60,6 +60,11 @@ class Model{
 		array("template" =>"lebkuchen", 		"name"=>"Lebkuchen",				"categories"=>"3", 		"img"=>"lebkuchen_main.jpg" ),
 		array("template" =>"kuchen", 			"name"=>"Kuchen",					"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
 		array("template" =>"reis", 				"name"=>"Persischer Reis",			"categories"=>"2", 		"img"=>"reis_main.jpg" ),
+		array("template" =>"indisches_brot", 	"name"=>"Indisches Fladenbrot",		"categories"=>"2", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"waffeln", 			"name"=>"Waffeln",					"categories"=>"1, 3", 	"img"=>"coming_soon.jpg" ),
+		array("template" =>"tiramisu", 			"name"=>"Tiramisu",					"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"schokoladenkuchen",	"name"=>"Schokoladenkuchen",		"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"omlette",			"name"=>"Schweizer Omlette",		"categories"=>"1", 		"img"=>"coming_soon.jpg" ),
 	);
 	private static $songs = array(
 		array("title"=>"Song 1", "artist"=>"Muster Max", "youtube_link"=>"http://youtube.com/hjdhf", "applemusic_link"=>"http://apple.com"),
@@ -72,7 +77,8 @@ class Model{
 		'default'				=> array("description"=>"Herzlich willkommen bei WUZA! Dem Freizeitprojekt von Marcel Hess. Auf WUZA findest Du Diverses bezüglich Code, Musik und vielem mehr.", "keywords"=>"wuza, marcel, hess, wusa"),
 		'quotes'				=> array("description"=>"Ein Zitat auf WUZA verpasst? Kein Problem! Hier findest Du das Archiv.", "keywords"=>"wuza, zitat, lustig, archiv, verpasst, alte, falschzitate"),
 		'recipes'				=> array("description"=>"Auf der Suche nach einer neuen Rezeptidee? Hier bist Du richtig!", "keywords"=>"wuza, rezept, idee"),
-		// 2DO - alle Rezepte.. 
+		// 2DO - alle Rezepte..
+		
 		'projects'				=> array("description"=>"Neben WUZA gibts noch andere Projekte von Marcel Hess! Entdecke hier einige davon.", "keywords"=>"wuza, projekte, projektanfrage, ipa, wbb, ibc"),
 		'project_build_tool'	=> array("description"=>"WBB steht für WoltLab Burning Board. Ein kleines Tool - einst für Gw2 - derweilen für ESO.", "keywords"=>"wuza, build, tool, wbb, php, plugin"),
 		'project_ibc'			=> array("description"=>"Webauftritt für IBC Switzerland.", "keywords"=>"wuza, ibc, switzerland"),
@@ -108,7 +114,8 @@ class Model{
 		'default'			=> array("de"=>"Home", 		"en"=>"Home"),
 		'music'				=> array("de"=>"Musik", 	"en"=>"Music"),
 		'recipes'			=> array("de"=>"Rezepte", 	"en"=>"Recipes"),
-		// 2Do - alle Rezepte 
+		// 2Do - alle Rezepte
+		
 		'quotes'			=> array("de"=>"Zitate", 	"en"=>"Quotes"),
 		'stories'			=> array("de"=>"Stories", 	"en"=>"Stories"),
 		'farsi'				=> array("de"=>"Farsi", 	"en"=>"Farsi"),
