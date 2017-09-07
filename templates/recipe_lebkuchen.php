@@ -14,7 +14,7 @@
                 <li>2 EL Lebkuchengewürz</li>
                 <li>2 EL Öl</li>
                 <li>3 EL Honig</li>
-                <li>2dl Milch</li>
+                <li>6dl Milch</li>
                 <li>Oblaten / Esspapier für den Boden</li>
             </ul>
         </div>
@@ -24,6 +24,15 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/lebkuchen_main.jpg" alt="Lebkuchen" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/lebkuchen_step1.jpg" alt="Lebkuchen" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/lebkuchen_step2.jpg" alt="Lebkuchen" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/lebkuchen_main2.jpg" alt="Lebkuchen" />
                 </div>
             </div>
             <!-- pagination -->
