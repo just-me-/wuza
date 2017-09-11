@@ -18,7 +18,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/Reis_main.jpg" alt="Reis" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/reis_main.jpg" alt="Reis" />
                 </div>
             </div>
             <!-- pagination -->
