@@ -67,7 +67,7 @@
         <li>Die <span class="highlight">Zwiebeln</span> anbraten und mit <span class="highlight">Grossmutters Gewürzmischung</span> würzen.</li>
         <li>Mit <span class="highlight">Tomatenmark</span> grob den Boden bedecken. Kurz erwärmen lassen.</li>
         <li>Die Pfanne mit <span class="highlight">Wasser</span> auffüllen und die Hitze wieder etwas hochstellen. Gut umrühren.</li>
-        <li>Das Poulet zur Sauce geben und die grob geschnittenen <span class="highlight">Tomaten</span> hinzufügen. Für <span class="highlight">15 Munuten</span> köcheln lassen.</li>
+        <li>Das Poulet zur Sauce geben und die grob geschnittenen <span class="highlight">Tomaten</span> hinzufügen. Für <span class="highlight">15 Minuten</span> köcheln lassen.</li>
     </ol>
     
 </div>
