@@ -64,6 +64,7 @@ class Model{
 		array("template" =>"waffeln", 			"name"=>"Waffeln",					"categories"=>"1, 3", 	"img"=>"waffeln_main.jpg" ),
 		array("template" =>"tiramisu", 			"name"=>"Tiramisu",					"categories"=>"3", 		"img"=>"tiramisu_main.jpg" ),
 		array("template" =>"schokoladenkuchen",	"name"=>"Schokoladenkuchen",		"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"ananaskuchen",		"name"=>"Gestürzter Ananaskuchen",	"categories"=>"3", 		"img"=>"ananaskuchen_main.jpg" ),
 		array("template" =>"omlette",			"name"=>"Schweizer Omlette",		"categories"=>"1", 		"img"=>"omlette_main.jpg" ),
 	);
 	private static $songs = array(
