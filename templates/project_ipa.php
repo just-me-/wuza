@@ -91,7 +91,7 @@
         Klar, es ist nicht perfekt, aber bedenke, dass das Video lediglich ein "kleines Präsentationsextra" darstellte und die Zeit stark begrenzt war. 
     </p>
      
-    <video poster="<?php echo $this->_['url']; ?>img/projects/ipa_paketverwaltung_cover.png" controls class="img-responsive">
+    <video poster="<?php echo $this->_['url']; ?>img/projects/ipa_paketverwaltung_cover.jpg" controls class="img-responsive">
         <source src="<?php echo $this->_['url']; ?>img/projects/ipa_paketverwaltung.mp4" type="video/mp4"> 
         Leider kann das Video nicht abgespielt werden. 
     </video>
