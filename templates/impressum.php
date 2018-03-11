@@ -45,7 +45,7 @@
     Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen
     Bestimmungen des Bundes (Datenschutzgesetz, DSG)  hat jede Person Anspruch auf Schutz ihrer Privatsphäre
     sowie auf Schutz vor  Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein.
-    Persönliche Daten werden streng vertraulich behandelt und weder an Dritte  verkauft noch weiter gegeben.
+    Persönliche Daten werden streng vertraulich behandelt und weder an Dritte verkauft noch weiter gegeben.
   </p>
   <p>
     In enger Zusammenarbeit mit unseren Hosting-Providern  bemühen wir uns, die Datenbanken so gut wie möglich
@@ -66,10 +66,10 @@
     über Ihre Benutzung dieser Website werden in der  Regel an einen Server von Google in den USA übertragen
     und dort gespeichert. Im  Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse
     von Google jedoch innerhalb von Mitgliedstaaten der Europäischen  Union oder in anderen Vertragsstaaten des Abkommens
-    über den Europäischen Wirtschaftsraum  zuvor gekürzt.
+    über den Europäischen Wirtschaftsraum zuvor gekürzt.
   </p>
   <p>
-    Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von  Google in den USA übertragen und dort gekürzt.
+    Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt.
     Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten
     für die Websitebetreiber zusammenzustellen und um  weitere mit der Websitenutzung und der Internetnutzung verbundene
     Dienstleistungen zu erbringen. Auch wird Google diese Informationen  gegebenenfalls an Dritte übertragen, sofern dies
@@ -83,6 +83,24 @@
     voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie
     erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
   </p>
+  
+  <h2>Datenschutzerklärung für die Nutzung von Twitter</h2>
+  <p>
+    Auf unseren Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die
+    Twitter Inc., 795 Folsom St., Suite  600, San Francisco, CA 94107, USA. Durch das Benutzen von Twitter und der
+    Funktion "Re-Tweet" werden die von Ihnen besuchten Webseiten mit Ihrem Twitter-Account verknüpft und anderen Nutzern
+    bekannt gegeben. Dabei werden u.a. Daten wie IP-Adresse, Browsertyp, aufgerufene Domains, besuchte Seiten,
+    Mobilfunkanbieter, Geräte- und Applikations-IDs und Suchbegriffe an Twitter übertragen.
+  </p>
+  <p>
+    Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie
+    deren Nutzung durch Twitter erhalten. Aufgrund laufender Aktualisierung der Datenschutzerklärung von Twitter,
+    weisen wir auf die aktuellste Version unter (twitter.com/privacy) hin. 
+  </p>
+  <p>
+    Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter twitter.com/account/settings
+    ändern. Bei Fragen wenden Sie sich an privacy@twitter.com.
+  </p>                
   
   <h2>Quelle</h2>
   <p>
