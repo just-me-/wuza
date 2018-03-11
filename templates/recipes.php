@@ -37,27 +37,21 @@
 
 <!-- filter setup -->
 <script>
-    var fltr = $('.filtr-container').filterizr();
     
-    // filter controls
-    $('.filtr-filters span').click(function() {
-        $('.filtr-filters span').removeClass('active');
-        $(this).addClass('active');
-        // handle shuffle control 
-        $('.filtr-filters span.shuffle').removeClass('active');
+    // fix first load (cuz of jq's .outerHeight)
+    $(window).load(function(){
+        var fltr = $('.filtr-container').filterizr();
+        
+        // filter controls
+        $('.filtr-filters span').click(function() {
+            $('.filtr-filters span').removeClass('active');
+            $(this).addClass('active');
+            // handle shuffle control 
+            $('.filtr-filters span.shuffle').removeClass('active');
+        });
+    
+        // always in a different order 
+        fltr.filterizr('shuffle'); 
     });
-    
-    /*
-    var interval = setInterval(function(){        
-        fltr.filterizr('shuffle');
-    }, 4500);
-    */
-    
-    // fix first load 
-    $(function() {
-        setTimeout(function () {
-            fltr.filterizr('shuffle');
-        }, 1);
-    })
     
 </script>
