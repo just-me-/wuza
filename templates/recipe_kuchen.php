@@ -22,7 +22,14 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/coming_soon.jpg" alt="Comming Soon" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/kuchen_main.jpg" alt="Kuchen" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/kuchen_1.jpg" alt="Kuchen Glasur" />
+                    <span class="title">Optional mit einer Glasur</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/kuchen_2.jpg" alt="Kuchen Glasur trocken" />
                 </div>
             </div>
             <!-- pagination -->
