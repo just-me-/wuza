@@ -46,7 +46,7 @@
     </div>
     
     <h2>Zubereitung</h2>
-    <ol class="steps noselectlal">
+    <ol class="steps noselect">
         <li>Für den <span class="highlight">Teig</span> alle Zutaten unterkneten (das Backpulver erst nach dem Mehl).</li>
         <li>Dann muss der Teig für <span class="highlight">15 Minuten</span> ruhen. Im Anschluss auf ein paar wenige Millimeter
         <span class="highlight">ausrollen</span>. (Lieber etwas zu dünn anstelle zu dick.)</li>
