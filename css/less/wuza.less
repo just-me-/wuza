@@ -1421,6 +1421,12 @@ body, .navbar-inverse {
         }
     }
 }
+/* IE Hack, fix gallery view */ 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+    .filtr-filters {
+        justify-content: flex-start;
+    }
+}
 
 /* ingredients list in recipes */
 .ingredients {
