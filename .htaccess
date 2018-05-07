@@ -10,3 +10,14 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [L]
 </IfModule>
 # END ROUTING
+
+# GZIP COMPRESSION
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript text/javascript application/json
+
+# CACHING
+<IfModule mod_headers.c>
+<FilesMatch "\.(gif|ico|jpeg|jpe|jpg|png|css|js|woff2|woff)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+</IfModule>
+
