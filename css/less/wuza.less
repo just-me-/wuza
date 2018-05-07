@@ -1381,7 +1381,11 @@ body, .navbar-inverse {
     }
 }
 .filtr-container {
-    min-height: 350px; 
+    min-height: 350px;
+    & > div {
+        padding-bottom: 20px;
+        padding-top: 20px; 
+    }
     img {
         border-radius: 10px;
         filter: grayscale(30%);

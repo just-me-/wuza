@@ -18,13 +18,13 @@
     <div class="filtr-container noselect">
         <?php
         foreach($this->_['recipes'] as $recipe){
-        ?>
-            <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="<?php echo $recipe['categories']; ?>" data-sort="value">
-                <a href="<?php echo $this->_['url']; ?>view/recipe_<?php echo $recipe['template']; ?>">
-                    <img class="max-100" src="<?php echo $this->_['url']; ?>img/recipes/<?php echo $recipe['img']; ?>" alt="<?php echo $recipe['name']; ?>">
-                    <span class="item-desc"><?php echo $recipe['name']; ?></span>
-                </a>
-            </div>
+        ?><!-- get ahead of stupid spaces :)
+            --><div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="<?php echo $recipe['categories']; ?>" data-sort="value"><!--
+                --><a href="<?php echo $this->_['url']; ?>view/recipe_<?php echo $recipe['template']; ?>"><!--
+                    --><img class="max-100" src="<?php echo $this->_['url']; ?>img/recipes/<?php echo $recipe['img']; ?>" alt="<?php echo $recipe['name']; ?>"><!--
+                    --><span class="item-desc"><?php echo $recipe['name']; ?></span><!--
+                --></a><!--
+            --></div>
         <?php
         }
         ?>
