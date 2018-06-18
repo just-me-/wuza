@@ -12,6 +12,18 @@ class Model{
 	);
 	// tmp linked tag until all ref. templates are done 
 	private static $projects = array(
+		array("template" =>"studentenportal", 	"title"=>"Studentenportal",  			"time"=>"seit Mai 2018",
+			  "content"=>"Seit Mai administriere ich das Studentenportal.ch der HSR und entwickle es weiter. Es basiert auf dem Django Web Framework, welches in Python geschrieben wurde."),
+		
+		array("template" =>"wg_app", 			"title"=>"WG App",  					"time"=>"seit Mai 2018",
+			  "content"=>"Eine Meteor Applikation für die Organisation des WG-Lebens."),
+		
+		array("template" =>"excel", 			"title"=>"VBA in Excel",  				"time"=>"Januar 2018",
+			  "content"=>"Für eine Abteilung der Credit Suisse wurde ein Makro geschrieben, welche automatisch Gewinn- und Verluststatistiken im Hintergrund erfasst."),
+		
+		array("template" =>"kongressapp", 		"title"=>"KongressApp",  				"time"=>"September 2017",
+			  "content"=>"Eine Applikation, welche in Meteor geschrieben wurde. Sie übernimmt den Q&A Teil einer Keynote."),
+		
 		array("template" =>"meteor", 			"title"=>"Meteor",  					"time"=>"seit August 2017",
 			  "content"=>"Erste Applikationen mit dem Full-Stack JavaScript-Framework sowie Pläne, gewisse WUZA-Projekte (wie WUZAlife) mit Meteor neu zu schreiben."),
 		
