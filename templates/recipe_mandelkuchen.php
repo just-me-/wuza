@@ -48,7 +48,7 @@
         <li>Die Mandelmischung auf den Blätterteig streichen und einen <span class="highlight">2cm breiten Rand</span> lassen.</li>
         <li>Mit der zweiten Blätterteigschicht zudecken und mit einer <span class="highlight">Gabel</span> die Ränder zusammendrücken.</li>
         <li>Mit einem Finger die Mitte des Kuchens etwas eindrücken, dann mit einem Messer nach aussen <span class="highlight">einschneiden</span>.</li>
-        <li>Den Kuchen mit etwas <span class="highlight">Puderzucker</span> bestreuen.</li>
+        <li>Den Kuchen mit dem <span class="highlight">Eigelb</span> des zweiten Eis bestreichen und mit etwas <span class="highlight">Puderzucker</span> bestreuen.</li>
         <li>Im Backofen bei <span class="highlight">220 °C für 12 bis 15 Minuten</span> backen.</li>
         <li>Den Mandelkuchen etwas abkühlen lassen, mit <span class="highlight">Puderzucker bestreuen</span> und noch warm servieren.</li>
     </ol>
