@@ -641,6 +641,55 @@ p, .fade-in {
 		max-width: 14px;
 	}
 }
+
+/* fancy menu icon */
+.navbar-toggle {
+    margin: 4px 4px 0 0;
+    padding: 0;
+    #menu-border {
+        height: 40px;
+        overflow: hidden;
+        border: 1px rgba(255, 255, 255, 0.4) solid;
+        border-radius: 5px;
+    }
+    .line {
+        fill:none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke:#fff;
+        stroke-width:5.5;
+        stroke-linecap:round;
+    }
+    .ham {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 400ms;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        .top {
+            stroke-dasharray: 40 160;
+        }
+        .middle {
+            stroke-dasharray: 40 142;
+            transform-origin: 50%;
+            transition: transform 400ms;
+        }
+        .bottom {
+            stroke-dasharray: 40 85;
+            transform-origin: 50%;
+            transition: transform 400ms, stroke-dashoffset 400ms;
+        }
+    }
+    &:not(.collapsed) { // isActive
+        .ham {
+            transform: rotate(45deg);
+            .top { stroke-dashoffset: -64px; }
+            .middle { transform: rotate(90deg); }
+            .bottom { stroke-dashoffset: -64px; }
+        }
+    }
+}
 /* fancy wuza logo */
 @font-face {
     font-family: 'WUZAfont';
@@ -1471,3 +1520,4 @@ body, .navbar-inverse {
     }
 }
 /* end recipes */
+
