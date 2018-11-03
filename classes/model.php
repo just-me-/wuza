@@ -87,7 +87,7 @@ class Model{
 		array("template" =>"indisches_brot", 	"name"=>"Indisches Fladenbrot",		"categories"=>"2", 		"img"=>"indisches_brot_main.jpg" ),
 		array("template" =>"waffeln", 			"name"=>"Waffeln",					"categories"=>"1, 3", 	"img"=>"waffeln_main.jpg" ),
 		array("template" =>"tiramisu", 			"name"=>"Tiramisu",					"categories"=>"3", 		"img"=>"tiramisu_main.jpg" ),
-		array("template" =>"schokoladenkuchen",	"name"=>"Schokoladenkuchen",		"categories"=>"3", 		"img"=>"coming_soon.jpg" ),
+		array("template" =>"schokoladenkuchen",	"name"=>"Schokoladenkuchen",		"categories"=>"3", 		"img"=>"schokoladenkuchen_main.jpg" ),
 		array("template" =>"ananaskuchen",		"name"=>"Gestürzter Ananaskuchen",	"categories"=>"3", 		"img"=>"ananaskuchen_main.jpg" ),
 		array("template" =>"omlette",			"name"=>"Schweizer Omlette",		"categories"=>"1", 		"img"=>"omlette_main.jpg" ),
 		array("template" =>"french_toast",		"name"=>"French Toast",				"categories"=>"1", 		"img"=>"french_toast_main.jpg" ),
