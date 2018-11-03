@@ -44,6 +44,13 @@
                     <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_step5.jpg" alt="Cookies Schritt 5" />
                     <span class="title">Auseinanderschneiden falls verschmolzen</span>
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_chocolate.jpg" alt="Cookies Chocolate" />
+                    <span class="title">Tipp: statt Vanille Kakaopulver</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/cookies_collection.jpg" alt="Cookies Collection" />
+                </div>
             </div>
             <!-- pagination -->
             <div class="swiper-pagination"></div>
