@@ -36,7 +36,7 @@
     <ol class="steps noselect">
         <li>Den Tee kann man sich im <span class="highlight">Teehaus</span> seines Vertrauens mischen lassen.</li>
         <li>Beim <span class="highlight">Kardamom</span> empfehle ich Samen. Ansonsten kann man auch Hülsen verwenden und die jeweils einzeln leicht aufbrechen. Pulver sollte man nicht nehmen.</li>
-        <li>Auf eine Kanne (1l Wasser) <span class="highlight">3TL Tee</span> verwenden und für <span class="highlight">mindestens 3 Minuten</span> ziehen lassen.</li>
+        <li>Auf eine Kanne (1l Wasser) <span class="highlight">3 TL Tee</span> verwenden und für <span class="highlight">mindestens 3 Minuten</span> ziehen lassen.</li>
     </ol>
     
 </div>
