@@ -7,7 +7,7 @@
         <div class="col-md-6 no-padding-left">
             <h2>Zutaten</h2>
             <ul class="ingredients checkable noselect">
-                <li>400g Pouletgeschnetzeltes</li>
+                <li>400g Pouletgeschnetzeltes (oder Hack)</li>
                 <li>2 Zwiebeln</li>
                 <li>2 Knoblauchzehen</li>
                 <li>2 Peperoni</li>
