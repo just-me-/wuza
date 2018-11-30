@@ -5,9 +5,13 @@
     <div class="recip_wrapper">
         
         <div class="col-md-6 no-padding-left">
-            <h2>Zutaten</h2>
+            <h2>Zutaten für 4 Personen</h2>
             <ul class="ingredients checkable noselect">
-                <li>Die Zutaten für dieses Rezept folgen später.</li>
+                <li>2 Zwiebeln</li>
+                <li>600g Poulet</li>
+                <li>350g Pilze (Champignons)</li>
+                <li>1 Bund Thymian</li>
+                <li>375g Blätterteig</li>
             </ul>
         </div>
         
