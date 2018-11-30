@@ -62,6 +62,7 @@ class Model{
 	// 1-Hauptspeise, 2-Beilage, 3-Dessert, 4-Apéro
 	private static $recipes = array(
 		array("template" =>"mojito", 			"name"=>"Mojito",					"categories"=>"4", 		"img"=>"mojito_main.jpg" ),
+		array("template" =>"gluehwein", 		"name"=>"Glühwein",					"categories"=>"4", 		"img"=>"gluehwein_main.jpg" ),
 		array("template" =>"tee", 				"name"=>"Persischer Tee",			"categories"=>"4", 		"img"=>"tee_main.jpg" ),
 		array("template" =>"tomaten_poulet", 	"name"=>"Tomaten Poulet",			"categories"=>"1", 		"img"=>"tomaten_poulet_main.jpg" ),
 		array("template" =>"ofen_poulet", 		"name"=>"Ofen Poulet",				"categories"=>"1", 		"img"=>"ofen_poulet_main.jpg" ),
@@ -105,6 +106,7 @@ class Model{
 		'quotes'				=> array("description"=>"Ein Zitat auf WUZA verpasst? Kein Problem! Hier findest Du das Archiv.", "keywords"=>"wuza, zitat, lustig, archiv, verpasst, alte, falschzitate"),
 		'recipes'				=> array("description"=>"Auf der Suche nach einer neuen Rezeptidee? Hier bist Du richtig!", "keywords"=>"wuza, rezept, idee"),
 		'recipe_mojito'				=> array("description"=>"WUZA-Rezept für Mojito.", "keywords"=>"mojito, rezept"),
+		'recipe_gluehwein'			=> array("description"=>"WUZA-Rezept für Glühwein.", "keywords"=>"glühwein, rezept"),
 		'recipe_tee'				=> array("description"=>"WUZA-Rezept für persischen Tee.", "keywords"=>"tee, persisch, iranisch, schwarztee, rezept"),
 		'recipe_tomaten_poulet'		=> array("description"=>"WUZA-Rezept für Tomaten Poulet.", "keywords"=>"tomaten, poulet, rezept"),
 		'recipe_ofen_poulet'		=> array("description"=>"WUZA-Rezept für Poulet aus dem Ofen.", "keywords"=>"ofen, poulet, rezept"),
@@ -171,6 +173,7 @@ class Model{
 		'music'				=> array("de"=>"Musik", 	"en"=>"Music"),
 		'recipes'			=> array("de"=>"Rezepte", 	"en"=>"Recipes"),
 		'recipe_mojito'				=> array("de"=>"Mojito", 			"en"=>""),
+		'recipe_gluehwein'			=> array("de"=>"Glühwein", 			"en"=>""),
 		'recipe_tee'				=> array("de"=>"Persischer Tee", 	"en"=>""),
 		'recipe_tomaten_poulet'		=> array("de"=>"Tomaten Poulet", 	"en"=>""),
 		'recipe_ofen_poulet'		=> array("de"=>"Ofen Poulet ", 		"en"=>""),
