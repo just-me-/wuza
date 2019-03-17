@@ -45,7 +45,8 @@
     <ol class="steps noselect">
         <li>Den Saft der Ananasdose abtropfen lassen - sollte etwa einen <span class="highlight">halben Cup Ananassaft</span> ergeben.</li>
         <li>Die <span class="highlight">Butter</span> zerlassen und etwas abkühlen lassen.</li>
-        <li><span class="highlight">Mehl, Backpulver, Zucker, Vanillezucker und Butter</span> vermischen. Dann den <span class="highlight">Ananassaft</span> dazugeben.</li>
+        <li>Dann den <span class="highlight">Zucker, Vanillezucker</span> und die <span class="highlight">Eier</span> unterrühren.</li>
+        <li>Den <span class="highlight">Ananassaft</span> dazugeben. Dann die Masse mit dem <span class="highlight">Mehl und Backpulver</span> vermischen.</li>
         <li>Die Kuchenform gut mit Butter einfetten und mit Mehl bestäuben.</li>
         <li>Dann den Boden mit etwas Rohrzucker ausstreuen. Anschliessend die Ananasscheiben auf dem Boden auslegen. 
         In die Lücken kommt jeweils eine Cocktailkirsche. Darüber nochmals eine kleine Schicht Rohrzucker.
