@@ -12,7 +12,7 @@
                 <li>1 EL Rahm</li>
                 <li>2 Eier</li>
                 <li>ca. 375g Blätterteig</li>
-                <li>(Ggf. Apfelmus oä zum Servieren)</li>
+                <li>Optional: Apfelmus zum Servieren</li>
             </ul>
         </div>
         
