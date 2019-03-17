@@ -5,9 +5,14 @@
     <div class="recip_wrapper">
         
         <div class="col-md-6 no-padding-left">
-            <h2>Zutaten</h2>
+            <h2>Zutaten für 4 Personen</h2>
             <ul class="ingredients checkable noselect">
-                <li>Die Zutaten für dieses Rezept folgen später.</li>
+                <li>8 Kartoffeln</li>
+                <li>500g Rindshackfleisch</li>
+                <li>1 Zwiebel</li>
+                <li>Bratspeck</li>
+                <li>4 Bun (Brötchen)</li>
+                <li>1 Tomate</li>
             </ul>
         </div>
         
@@ -50,9 +55,29 @@
         </div>
     </div>
     
-    <h2>Zubereitung</h2>
+    <h2>Zubereitung Country Cuts</h2>
     <ol class="steps noselect">
-        <li>Die Zubereitungsschritte für dieses Rezept folgen später.</li>
+        <li>Die <span class="highlight">Kartoffeln</span> waschen und in Frittenform schneiden.</li>
+        <li>Die Country Cuts in einer Schüssel mit <span class="highlight">4 El Olivenöl</span> mischen.
+            Dann auf einem Backblech verteilen.</li>
+        <li>Die Kartoffeln bei <span class="highlight">200 °C für 20 Minuten</span> backen und gelegentlich umrühren.</li>
+        <li>Sobald sie knusprig sind, aus dem Ofen holen und <span class="highlight">salzen</span>.</li>
+    </ol>
+    
+    <h2>Zubereitung Bacon Burger</h2>
+    <ol class="steps noselect">
+        <li>Die <span class="highlight">Zwiebel</span> fein hacken. Dann in einer Schüssel mit dem
+            <span class="highlight">Hackfleisch, Salz und Pfeffer</span> vermischen.</li>
+        <li>Die Mischung zu Kugeln formen. Kurz bevor die Country Cuts fertig sind, die Kugeln in einer Bratpfanne
+            leicht flachdrücken. Den <span class="highlight">Bratspeck</span> in den Freiräumen platzieren.
+            Bei <span class="highlight">mittlerer Hitze</span> anbraten und dabei die Pfanne mit
+            einem <span class="highlight">Deckel</span> abdecken, damit der Burger saftig wird.
+        </li>
+        <li>Nach <span class="highlight">2-3 Minuten</span> das Fleisch wenden und die Speckscheibe drauflegen.
+            Die zweite Seite ebenfalls 2-3 Minuten anbraten.</li>
+        <li>Die Buns mit <span class="highlight">Senf</span> bestreichen. Dann mit dem Fleisch, den
+            <span class="highlight">geschnittenen Tomaten</span> und dem Speck belegen.
+        </li>
     </ol>
     
 </div>
