@@ -11,10 +11,10 @@
                 <li>2 Zwiebeln</li>
                 <li>3 Peperoni</li>
                 <li>(Karotten, Bambussprossen)</li>
-                <li>6EL Apfelessig</li>
-                <li>4El Ketchup</li>
-                <li>1El Sojasauce</li>
-                <li>2El Stärkemehl (Maisstärke)</li>
+                <li>6 EL Apfelessig</li>
+                <li>4 EL Ketchup</li>
+                <li>1 EL Sojasauce</li>
+                <li>2 EL Stärkemehl (Maisstärke)</li>
                 <li>Eingelegte Ananas, geschnitten (ca. 270g)</li>
                 <li>150g Zucker</li>
                 <li>3dl Wasser</li>

@@ -47,7 +47,7 @@
     </div>
     
     <h2>Zubereitung</h2>
-    <ol class="steps noselect_">
+    <ol class="steps noselect">
         <li>
             Das <span class="highlight">Fleisch mit Butter</span> anbraten.
             Mit wenig <span class="highlight">Mehl</span> bestreuen und mit <span class="highlight">Salz und Pfeffer</span> würzen.
