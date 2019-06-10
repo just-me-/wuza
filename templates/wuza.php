@@ -86,9 +86,12 @@
           <img id="logo_big" class="logo visible-sm visible-md visible-lg" src="<?php echo $this->_['url']; ?>img/WuzaLogo.png?version=%22;<?php echo $this->_['version']; ?>%22" alt="WUZA"  height="45" width="160">
           <img id="logo_small" class="logo visible-xs" src="<?php echo $this->_['url']; ?>img/WuzaLogo_clean.png?version=%22<?php echo $this->_['version']; ?>%22" alt="WUZA" height="45" width="160">
           -->
+          <img id="logo_gif" src="<?php echo $this->_['url']; ?>img/WuzaLogo.gif" alt="WUZA"  height="45" width="160">
+          <!--
           <div class="animated-logo">
               <div class="logo-text">Wuza</div>
           </div>
+          -->
         </a>
         
       </div>
