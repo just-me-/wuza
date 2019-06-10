@@ -16,6 +16,12 @@
                 <li>1 Päckchen Vanillezucker</li>
                 <li>1 Prise Salz</li>
             </ul>
+            
+            <h3>Optionale Glasur</h3>
+            <ul class="ingredients checkable noselect">
+                <li>100g weisse Schokolade</li>
+                <li>Lebensmittelfarbe nach Wahl</li>
+            </ul>
         </div>
         
         <div id="main_recipe_slider" class="swiper-container swiper-slider-no-auto col-md-6 no-padding-left no-padding-right noselect">
@@ -30,6 +36,10 @@
                 </div>
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/kuchen_2.jpg" alt="Kuchen Glasur trocken" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/kuchen_3.jpg" alt="In diversen Farben" />
+                    <span class="title">In diversen Farben möglich</span>
                 </div>
             </div>
             <!-- pagination -->
@@ -49,6 +59,14 @@
         <li>Kuchenform mit Butter ausstreichen und mit Mehl bestäuben.</li>
         <li>Bei <span class="highlight">170 °C für 50 bis 55 Minuten</span> backen.</li>
         <li>Zum Auskühlen Alufolie drüberstülpen.</li>
+    </ol>
+    
+    <h3>Optionale Glasur</h3>
+    <ol class="steps noselect">
+        <li>Der Kuchen muss <span class="highlight">komplett ausgekühlt</span> sein.</li>
+        <li>Die <span class="highlight">Schokolade</span> in der Mikrowelle oder im Wasserbad schmelzen.</li>
+        <li>Dann die <span class="highlight">Lebensmittelfarbe</span> mit der geschmolzenen Schokolade vermengen.</li>
+        <li>Den Kuchen auf ein Gitter stellen. Die Schokolade darübergiessen und verteilen. Trocknen lassen.</li>
     </ol>
     
 </div>
