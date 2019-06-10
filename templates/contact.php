@@ -42,12 +42,12 @@
     In meiner Freizeit erweitere ich mein Wissen in anderen Bereichen - wie beispielsweise Swift-Applikationen für iOS 
     - oder baue bekanntes Wissen - zum Beispiel in meinen PHP Programmen - aus.
     Insofern Zeit vorhanden ist, arbeite ich an neuen Projekten oder erweitere meine bestehenden Codezeilen.
-    Weitere Informationen dazu findest Du <a class="getHard" href="view/projects">hier, in dem Projektebereich</a> von wuza.ch. 
+    Weitere Informationen dazu findest Du <a href="<?php echo $this->_['url']; ?>view/projects">hier, in dem Projektebereich</a> von wuza.ch. 
   </p>
   
   <p>
     Nebst Codezeilen schreibe ich auch gerne Textzeilen. Einzelne Auszüge meiner Arbeiten oder Kurzprojekte finden sich auch auf wuza.ch online.
-    Eines der jüngeren Kleinprojekte ist <a class="getHard" href="view/pdf/file/1">ein Kurztext über die Milizpolitik der Schweiz</a>.
+    Eines der jüngeren Kleinprojekte ist <a href="<?php echo $this->_['url']; ?>view/pdf/file/1">ein Kurztext über die Milizpolitik der Schweiz</a>.
   </p>
   
   <p>

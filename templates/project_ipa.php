@@ -14,7 +14,7 @@
     <p class="fade-in-move-down">
         Die IPA (Individuelle Praktische Arbeit) ist ein Bestandteil des Qualifikationsverfahrens für die Ausbildung zum Informatiker mit eidg. Fähigkeitszeugnis.
         In dem zehntägigen Projekt gilt es zu zeigen, was man in den vier Jahren seiner Ausbildungszeit gelernt hat.
-        Meine Projektarbeit - und natürlich auch meine Ausbildung - habe ich erfolgreich absolviert und meine Abschlussarbeit wurde sogar als <a class="getHard" href="view/pdf/file/2">eine der 10 besten Informatik-Praxisfacharbeiten der Schweiz</a> ausgezeichnet. 
+        Meine Projektarbeit - und natürlich auch meine Ausbildung - habe ich erfolgreich absolviert und meine Abschlussarbeit wurde sogar als <a href="<?php echo $this->_['url']; ?>view/pdf/file/2">eine der 10 besten Informatik-Praxisfacharbeiten der Schweiz</a> ausgezeichnet. 
     </p>
     
     <h2>Die Facharbeit</h2>

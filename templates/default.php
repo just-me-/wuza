@@ -69,23 +69,23 @@
     </p>
     <p>
         Bemerkungen, dass neue Easter Eggs eingebaut wurden, lassen sich im nachfolgenden Bereich bezüglich
-        der letzten Aktualisierungen oder auf der <a class="getHard" href="view/project_wuza">WUZA-Projektseite</a> finden. Frohes Suchen!
+        der letzten Aktualisierungen oder auf der <a href="<?php echo $this->_['url']; ?>view/project_wuza">WUZA-Projektseite</a> finden. Frohes Suchen!
     </p>
     
     <!-- 2Do: loop -->
     <h3>Die letzten Aktualisierungen</h3>
-    <div class="hover-list getHard">
+    <div class="hover-list">
         <ul>
-            <li><a class="colorful" href="view/recipes">Rezepte <span>- auf der Suche nach einer neuen Idee?</span></a></li>
+            <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/recipes">Rezepte <span>- auf der Suche nach einer neuen Idee?</span></a></li>
             <li><a class="blocked" href="#">Designaktualisierung <span>- das Menü wirkt nun noch moderner</span></a></li>
-            <li><a class="colorful" href="view/contact">Fähigkeiten <span>- dem Bereich "Über mich" wurde der Abschnitt "Fähigkeiten" hinzugefügt</span></a></li>
+            <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/contact">Fähigkeiten <span>- dem Bereich "Über mich" wurde der Abschnitt "Fähigkeiten" hinzugefügt</span></a></li>
             <!--<li><a class="colorful" href="view/projects">Weitere Projekte <span>- Projekte wie WUZA, meine IPA und JS Mario wurden erfasst</span></a></li>-->
-            <li><a class="colorful" href="view/project_wuza">Backend <span>- eine erste Version wurde implementiert. Hier erhältst Du einen Einblick</span></a></li>
-            <li><a class="colorful" href="view/quotes">Falschzitate <span>- hast Du ein Zitat der Woche verpasst? Kein Problen!</span></a></li>
-            <li><a class="colorful" href="view/projects">Projektübersicht <span>- die ersten Projekte wurden in der Timeline erfasst</span></a></li>
+            <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/project_wuza">Backend <span>- eine erste Version wurde implementiert. Hier erhältst Du einen Einblick</span></a></li>
+            <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/quotes">Falschzitate <span>- hast Du ein Zitat der Woche verpasst? Kein Problen!</span></a></li>
+            <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/projects">Projektübersicht <span>- die ersten Projekte wurden in der Timeline erfasst</span></a></li>
             <li><a class="blocked" href="#">Easter Egg &laquo;Gravity Troll&raquo; <span>- Hinweis: Trolle einen Troll und er trollt dich zurück!</span></a></li>
             <!--<li><a class="colorful" href="view/project_build_tool">Projekt Build Tool <span>- ein  Projekt wurde auf WUZA neu erfasst</span></a></li>-->
-            <li><a class="colorful" href="view/contact">Vorstellung <span>- die Seite "Über mich" enthält nun einen Steckbrief von mir</span></a></li>
+            <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/contact">Vorstellung <span>- die Seite "Über mich" enthält nun einen Steckbrief von mir</span></a></li>
             <!--<li><a class="colorful" href="view/impressum">Rechtliches <span>- das Impressum wurde hochgeladen</span></a></li>-->
         </ul>
     </div>

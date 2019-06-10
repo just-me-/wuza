@@ -6,7 +6,7 @@
     
     <div id="content">
          <ul class="nav">
-         	<li class="home"><a class="getHard" href="view/default">Zur&uuml;ck zur &Uuml;bersicht</a></li>
+         	<li class="home"><a href="<?php echo $this->_['url']; ?>view/default">Zur&uuml;ck zur &Uuml;bersicht</a></li>
          </ul>
     </div>
        

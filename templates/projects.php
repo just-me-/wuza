@@ -22,7 +22,7 @@
     <li>
         <?php echo '<div class="direction-'.(++$count%2 ? "l" : "r").'">'; ?>
             <div class="flag-wrapper">
-                <span class="flag"><?php echo $project['linked'] ? '<a class="getHard colorful" href="view/project_'.$project['template'].'">'.$project['title'].'</a>' : $project['title'] ?></span>
+                <span class="flag"><?php echo $project['linked'] ? '<a class="colorful" href="'.$this->_['url'].'view/project_'.$project['template'].'">'.$project['title'].'</a>' : $project['title'] ?></span>
                 <?php echo $project['time'] ? '<span class="time-wrapper"><span class="time">'.$project['time'].'</span></span>' : ""; ?>
             </div>
             <?php echo $project['content'] ? '<div class="desc">'.$project['content'].'</div>' : ""; ?>

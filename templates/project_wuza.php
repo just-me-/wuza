@@ -30,7 +30,7 @@
     </div>
     
     <p class="fade-in-move-down">
-        Wie Du wahrscheinlich bereits auf <a class="getHard" href="view/default">der Startseite</a> erfahren hast, ist WUZA ein Überprojekt für kleinere Projekte und Experimente.
+        Wie Du wahrscheinlich bereits auf <a href="<?php echo $this->_['url']; ?>view/default">der Startseite</a> erfahren hast, ist WUZA ein Überprojekt für kleinere Projekte und Experimente.
         Nach dem Motto <i>Learning by Doing</i> werden immer weitere Bestandteile dem WUZA-Projekt hinzugefügt.
         Es gibt eine lange Liste mit reichlich Ideen für neue Extras und diversen Gebieten, welche ich meinem Know-how hinzufügen möchte. Aber leider gibt es immer diesen einen Faktor namens Zeit.  
         Auf dieser Seite findest Du zu einzelnen - bereits umgesetzten - Bestandteilen und Features genauere Informationen und Hintergedanken. 
@@ -107,7 +107,7 @@
         Zum Glück hat man schon Übung mit Mutters bzw. Grossmutters Handschrift und das Entziffern fällt zumindest nach der Sucherei meist leicht.
     </p>
     <p>
-        Doch nun geht es viel einfacher. Im <a class="getHard" href="view/recipes">Rezeptbereich von WUZA</a> werden die Rezepte fortlaufend digitalisiert.
+        Doch nun geht es viel einfacher. Im <a href="<?php echo $this->_['url']; ?>view/recipes">Rezeptbereich von WUZA</a> werden die Rezepte fortlaufend digitalisiert.
         Einige davon sind auch öffentlich einsehbar. Sie lassen sich bequem filtern oder man kann auch spezifisch nach einem Rezept suchen
         und erhält sofort einen Treffer. Immer und überall. Dank dem Design werden die Rezepte stets übersichtlich dargestellt - auf dem Laptop, Tablet und dem Smartphone.
         Und wird man mal wieder nach einem Rezept gefragt, kann man es komfortabel per Link mit seinen Freunden teilen.
@@ -117,7 +117,7 @@
     <h2>Im Hintergrund</h2>
     <p>
         WUZA beinhaltet auch Projekte, welche nicht direkt auf der Website von WUZA verlinkt oder präsentiert sind.
-        Falls ein Projekt (noch) nicht in der <a class="getHard" href="view/projects">Projektübersicht</a> gelistet ist, lässt es sich meist dennoch
+        Falls ein Projekt (noch) nicht in der <a href="<?php echo $this->_['url']; ?>view/projects">Projektübersicht</a> gelistet ist, lässt es sich meist dennoch
         über <a href="https://github.com/just-me-?tab=repositories" target=_blank>GitHub</a> verfolgen. Die meisten Projekte sind öffentlich einsehbar. 
     </p>
     
