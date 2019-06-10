@@ -12,17 +12,29 @@ class Model{
 	);
 	// tmp linked tag until all ref. templates are done 
 	private static $projects = array(
+		array("template" =>"antenne", 	"title"=>"Newsfeed Antenne Märstetten",  	"time"=>"Juni 2019",
+			  "content"=>"Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert."),
+		
+		array("template" =>"easymech", 	"title"=>"EasyMech",  			"time"=>"seit Februar 2019",
+			  "content"=>"Für die Firma DuKoStapler wurde ein Maschinenverwaltungstool programmiert. Das Frontend wurde mit React realisiert und das Backend mit C# in ASP.NET."),
+		
+		array("template" =>"rockt_the_ring", 	"title"=>"Rock the Ring",  			"time"=>"Februar bis Mai 2019",
+			  "content"=>"Für das Festival «Rock the Ring» wurde eine neue, moderne Website erstellt. Zusätzlich wurden moderne Lösungsansätze mit nativen Smartphone-Funktionen (wie Ticketkäufe per Siri und Apple Pay) mittels React Native entworfen."),
+		
 		array("template" =>"studentenportal", 	"title"=>"Studentenportal",  			"time"=>"seit Mai 2018",
 			  "content"=>"Seit Mai administriere ich das Studentenportal.ch der HSR und entwickle es weiter. Es basiert auf dem Django Web Framework, welches in Python geschrieben wurde."),
 		
 		array("template" =>"wg_app", 			"title"=>"WG App",  					"time"=>"seit Mai 2018",
-			  "content"=>"Eine Meteor Applikation für die Organisation des WG-Lebens."),
+			  "content"=>"Eine Meteor Applikation für die Organisation des WG-Lebens. Dazu gehören eine Einkaufsliste, Eventveranstaltungen und Kochplanung."),
 		
 		array("template" =>"excel", 			"title"=>"VBA in Excel",  				"time"=>"Januar 2018",
 			  "content"=>"Für eine Abteilung der Credit Suisse wurde ein Makro geschrieben, welche automatisch Gewinn- und Verluststatistiken im Hintergrund erfasst."),
 		
+		array("template" =>"sbb", 			"title"=>"SBB Fahrplan",  					"time"=>"Oktober 2017",
+			  "content"=>"Mittels der SBB API wurde eine kleine, animierte Übersicht der nächsten Bus-Verbindungen von der WG zur HSR und zurück erstellt. Ideal, um sie mit beispielsweise einem Raspberry Pi auf einem Display anzeigen zu lassen."),
+		
 		array("template" =>"kongressapp", 		"title"=>"KongressApp",  				"time"=>"September 2017",
-			  "content"=>"Eine Applikation, welche in Meteor geschrieben wurde. Sie übernimmt den Q&A Teil einer Keynote."),
+			  "content"=>"Eine Applikation, welche in Meteor geschrieben wurde. Sie übernimmt den Q&A Teil während einer Keynote. Teilnehmer können so einfach und unkompliziert Fragen einreichen, welche von einer Moderation live aufgeschaltet werden können."),
 		
 		array("template" =>"meteor", 			"title"=>"Meteor",  					"time"=>"seit August 2017",
 			  "content"=>"Erste Applikationen mit dem Full-Stack JavaScript-Framework sowie Pläne, gewisse WUZA-Projekte (wie WUZAlife) mit Meteor neu zu schreiben."),
