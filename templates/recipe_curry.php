@@ -7,7 +7,15 @@
         <div class="col-md-6 no-padding-left">
             <h2>Zutaten</h2>
             <ul class="ingredients checkable noselect">
-                <li>Coming soon</li>
+                <li>3 Peperoni</li>
+                <li>5dl Kokosnussmilch</li>
+                <li>Thai Kitchen Curry Paste (grün oder gelb)</li>
+                <li>Optional: Bambussprosse</li>
+                <li>Babymais aus dem Glas</li>
+                <li>Grüne Bohnen (Dose)</li>
+                <li>2 Zucchetti</li>
+                <li>Poulet</li>
+                <li>Naturjoghurt</li>
             </ul>
         </div>
         
@@ -29,7 +37,12 @@
     
     <h2>Zubereitung</h2>
     <ol class="steps noselect">
-        <li><span class="highlight">Coming soon</span></li>
+        <li>Das <span class="highlight">Poulet</span> in etwas Öl anbraten. Mit <span class="highlight">Salz und Pfeffer</span> würzen.</li>
+        <li>Dann das geschnittene <span class="highlight">Gemüse</span> mit etwas <span class="highlight">Salz</span> ebenfalls anbraten und dann etwas dünsten.</li>
+        <li>Die <span class="highlight">Curry Paste</span> mit dem Gemüse vermengen. Warm werden lassen.</li>
+        <li>Mit der <span class="highlight">Kokusnussmilch</span> aufgiessen und kurz aufkochen.</li>
+        <li>Hitze reduzieren. <span class="highlight">Bohnen und geschnittenen Mais</span> hinzugeben und warm werden lassen.</li>
+        <li>Mit Jasminreis und <span class="highlight">Naturjoghurt</span> servieren.</li>
     </ol>
     
 </div>
