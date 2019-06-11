@@ -7,7 +7,12 @@
         <div class="col-md-6 no-padding-left">
             <h2>Zutaten</h2>
             <ul class="ingredients checkable noselect">
-                <li>Coming soon</li>
+                <li>Poulet</li>
+                <li>Glas Kapern</li>
+                <li>500g Kirschtomaten</li>
+                <li>1 EL Oregano</li>
+                <li>Teigwaren</li>
+                <li>Etwas Olivenöl</li>
             </ul>
         </div>
         
@@ -16,6 +21,13 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/pasta_main.jpg" alt="Sizilianische Pasta" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/pasta_step1.jpg" alt="Fleisch anbraten" />
+                    <span class="title">Fleisch, Kapern und Tomaten</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/pasta_end.jpg" alt="Sizilianische Pasta in der Pfanne" />
                 </div>
             </div>
             <!-- pagination -->
@@ -29,7 +41,13 @@
     
     <h2>Zubereitung</h2>
     <ol class="steps noselect">
-        <li><span class="highlight">Coming soon</span></li>
+        <li>Die <span class="highlight">Teigwaren</span> gemäss Packungsbeilage in Salzwasser kochen.</li>
+        <li>Das <span class="highlight">Poulet</span> in etwas Olivenöl anbraten. Dann beiseite stellen.</li>
+        <li><span class="highlight">1 EL Olivenöl</span> erhitzen. Die <span class="highlight">Kapern</span> darin knusprig braten.</li>
+        <li>Die Kapern aus der Pfanne nehmen und zum Poulet stellen. Das aromatische Öl in der Pfanne lassen.</li>
+        <li>Die <span class="highlight">halbierten Tomaten</span> ins Öl geben und mit dem <span class="highlight">Oregano</span> bestreuen. Etwas anbraten.</li>
+        <li><span class="highlight">Zwei Kellen Nudelwasser</span> hinzugeben und köcheln lassen.</li>
+        <li>Die Teigwaren abgiessen und mit der Sauce, den Kapern und dem Fleisch vermischen. Mit <span class="highlight">Salz und Pfeffer</span> abschmecken.</li>
     </ol>
     
 </div>
