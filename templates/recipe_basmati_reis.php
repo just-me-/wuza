@@ -8,7 +8,7 @@
             <h2>Zutaten (für 2 Portionen)</h2>
             <ul class="ingredients checkable noselect">
                 <li>1 Tasse Reis</li>
-                <li>2 Tassen Wasser</li>
+                <li>1,5 Tassen Wasser</li>
                 <li>½ TL Salz</li>
             </ul>
         </div>
