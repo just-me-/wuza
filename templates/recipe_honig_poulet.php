@@ -7,7 +7,17 @@
         <div class="col-md-6 no-padding-left">
             <h2>Zutaten</h2>
             <ul class="ingredients checkable noselect">
-                <li>Coming soon</li>
+                <li>Poulet</li>
+                <li>2 Zwiebeln</li>
+                <li>2 EL Sesamkerne zum Garnieren</li>
+                <li>2dl Bouillon</li>
+                <li>2 EL Maisstärke</li>
+                <li>4 EL Honig</li>
+                <li>4 EL Soja</li>
+                <li>4 EL Weissweinessig</li>
+                <li>1 EL Sriracha Chili Sauce</li>
+                <li>1 EL Ingwerpulver</li>
+                <li>Saft einer Zitrone</li>
             </ul>
         </div>
         
@@ -36,7 +46,11 @@
     
     <h2>Zubereitung</h2>
     <ol class="steps noselect">
-        <li><span class="highlight">Coming soon</span></li>
+        <li>Das <span class="highlight">Poulet mit Salz und Pfeffer</span> würzen und mit etwas Olivenöl anbraten.</li>
+        <li>Die <span class="highlight">Zwiebeln</span> in einem mittigen Loch ebenfalls mitanbraten.</li>
+        <li>Die <span class="highlight">restlichen Zutaten</span> (ohne Sesamkerne) in einem separaten Topf vermengen und aufkochen.</li>
+        <li>Sobald die Sauce etwas eingedickt ist, der Bratpfanne beifügen.</li>
+        <li>Mit Jasminreis und Gemüse servieren. Mit einigen <span class="highlight">Sesamkernen</span> bestreuen.</li>
     </ol>
     
 </div>

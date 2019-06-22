@@ -7,8 +7,8 @@
         <div class="col-md-6 no-padding-left">
             <h2>Zutaten</h2>
             <ul class="ingredients checkable noselect">
-                <li>2EL Mehl</li>
-                <li>2EL Butter</li>
+                <li>2 EL Mehl</li>
+                <li>2 EL Butter</li>
                 <li>1l Milch</li>
                 <li>2 Zwiebeln</li>
                 <li>3 Knoblauchzehen</li>
@@ -70,7 +70,7 @@
             und dann <span class="highlight">Käse</span>sauce. Dann wieder Blätter, Tomatensauce, Blätter, Käse, etc.
             Die oberste Schicht ist <span class="highlight">Käse</span>.
         </li>
-        <li>Bei <span class="highlight">185 °C für 50 Minuten</span> in den Ofen. </li>
+        <li>Bei <span class="highlight">185 °C für 50 Minuten</span> in den Ofen.</li>
     </ol>
     
 </div>
