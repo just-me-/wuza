@@ -17,6 +17,13 @@
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/honig_poulet_main.jpg" alt="Honig Poulet" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/honig_poulet_step1.jpg" alt="Poulet anbraten" />
+                    <span class="title">Poulet und Zwiebeln anbraten</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/honig_poulet_end.jpg" alt="Honig Poulet fertig" />
+                </div>
             </div>
             <!-- pagination -->
             <div class="swiper-pagination"></div>
