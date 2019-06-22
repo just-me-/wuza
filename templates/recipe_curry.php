@@ -25,6 +25,25 @@
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/curry_main.jpg" alt="Curry" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/curry_step1.jpg" alt="Poulet" />
+                    <span class="title">Poulet anbraten</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/curry_step2.jpg" alt="Gemüse" />
+                    <span class="title">Dann Gemüse anbraten</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/curry_step3.jpg" alt="Paste" />
+                    <span class="title">Paste erwärmen</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/curry_step4.jpg" alt="Kokosnussmilch" />
+                    <span class="title">Kokosnussmilch hinzugeben</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/curry_end.jpg" alt="Curry fertig" />
+                </div>
             </div>
             <!-- pagination -->
             <div class="swiper-pagination"></div>
@@ -38,7 +57,7 @@
     <h2>Zubereitung</h2>
     <ol class="steps noselect">
         <li>Das <span class="highlight">Poulet</span> in etwas Öl anbraten. Mit <span class="highlight">Salz und Pfeffer</span> würzen.</li>
-        <li>Dann das geschnittene <span class="highlight">Gemüse</span> mit etwas <span class="highlight">Salz</span> ebenfalls anbraten und dann etwas dünsten.</li>
+        <li>Dann das geschnittene <span class="highlight">Gemüse</span> mit etwas <span class="highlight">Salz</span> ebenfalls anbraten und anschliessend etwas dünsten.</li>
         <li>Die <span class="highlight">Curry Paste</span> mit dem Gemüse vermengen. Warm werden lassen.</li>
         <li>Mit der <span class="highlight">Kokusnussmilch</span> aufgiessen und kurz aufkochen.</li>
         <li>Hitze reduzieren. <span class="highlight">Bohnen und geschnittenen Mais</span> hinzugeben und warm werden lassen.</li>
