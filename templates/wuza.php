@@ -35,6 +35,7 @@
     <!-- end fonts -->
     
     <link href="<?php echo $this->_['url']; ?>css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $this->_['url']; ?>css/aos.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/swiper.min.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/wuza.css?version=%22<?php echo $this->_['version']; ?>%22" rel="stylesheet">
     
@@ -170,6 +171,8 @@
     <script src="<?php echo $this->_['url']; ?>js/cookieconsent.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/raphael.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/jGravity-min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="<?php echo $this->_['url']; ?>js/wuza.js?version=%22<?php echo $this->_['version']; ?>%22"></script>
     
     <input id="js" type="hidden" name="js" value="<?php echo $this->_['js']; ?>">
