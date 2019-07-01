@@ -13,25 +13,25 @@ class Model{
 	// tmp linked tag until all ref. templates are done 
 	private static $projects = array(
 		array("template" =>"antenne", 	"title"=>"Newsfeed Antenne Märstetten",  	"time"=>"Juni 2019",
-			  "content"=>"Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert."),
+			  "content"=>"Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert.", "linked" => 1),
 		
 		array("template" =>"easymech", 	"title"=>"EasyMech",  			"time"=>"seit Februar 2019",
-			  "content"=>"Für die Firma DuKoStapler wurde ein Maschinenverwaltungstool programmiert. Das Frontend wurde mit React realisiert und das Backend mit C# in ASP.NET."),
+			  "content"=>"Für die Firma DuKoStapler wurde ein Maschinenverwaltungstool programmiert. Das Frontend wurde mit React realisiert und das Backend mit C# in ASP.NET.", "linked" => 1),
 		
-		array("template" =>"rockt_the_ring", 	"title"=>"Rock the Ring",  			"time"=>"Februar bis Mai 2019",
-			  "content"=>"Für das Festival «Rock the Ring» wurde eine neue, moderne Website erstellt. Zusätzlich wurden moderne Lösungsansätze mit nativen Smartphone-Funktionen (wie Ticketkäufe per Siri und Apple Pay) mittels React Native entworfen."),
+		array("template" =>"rock_the_ring", 	"title"=>"Rock the Ring",  			"time"=>"Februar bis Mai 2019",
+			  "content"=>"Für das Festival «Rock the Ring» wurde eine neue, moderne Website erstellt. Zusätzlich wurden moderne Lösungsansätze mit nativen Smartphone-Funktionen (wie Ticketkäufe per Siri und Apple Pay) mittels React Native entworfen.", "linked" => 1),
 		
 		array("template" =>"studentenportal", 	"title"=>"Studentenportal",  			"time"=>"seit Mai 2018",
 			  "content"=>"Seit Mai administriere ich das Studentenportal.ch der HSR und entwickle es weiter. Es basiert auf dem Django Web Framework, welches in Python geschrieben wurde."),
 		
 		array("template" =>"wg_app", 			"title"=>"WG App",  					"time"=>"seit Mai 2018",
-			  "content"=>"Eine Meteor Applikation für die Organisation des WG-Lebens. Dazu gehören eine Einkaufsliste, Eventveranstaltungen und Kochplanung."),
+			  "content"=>"Eine Meteor Applikation für die Organisation des WG-Lebens. Dazu gehören eine Einkaufsliste, Eventveranstaltungen und Kochplanung.", "linked" => 1),
 		
 		array("template" =>"excel", 			"title"=>"VBA in Excel",  				"time"=>"Januar 2018",
 			  "content"=>"Für eine Abteilung der Credit Suisse wurde ein Makro geschrieben, welche automatisch Gewinn- und Verluststatistiken im Hintergrund erfasst."),
 		
 		array("template" =>"sbb", 			"title"=>"SBB Fahrplan",  					"time"=>"Oktober 2017",
-			  "content"=>"Mittels der SBB API wurde eine kleine, animierte Übersicht der nächsten Bus-Verbindungen von der WG zur HSR und zurück erstellt. Ideal, um sie mit beispielsweise einem Raspberry Pi auf einem Display anzeigen zu lassen."),
+			  "content"=>"Mittels der SBB API wurde eine kleine, animierte Übersicht der nächsten Bus-Verbindungen von der WG zur HSR und zurück erstellt. Ideal, um sie mit beispielsweise einem Raspberry Pi auf einem Display anzeigen zu lassen.", "linked" => 1),
 		
 		array("template" =>"kongressapp", 		"title"=>"KongressApp",  				"time"=>"September 2017",
 			  "content"=>"Eine Applikation, welche in Meteor geschrieben wurde. Sie übernimmt den Q&A Teil während einer Keynote. Teilnehmer können so einfach und unkompliziert Fragen einreichen, welche von einer Moderation live aufgeschaltet werden können."),
@@ -175,6 +175,11 @@ class Model{
 		'project_teso_addons'	=> array("description"=>"LUA Add-ons für TESO.", "keywords"=>"wuza, lua, teso, addon, add-on"),
 		'project_teso_map'		=> array("description"=>"Eine animationsreiche Karte für die Himmelsscherben in TESO.", "keywords"=>"wuza, animationen, canvas, teso, himmelsscherben"),
 		'project_wordpress'		=> array("description"=>"Modernisierung von Webauftritten.", "keywords"=>"wuza, wordpress, website, webseite, firmen, firma"),
+		'project_antenne'		=> array("description"=>"Newsfeed Antenne Märstetten.", "keywords"=>"wuza, react, antenne märstetten"),
+		'project_easymech'		=> array("description"=>"EasyMech, das Maschinenverwaltungstool.", "keywords"=>"wuza, easymech, react, C#, ASP.NET"),
+		'project_rock_the_ring'	=> array("description"=>"Rock the Ring Website Redesign.", "keywords"=>"wuza, rock the ring, website, redesign"),
+		'project_wg_app'		=> array("description"=>"WG App in Meteor.", "keywords"=>"wuza, meteor, WG, einkäufe, essensliste"),
+		'project_sbb'			=> array("description"=>"SBB Fahrplan durch SBB API.", "keywords"=>"wuza, sbb, fahrplan, api"),
 		'contact'				=> array("description"=>"WUZA ist ein Projekt von Marcel Hess! Erfahre hier mehr über mich.", "keywords"=>"marcel, hess, wuza, mail, märstetten, über, beruf, bereiche"),
 		'social'				=> array("description"=>"WUZA ist sozial! Finde WUZA auf Social Media Plattformen - beispielsweise Twitter.", "keywords"=>"wuza, sozial, netzwerk, twitter, social media"),
 		'impressum'				=> array("description"=>"Das rechtliche Zeugs für WUZA. Auch findest Du hier die Kontaktadresse.", "keywords"=>"impressum, kontakt, kontaktadresse, wuza, marcel, hess"),
@@ -257,6 +262,11 @@ class Model{
 		'project_teso_addons'	=> array("de"=>"TESO Add-ons", 		"en"=>""),
 		'project_teso_map'		=> array("de"=>"TESO Map", 			"en"=>""),
 		'project_wordpress'		=> array("de"=>"WordPress Sites", 	"en"=>""),
+		'project_easymech'		=> array("de"=>"EasyMech", 			"en"=>""),
+		'project_rock_the_ring'	=> array("de"=>"Rock the Ring", 	"en"=>""),
+		'project_wg_app'		=> array("de"=>"WG App", 			"en"=>""),
+		'project_sbb'			=> array("de"=>"SBB Fahrplan", 		"en"=>""),
+		'project_antenne'		=> array("de"=>"Newsfeed Antenne Märstetten", 	"en"=>""),
 		// other
 		'pdf'					=> array("de"=>"PDF Anzeige", 	"en"=>"Display PDF"),
 	);
