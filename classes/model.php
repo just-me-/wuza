@@ -12,6 +12,9 @@ class Model{
 	);
 	// tmp linked tag until all ref. templates are done 
 	private static $projects = array(
+		array("template" =>"appquest", 	"title"=>"iOS AppQuest als Coach", 	"time"=>"Sep. bis Dez. 2019",
+			  "content"=>"Nachdem ich im 2014 Teilnehmer an der AppQuest war, bin ich nun selbst als Coach für die beiden diesjährigen iOS-Teams verantwortlich."),
+		
 		array("template" =>"antenne", 	"title"=>"Newsfeed Antenne Märstetten",  	"time"=>"Juni 2019",
 			  "content"=>"Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert.", "linked" => 1),
 		
