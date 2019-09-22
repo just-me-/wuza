@@ -1,6 +1,6 @@
 <div id="main_recipe_fritata" class="fade-in-move-down">
     
-    <h1><span class="bubbles">Fritata</span></h1>
+    <h1><span class="bubbles">Frittata</span></h1>
     
     <div class="recip_wrapper">
         
@@ -26,7 +26,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/fritata_main.jpg" alt="Fritata" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/fritata_main.jpg" alt="Fritstata" />
                 </div>
                 <div class="swiper-slide">
                     <img src="<?php echo $this->_['url']; ?>img/recipes/fritata_step1.jpg" alt="Eingefettete Backform" />
@@ -37,7 +37,7 @@
                     <span class="title">Eimischung hinzugeben</span>
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?php echo $this->_['url']; ?>img/recipes/fritata_end.jpg" alt="Fritata aus dem Ofen" />
+                    <img src="<?php echo $this->_['url']; ?>img/recipes/fritata_end.jpg" alt="Frittata aus dem Ofen" />
                 </div>
             </div>
             <!-- pagination -->
