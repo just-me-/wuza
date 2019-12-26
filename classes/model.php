@@ -12,13 +12,18 @@ class Model{
 	);
 	// tmp linked tag until all ref. templates are done 
 	private static $projects = array(
-		array("template" =>"appquest", 	"title"=>"iOS AppQuest als Coach", 	"time"=>"Sep. bis Dez. 2019",
+		array("template" =>"sa", 	"title"=>"Dafny Language Server",  	"time"=>"Sep. bis Dez. 2019",
+			  "content"=>"In unserer Studienarbeit wurde der Dafny Language Server in C# neu implementiert.
+			  Das in TypeScript geschriebene Visual Studio Code Plugin, welches die Sprache Dafny unterstützt,
+			  kommuniziert über das LSP direkt mit dem Language Server.", "linked" => 1),
+		
+		array("template" =>"appquest", 	"title"=>"iOS AppQuest als Coach", 			"time"=>"Sep. bis Dez. 2019",
 			  "content"=>"Nachdem ich im 2014 Teilnehmer an der AppQuest war, bin ich nun selbst als Coach für die beiden diesjährigen iOS-Teams verantwortlich."),
 		
 		array("template" =>"antenne", 	"title"=>"Newsfeed Antenne Märstetten",  	"time"=>"Juni 2019",
 			  "content"=>"Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert.", "linked" => 1),
 		
-		array("template" =>"easymech", 	"title"=>"EasyMech",  			"time"=>"seit Februar 2019",
+		array("template" =>"easymech", 	"title"=>"EasyMech",  						"time"=>"seit Februar 2019",
 			  "content"=>"Für die Firma DuKoStapler wurde ein Maschinenverwaltungstool programmiert. Das Frontend wurde mit React realisiert und das Backend mit C# in ASP.NET.", "linked" => 1),
 		
 		array("template" =>"rock_the_ring", 	"title"=>"Rock the Ring",  			"time"=>"Februar bis Mai 2019",
@@ -183,6 +188,7 @@ class Model{
 		'project_rock_the_ring'	=> array("description"=>"Rock the Ring Website Redesign.", "keywords"=>"wuza, rock the ring, website, redesign"),
 		'project_wg_app'		=> array("description"=>"WG App in Meteor.", "keywords"=>"wuza, meteor, WG, einkäufe, essensliste"),
 		'project_sbb'			=> array("description"=>"SBB Fahrplan durch SBB API.", "keywords"=>"wuza, sbb, fahrplan, api"),
+		'project_sa'			=> array("description"=>"Dafny Language Server Redesign als Studienarbeit.", "keywords"=>"wuza, dafny, language server, lsp"),
 		'contact'				=> array("description"=>"WUZA ist ein Projekt von Marcel Hess! Erfahre hier mehr über mich.", "keywords"=>"marcel, hess, wuza, mail, märstetten, über, beruf, bereiche"),
 		'social'				=> array("description"=>"WUZA ist sozial! Finde WUZA auf Social Media Plattformen - beispielsweise Twitter.", "keywords"=>"wuza, sozial, netzwerk, twitter, social media"),
 		'impressum'				=> array("description"=>"Das rechtliche Zeugs für WUZA. Auch findest Du hier die Kontaktadresse.", "keywords"=>"impressum, kontakt, kontaktadresse, wuza, marcel, hess"),
@@ -269,6 +275,7 @@ class Model{
 		'project_rock_the_ring'	=> array("de"=>"Rock the Ring", 	"en"=>""),
 		'project_wg_app'		=> array("de"=>"WG App", 			"en"=>""),
 		'project_sbb'			=> array("de"=>"SBB Fahrplan", 		"en"=>""),
+		'project_sa'			=> array("de"=>"Dafny Language Server", 		"en"=>""),
 		'project_antenne'		=> array("de"=>"Newsfeed Antenne Märstetten", 	"en"=>""),
 		// other
 		'pdf'					=> array("de"=>"PDF Anzeige", 	"en"=>"Display PDF"),

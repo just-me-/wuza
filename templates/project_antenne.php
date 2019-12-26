@@ -3,7 +3,7 @@
     <h1>Newsfeed Antenne Märstetten</h1>
     
     <p>
-        Der Inhalt dieses Projekts wird bis Ende Oktober aufgeschaltet.
+        Der Inhalt dieses Projekts wird bis Ende Februar aufgeschaltet.
     </p>
     
 </div>

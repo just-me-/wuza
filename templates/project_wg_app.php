@@ -3,6 +3,6 @@
     <h1>WG App</h1>
     
     <p>
-        Der Inhalt dieses Projekts wird bis Ende Oktober aufgeschaltet.
+        Der Inhalt dieses Projekts wird bis Ende Februar aufgeschaltet.
     </p>
 </div>
