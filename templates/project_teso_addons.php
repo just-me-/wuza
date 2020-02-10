@@ -31,6 +31,10 @@
                 <img src="<?php echo $this->_['url']; ?>img/projects/teso_addons_rez5.jpg" alt="Rez Screen 5" />
                 <span class="title">Falls man sich direkt über dem Spieler befindet</span>
             </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/teso_addons_rez6.jpg" alt="Rez Screen 6" />
+                <span class="title">Lichtstrahl zur besseren Orientierung</span>
+            </div>
         </div>
         <!-- pagination -->
         <div class="swiper-pagination"></div>
