@@ -12,7 +12,7 @@
         So sind heute Vermietungen der Maschinen immer sehr mühsam und aufwändig zu verbuchen und auch schwer nachzuverfolgen.
     </p>
     <p>
-        Die Idee von «EasyMech» ist eine Software zu schreiben, welche die Verwaltung eines Baumaschinen Betriebs ermöglicht.
+        Die Idee von «EasyMech» ist eine Software zu schreiben, welche die Verwaltung eines Baumaschinenbetriebs ermöglicht.
         In diesem System sollen Kunden und Baumaschinen verwaltet werden können, wobei die Maschinen
         in verschiedene Kategorien unterteilt sind. Für die Maschinen sollen verschiedene Dienstleistungen
         wie Servicearbeiten und Vermietungen erfasst werden können.
