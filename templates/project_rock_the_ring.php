@@ -7,6 +7,11 @@
         (wie Ticketkäufe per Siri und Apple Pay) mittels React Native entworfen.
     </p>
     
+    <video poster="<?php echo $this->_['url']; ?>img/projects/rockthering_cover.jpg" controls muted autoplay loop class="img-responsive fade-in-move-down">
+        <source src="<?php echo $this->_['url']; ?>img/projects/rockthering.mp4" type="video/mp4"> 
+        Leider kann das Video nicht abgespielt werden. 
+    </video>
+    
     <h2>Ausgangslage und Problem</h2>
     <p>
         Diese Projektarbeit beschäftigte sich mit dem Design und dem Erstellen einer neuen und moderneren
