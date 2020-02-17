@@ -31,4 +31,7 @@
         Eine weiterführende Version wurde ausgearbeitet und zur Abgabe fertiggestellt.
         Mögliche Erweiterungen mit aktuellsten Technologien wurden inklusive einer Kostenschätzung aufgezeigt.
     </p>
+    
+    <img class="img-responsive img-rounded" src="<?php echo $this->_['url']; ?>img/projects/rockthering_applepay.jpg?1" alt="Apple Pay" />
+    
 </div>
