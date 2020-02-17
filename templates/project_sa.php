@@ -30,7 +30,7 @@
         Das Ziel dieser Arbeit war es, den Language Server so zu gestalten,
         dass er direkt in die Dafny-Bibliothek integriert werden kann, und die proprietäre JSON-basierte Interaktion zu übergehen.
         Anschliessend können so neue Sprachfunktionen implementiert und über das Sprachserverprotokoll angeboten werden.
-        Um direkten Zugriff auf die Dafny-Bibliothek zu haben, wird der Sprachserver in C # neu implementiert.
+        Um direkten Zugriff auf die Dafny-Bibliothek zu haben, wird der Sprachserver in C# neu implementiert.
     </p>
     
     <h2>Ergebnis</h3>

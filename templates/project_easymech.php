@@ -2,14 +2,14 @@
     
     <h1>EasyMech</h1>
     <p>
-        Für die Firma DuKoStapler wurde im Rahmen des Engineering Project an der HSR ein Maschinenverwaltungstool programmiert.
+        Für die Firma DuKoStapler GmbH wurde im Rahmen des Engineering Projects an der HSR ein Maschinenverwaltungstool programmiert.
         Das Frontend wurde mit dem Framework React realisiert und das Backend mit C# in ASP.NET.
     </p>
     
     <h2>Ausgangslage und Ziel</h2>
     <p>
         Die Firma DuKoStapler GmbH verwaltet ihre Baumaschinen und Wartungspläne per Papieragenda.
-        So sind heute Vermietungen der Maschinen immer sehr mühsam und aufwändig zu verbuchen und auch schwer nachzuverfolgen.
+        So sind heute Vermietungen der Maschinen immer sehr mühsam und aufwendig zu verbuchen und auch schwer nachzuverfolgen.
     </p>
     <p>
         Die Idee von «EasyMech» ist eine Software zu schreiben, welche die Verwaltung eines Baumaschinenbetriebs ermöglicht.
@@ -20,7 +20,7 @@
         Die im System geführten Maschinen können der Firma selber gehören oder im Fremdbesitz sein.
         Anhand der Software soll anschliessend ersichtlich sein, welche Arbeiten und Leistungen an welcher Maschine
         durchgeführt wurden. Auch die eingebauten Ersatzteile sollten ersichtlich sein.
-        Wenn ein Service durchgeführt wurde, soll nach Ablauf eines definierten Zeitraums wieder eine Erinnerung / Arbeitsauftrag erstellt werden.
+        Wenn ein Service durchgeführt wurde, soll nach Ablauf eines definierten Zeitraums wieder eine Erinnerung erstellt werden.
     </p>
     
     <h2>Ergebnis</h2>
@@ -42,8 +42,8 @@
         sodass eine angenehme Usability geboten wird.
     </p>
     
-    <h2>Architektonische Ziele</h2>
-    <h3>Scalability</h3>
+    <h3>Architektonische Ziele</h3>
+    <h4>Scalability</h4>
     <p>
        Um im Backend den Data-Access-Layer von der Schnittstelle zum Frontend zu trennen,
        haben wir einen Service-Layer eingeschoben. Wir antizipieren viele kleinere Anpassung der Datenbank
@@ -55,7 +55,7 @@
         Die Trennung in Backend und Frontend wurde aus ähnlichen Gründen gemacht.
         So können z.B. grosse Teile des Frontend wiederverwendet und nur die Inhalte ausgetauscht werden. 
     </p>
-    <h3>Security</h3>
+    <h4>Security</h4>
     <p>
         Um die Applikation zu schützen, wird der App ein Reverse-Proxy vorgeschaltet, der auf eine Keycloak-Instanz verweist.
         Das Applikations-Frontend ist nur mit gültigem JWT, ausgestellt durch Keycloak, erreichbar.

@@ -6,8 +6,8 @@
     
     <h1 class="fade-in-move-down">Newsfeed Antenne Märstetten</h1>
     <p class="fade-in-move-down">
-        Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert.
-        So können sich Intressenten individuell über aktuelle Ereignisse informieren, ohne dass
+        Mittels dem Framework React wurde ein Newsticker für die Bewohner von Märstetten implementiert.
+        So können sich Interessenten individuell über aktuelle Ereignisse informieren, ohne dass
         an alle jeweils eine Mail verschickt werden muss. 
     </p>
     

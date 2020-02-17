@@ -26,5 +26,4 @@
         Eine weiterführende Version wurde ausgearbeitet und zur Abgabe fertiggestellt.
         Mögliche Erweiterungen mit aktuellsten Technologien wurden inklusive einer Kostenschätzung aufgezeigt.
     </p>
-    
 </div>
