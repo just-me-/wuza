@@ -1,9 +1,14 @@
-<div id="main_project_antenne" class="fade-in-move-down">
+<div id="main_project_antenne" class="relative">
     
-    <h1>Newsfeed Antenne Märstetten</h1>
+    <?php
+       echo $this->getGitHubRibbon("https://github.com/just-me-/newsfeed");
+    ?>
     
-    <p>
-        Der Inhalt dieses Projekts wird bis Ende Februar aufgeschaltet.
+    <h1 class="fade-in-move-down">Newsfeed Antenne Märstetten</h1>
+    <p class="fade-in-move-down">
+        Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert.
+        So können sich Intressenten individuell über aktuelle Ereignisse informieren, ohne dass
+        an alle jeweils eine Mail verschickt werden muss. 
     </p>
     
 </div>
