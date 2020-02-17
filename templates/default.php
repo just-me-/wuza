@@ -3,7 +3,7 @@
     <p class="fade-in-move-down">
         Herzlich willkommen bei WUZA - einem Freizeitprojekt von Marcel Hess!
     </p>
-    
+
     <div id="quote_home" class="quote bs-callout bs-callout-default noselect fade-in-move-down">
         <h4 class="no-margin">Falschzitat der Woche</h4>
         <p class="no-margin">
@@ -15,17 +15,17 @@
             <?php
             }
             ?>
-            
+
         </p>
         <p id="quote_home_help" class="light no-margin" style="display: none">
-            <?php echo $this->_['quote']['help']; ?> 
+            <?php echo $this->_['quote']['help']; ?>
         </p>
         <p class="light no-margin none"><a href=#>weiter zum Archiv der falsch zugeordneten Zitate</a></p>
-        
+
     </div>
-    
+
     <h2>Über das WUZA-Projekt</h2>
-    
+
     <h3>WuWhat?</h3>
     <p>
         Ja, die Namensgebung. Ein Punkt, nach welchem ich schon ein paar Mal gefragt wurde.
@@ -37,7 +37,7 @@
         vorab auszusagen, auf dem Account zu machen und zu veröffentlichen, worauf ich Lust und Laune habe.
         Ohne darauf Rücksicht nehmen zu müssen, ob das ganze Projekt nun allgemein nützlich, "schön" und
         unter dem Strich öffentlichkeitstauglich ist. <br/>
-        Diesem Grundsatz möchte ich auch weiterhin auf WUZA folgen. 
+        Diesem Grundsatz möchte ich auch weiterhin auf WUZA folgen.
     </p>
     <p>
         Das Problem dabei war jedoch, dass solche Domainnamen, welche mir eingefallen sind,
@@ -51,14 +51,14 @@
         &laquo;Lauf, Forrest, lauf!&raquo; aus Forrest Gump oder &laquo;Houston - wir haben ein Problem&raquo;
         aus dem Film Apollo 13. <br/>
         Nach dem Motto <i>keep calm and repeat wusa</i> gilt es seine
-        Ohrläppchen zu massieren, tief durchzuatmen und zu entspannen. 
+        Ohrläppchen zu massieren, tief durchzuatmen und zu entspannen.
     </p>
     <p>
         Um dem Ganzen eine eigene Note zu verpassen, wurde S durch Z ersetzt und der Slogan <i>Stay Calm & Be Yourself</i>
         gewählt. Also eine Verbindung der Grundsätze von WUSA und just-me. <br/>
-        Und, ach ja: WUZA bedeutet im Internetslang übrigens auch <i>what's up?</i> Aber das tut im Grunde nichts zur Sache. 
+        Und, ach ja: WUZA bedeutet im Internetslang übrigens auch <i>what's up?</i> Aber das tut im Grunde nichts zur Sache.
     </p>
-    
+
     <h3>Easter Eggs</h3>
     <p>
         Besonders dürfen sich einige Personen darüber freuen, dass auf dieser Website verschiedene
@@ -71,11 +71,12 @@
         Bemerkungen, dass neue Easter Eggs eingebaut wurden, lassen sich im nachfolgenden Bereich bezüglich
         der letzten Aktualisierungen oder auf der <a href="<?php echo $this->_['url']; ?>view/project_wuza">WUZA-Projektseite</a> finden. Frohes Suchen!
     </p>
-    
+
     <!-- 2Do: loop -->
     <h3>Die letzten Aktualisierungen</h3>
     <div class="hover-list">
         <ul>
+            <li><a class="blocked" href="#">Designaktualisierung <span>- der Hintergrund wurde komplett überarbeitet und es fliegen nun Vögel herum.</span></a></li>
             <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/recipes">Rezepte <span>- auf der Suche nach einer neuen Idee?</span></a></li>
             <li><a class="blocked" href="#">Designaktualisierung <span>- das Menü wirkt nun noch moderner</span></a></li>
             <li><a class="colorful" href="<?php echo $this->_['url']; ?>view/contact">Fähigkeiten <span>- dem Bereich "Über mich" wurde der Abschnitt "Fähigkeiten" hinzugefügt</span></a></li>
@@ -89,7 +90,7 @@
             <!--<li><a class="colorful" href="view/impressum">Rechtliches <span>- das Impressum wurde hochgeladen</span></a></li>-->
         </ul>
     </div>
-    
+
     <h3>Die Wird-ASAP-Erledigt-Liste</h3>
     <div class="hover-list">
         <ul>
@@ -102,5 +103,5 @@
             <li><a class="blocked" href="">Weitere Funktionen und Bereiche <span>- alles soll ja nicht gespoilert werden, oder? ;-)</span></a></li>
         </ul>
     </div>
-    
+
 </div>

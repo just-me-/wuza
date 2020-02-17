@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-    
+
     <title><?php echo $this->_['header_titel']; ?></title>
-    
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php echo $this->_['url']; ?>icon/apple-touch-icon-60x60.png">
@@ -29,42 +29,42 @@
     <meta name="msapplication-config" content="<?php echo $this->_['url']; ?>icon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- end favicon -->
-    
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- end fonts -->
-    
+
     <link href="<?php echo $this->_['url']; ?>css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/aos.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/swiper.min.css" rel="stylesheet">
     <link href="<?php echo $this->_['url']; ?>css/wuza.css?version=%22<?php echo $this->_['version']; ?>%22" rel="stylesheet">
-    
+
     <meta name="description" content="<?php echo $this->_['header_description']; ?>">
     <meta name="keywords" content="<?php echo $this->_['header_keywords']; ?>">
-    
+
     <!-- for social-media-links -->
     <meta property="og:title" content="<?php echo $this->_['header_titel']; ?>" />
     <meta property="og:description" content="<?php echo $this->_['header_description']; ?>" />
     <meta property="og:image" content="<?php echo $this->_['url']; ?>img/WuzaIcon.png" />
-    
+
   </head>
-  
+
   <body class="<?php echo $this->_['js'] ? "has-jssession" : "hasnot-jssession"; ?>">
-    
+
     <!-- GoogleAnalytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
+
       ga('create', 'UA-71745084-1', 'auto');
       ga('send', 'pageview');
-    
+
     </script>
     <!-- end GoogleAnalytics -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     <nav class="navbar navbar-inverse noselect">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -91,7 +91,7 @@
               <div class="logo-text">Wuza</div>
           </div>
         </a>
-        
+
       </div>
       <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -110,14 +110,14 @@
             }
             ?>
           </ul>
-          
+
           <!--
           <ul class="nav navbar-nav navbar-right none">
             <li><a <?php echo 'href="?lang=de"' ?> class="language">DE</a></li>
             <li><a <?php echo 'href="?lang=en"' ?> class="language">EN</a></li>
           </ul>
           -->
-          
+
           <?php
           if($this->_['debug_mode']){
           ?>
@@ -132,52 +132,55 @@
           <?php
           }
           ?>
-          
+
       </div>
-      
+
     </nav>
-    
+
     <?php
       if(!$this->_['js']) {
         print '
         <noscript>
           <div class="test-js text-warning bg-warning small-padding">
-            Bitte aktivieren Sie <b>JavaScript</b> für <b>wuza.ch</b>, um alle Funktionen dieser Seite vorgesehen nutzen zu können. 
+            Bitte aktivieren Sie <b>JavaScript</b> für <b>wuza.ch</b>, um alle Funktionen dieser Seite vorgesehen nutzen zu können.
           </div>
         </noscript>
         ';
       }
     ?>
-    
+
     <div class="main">
-      
+
       <div class="container">
         <?php echo $this->_['content']; ?>
       </div>
-      
+
       <!--
       <?php echo "by /mh"; ?>
       -->
-      
+
       <div class="footer noselect">
         <div class="right">Letzte Aktualisierung am <?php echo $this->_['last_update']; ?></div>
         <div class="left">Von Marcel Hess</div>
       </div>
-      
+
     </div>
-    
+
     <script src="<?php echo $this->_['url']; ?>js/bootstrap.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/swiper.jquery.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/cookieconsent.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/raphael.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/jGravity-min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/three.r95.min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/vanta.birds.min.js"></script>
+    <script src="<?php echo $this->_['url']; ?>js/vanta.cells.min.js"></script>
     <script src="<?php echo $this->_['url']; ?>js/aos.js"></script>
     <script>AOS.init();</script>
     <script src="<?php echo $this->_['url']; ?>js/wuza.js?version=%22<?php echo $this->_['version']; ?>%22"></script>
-    
+
     <input id="js" type="hidden" name="js" value="<?php echo $this->_['js']; ?>">
     <input id="lang" type="hidden" name="lang" value="<?php echo $this->_['lang']; ?>">
     <input id="url" type="hidden" name="url" value="<?php echo $this->_['url']; ?>">
-    
+
   </body>
 </html>

@@ -1,6 +1,7 @@
 // *** G L O B A L   V A R S *** //
 var keyword = new Object();
-var foundTheTroll = 0; 
+var foundTheTroll = 0;
+var fancyBackgroundRendered = false;
 
 
 // *** O N L O A D   E V E N T S *** //
@@ -12,26 +13,45 @@ $('.test-js').ready(function() {
 
 
 $(document).ready(function(){
-	
+
 	// to clean on noscript if necessary
 	$('body').addClass('has_js');
-    
+
     // set "js is active" for directly hidding "js is required"-infobox
     if(!($('#js').val())) {
         $.post("api.php", {"js": "1", "action": "setJS"});
         $('#js').val("1");
     }
-    
+
+    // fancy background
+    VANTA.BIRDS({
+      el: ".container",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xffffff,
+      backgroundAlpha: 0.001,
+      birdSize: 1.00,
+      speedLimit: 4.00,
+      separation: 90.00,
+      alignment: 40.00,
+      quantity: 2.00
+    })
+    renderFancyBackground();
+
     // activate animated img slider
     var mySwiper = new Swiper ('.swiper-slider', {
         // Optional parameters
         speed: 500,
-        autoplay: 3500, 
-        
+        autoplay: 3500,
+
         // If we need pagination
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        
+
         // Navigation arrows
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -40,18 +60,18 @@ $(document).ready(function(){
         // Optional parameters
         loop: false,
         speed: 500,
-        
+
         // If we need pagination
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        
+
         // Navigation arrows
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     });
-	
+
 	// show cookie info
-	var url = getInputValue("#url"); 
+	var url = getInputValue("#url");
 	window.cookieconsent_options = {
 	  "message":"WUZA verwendet Cookies, um Deinen Besuch optimal zu gestalten. <br/>",
 	  "dismiss":"Alles klar und akzeptiert!",
@@ -59,16 +79,16 @@ $(document).ready(function(){
 	  "link":url+"view/impressum",
 	  "theme":url+"css/cookieconsent.css"
 	};
-	
+
 	// for intern links; just in case
-	// var url = getInputValue("#url"); 
+	// var url = getInputValue("#url");
 	$('a.getHard, .getHard a').each(function() {
 		var href = $( this ).attr("href");
 		if ((!(href.match(/^[http|#]/i))) && (typeof href != 'undefined' && href)) {
 			$( this ).attr("href", url+href);
 		}
 	});
-	
+
 	// bubble effect
 	$.each($(".bubbles"), function(){
 		var bubblecount = ($(this).width()/50)*10;
@@ -77,25 +97,28 @@ $(document).ready(function(){
 		   $(this).append('<span class="particle" style="top:' + $.rnd(20,80) + '%; left:' + $.rnd(0,95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
 		}
 	});
-	
+
 	// progress bar
 	$('.skillbar').each(function(){
 		$(this).find('.skillbar-bar').animate({
 			width:$(this).attr('data-percent')
 		},4000);
 	});
-	
+
     // ordered lists .steps => arrow animation
     var time_for_one = 1500;
-    // trigger first one 
+    // trigger first one
     setClassStepByStep("ol.steps li", "arrow", time_for_one);
-    // add endless loop 
+    // add endless loop
     setInterval(function(){
         setClassStepByStep("ol.steps li", "arrow", time_for_one);
     }, time_for_one * $("ol.steps li").length)
-    
+
 });
 
+$( window ).resize(function() {
+  renderFancyBackground();
+});
 
 // for ... hmm ... what could that be..? ;-)
 $( "html" ).keydown(function( event ) {
@@ -103,31 +126,31 @@ $( "html" ).keydown(function( event ) {
     if ( event.which == 84 || event.which == 82 || event.which == 79 || event.which == 76) {
         keyword[event.which] = 1;
     } else {
-        keyword = {}; 
+        keyword = {};
     }
-    
+
     if (keyword[84] == 1 && keyword[82] == 1 && keyword[79] == 1 && keyword[76] == 1 && foundTheTroll == 0) {
-		
+
 		var $div = $('<div />').prependTo(".container");
 		$div.attr('id', 'falling_titles');
-		
+
 		var $div = $('<div />').prependTo(".container");
 		$div.attr('class', 'easter_egg_warning warningdiv small-padding');
 		$div.html('<b>Yay!</b> - you found me! Move your mouse now... You can spin around some objects! :-)');
-		
+
 		var elements = "h1, h2, h3, .has_gravity";
-		
+
 		$( elements ).each(function() {
-			
+
 			$( this ).fadeOut(function() {
-				$( this ).detach().appendTo('#falling_titles');//.show();	
+				$( this ).detach().appendTo('#falling_titles');//.show();
 			});
-			
+
 		});
-		
+
 		$( ".container" ).css( "max-height", "600px" ).css( "overflow", "hidden" );
 		$( elements ).css( "padding", "0" ).css( "margin", "0" );
-		
+
 		$( elements ).promise().done(function() {
 			$("p").hide("slow", function() {
 				$(elements).show("slow", function() {
@@ -141,7 +164,7 @@ $( "html" ).keydown(function( event ) {
 				});
 			});
 		});
-		
+
 		keyword = {};
 		foundTheTroll = 1;
 	}
@@ -164,7 +187,7 @@ $('ul.checkable li').bind('click', function(){
 
 // *** F U N C T I O N S *** //
 
-// shows/hide hints for quotes 
+// shows/hide hints for quotes
 function changeQuoteVisibility(quote_id) {
     $('#quote_' + quote_id + '_help').slideToggle("slow");
 }
@@ -188,11 +211,26 @@ function setClassStepByStep(selector, classname, time_for_one) {
     });
 }
 
+function renderFancyBackground() {
+  if(!fancyBackgroundRendered && window.innerWidth >= 1024) {
+    VANTA.CELLS({
+      el: "html",
+      mouseControls: false,
+      touchControls: false,
+      minHeight: screen.height+20,
+      minWidth: 200.00,
+      scale: 1.00,
+      color1: 0x282a2a,
+      color2: 0xfffefd,
+      size: 0.80
+    });
+    fancyBackgroundRendered = true;
+  }
+}
+
 // position for bubble effect
 jQuery.rnd = function(m,n) {
       m = parseInt(m);
       n = parseInt(n);
       return Math.floor( Math.random() * (n - m + 1) ) + m;
 }
-
-
