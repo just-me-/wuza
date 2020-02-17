@@ -5,6 +5,8 @@
         In unserer Studienarbeit wurde der Dafny Language Server in C# neu implementiert. Das in TypeScript geschriebene Visual Studio Code Plugin, welches die Sprache Dafny unterstützt, kommuniziert über das LSP direkt mit dem Language Server.
     </p>
     
+    <img class="img-responsive img-rounded" src="<?php echo $this->_['url']; ?>img/projects/sa.jpg" alt="SA Plakatübersicht" />
+    
     <h2>Ausgangslage</h2>
     <p>
         Dafny ist eine formale Programmiersprache, um die Korrektheit eines Programms mit
