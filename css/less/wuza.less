@@ -1,17 +1,17 @@
 /* varis */
 @main-bg-color:         #eeeeee;
-@main-bg-alpha:         0.9;
+@main-bg-alpha:         0.8;
 @nav-bg-color-from:     #303030;
 @nav-bg-color-to:       #303030;
 @nav-bg-alpha:          0.85;
-@link-basic-color:		#003866;
-@link-soft-color:		#3389D2;
-@link-light-color:		#3A9CEF;
+@link-basic-color:		#EF6685;
+@link-soft-color:		#ff734a;
+@link-light-color:		#EFA358;
 @color-touch:           #fa8072; // used for recipes... yet
 /* end varis*/
 
-/* for imgs */  
-.circular { 
+/* for imgs */
+.circular {
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -23,7 +23,7 @@
 .circular > img,
 .rounded > a> img,
 .rounded > img {
-    width: 100%; 
+    width: 100%;
 }
 .rounded {
     width: 92px;
@@ -41,7 +41,7 @@ img.rounded { width: auto; }
 }
 .dashed.error { border-color: #FF9696; }
 .dashed.success { border-color: #82C382; }
-/* end imgs */  
+/* end imgs */
 
 /* hover list */
 .hover-list {
@@ -62,7 +62,7 @@ img.rounded { width: auto; }
 		color: #000;
 		width: 100%;
 		padding: 8px 0;
-	  
+
 		-webkit-transition: font-size 0.15s ease, background-color 0.3s ease;
 		-moz-transition: font-size 0.15s ease, background-color 0.3s ease;
 		-o-transition: font-size 0.15s ease, background-color 0.3s ease;
@@ -84,7 +84,7 @@ img.rounded { width: auto; }
 /* end hover list */
 
 /* material list */
-@icon-size = 1.3em; 
+@icon-size = 1.3em;
 ul.material {
 	list-style: none;
 	padding: 0;
@@ -95,11 +95,11 @@ ul.material {
 	padding-left: @icon-size;
   }
   li:before {
-	content: "\E922"; 
+	content: "\E922";
 	font-family: "Material Icons";
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: -@icon-size; 
+	margin-left: -@icon-size;
 	width: @icon-size;
   }
 }
@@ -110,12 +110,12 @@ ul.checkable {
     list-style: none;
     padding: 0;
     li:hover {
-        cursor: pointer; 
+        cursor: pointer;
     }
     li:before {
-        content: "\E836"; 
+        content: "\E836";
         font-family: "Material Icons";
-        padding-right: 8px; 
+        padding-right: 8px;
     }
     li.checked:before {
         content: "\E837";
@@ -125,10 +125,10 @@ ul.checkable {
 
 /* ordered list */
 ol.steps {
-    counter-reset: li; 
+    counter-reset: li;
     list-style: none;
     padding-left: 2.5em;
-    
+
     li {
         position: relative;
         display: block;
@@ -140,7 +140,7 @@ ol.steps {
     li:before {
         content: counter(li);
         counter-increment: li;
-        position: absolute; 
+        position: absolute;
         left: -2.5em;
         top: 50%;
         margin-top: -1em;
@@ -152,14 +152,14 @@ ol.steps {
         font-weight: bold;
     }
     li:after{
-        position: absolute; 
+        position: absolute;
         content: '';
         border: .5em solid transparent;
         left: -1em;
         top: 50%;
         margin-top: -.5em;
         transition: all .3s ease-out;
-        
+
         -webkit-animation-name: slide;
         -webkit-animation-duration: 1.5s;
         -webkit-animation-timing-function: ease-in-out;
@@ -169,7 +169,7 @@ ol.steps {
     li.arrow:after,
     li:hover:after {
         left: -.5em;
-        border-left-color: @color-touch; 
+        border-left-color: @color-touch;
     }
 }
 /* end ordered list */
@@ -208,7 +208,7 @@ ol.steps {
         opacity: 1;
     }
     // bullets outside and bigger
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     .swiper-pagination-bullets {
         bottom: -4px;
         .swiper-pagination-bullet {
@@ -265,7 +265,7 @@ ol.steps {
 	color: #ffffff;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
-	
+
 	span {
 		display: block;
 		padding: 0 20px;
@@ -334,7 +334,7 @@ ol.steps {
 }
 .bs-callout-default { border-left-color: #777; }
 .gray-background: { background-color: #f7f7f9; }
-    
+
 /* info error warning - rounded */
 .infodiv,
 .warningdiv,
@@ -351,12 +351,12 @@ ol.steps {
   background-color: #DFF0D8;
 }
 .warningdiv {
-  color: #8a6d3b; 
+  color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #8a6d3b;
 }
 .errordiv {
-  color: #a94442; 
+  color: #a94442;
   background-color: #f2dede;
   border-color: #a94442;
 }
@@ -408,40 +408,40 @@ ol.steps {
 a.blocked { cursor: default; }
 div { max-width: 100%; }
 
-@-webkit-keyframes colours { 
-	0% {color: @link-basic-color;} 
-	25% {color: @link-soft-color;} 
-	50% {color: @link-light-color;} 
-	75% {color: @link-soft-color;} 
-	100% {color: @link-basic-color;} 
-} 
-@-moz-keyframes colours { 
-	0% {color: @link-basic-color;} 
-	25% {color: @link-soft-color;} 
-	50% {color: @link-light-color;} 
-	75% {color: @link-soft-color;} 
-	100% {color: @link-basic-color;} 
+@-webkit-keyframes colours {
+	0% {color: @link-basic-color;}
+	25% {color: @link-soft-color;}
+	50% {color: @link-light-color;}
+	75% {color: @link-soft-color;}
+	100% {color: @link-basic-color;}
 }
-@-webkit-keyframes bgcolours { 
-	0% {background: @link-basic-color;} 
-	25% {background: @link-soft-color;} 
-	50% {background: @link-light-color;} 
-	75% {background: @link-soft-color;} 
-	100% {background: @link-basic-color;} 
-} 
-@-moz-keyframes bgcolours { 
-	0% {background: @link-basic-color;} 
-	25% {background: @link-soft-color;} 
-	50% {background: @link-light-color;} 
-	75% {background: @link-soft-color;} 
-	100% {background: @link-basic-color;} 
+@-moz-keyframes colours {
+	0% {color: @link-basic-color;}
+	25% {color: @link-soft-color;}
+	50% {color: @link-light-color;}
+	75% {color: @link-soft-color;}
+	100% {color: @link-basic-color;}
+}
+@-webkit-keyframes bgcolours {
+	0% {background: @link-basic-color;}
+	25% {background: @link-soft-color;}
+	50% {background: @link-light-color;}
+	75% {background: @link-soft-color;}
+	100% {background: @link-basic-color;}
+}
+@-moz-keyframes bgcolours {
+	0% {background: @link-basic-color;}
+	25% {background: @link-soft-color;}
+	50% {background: @link-light-color;}
+	75% {background: @link-soft-color;}
+	100% {background: @link-basic-color;}
 }
 @keyframes blur{
 	from{ text-shadow: 0px 0px 25px @link-soft-color; }
-	to { text-shadow: none; }
+	to { text-shadow: none}
 }
 p a, .colorful a, a.colorful, span.colorful {
-	-webkit-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite; 
+	-webkit-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite;
     -moz-animation: colours 5s ease infinite normal, blur 1.5s alternate infinite;
 }
 p a {
@@ -457,7 +457,7 @@ p a {
 		width: 0;
 		height: 2px;
 		transition: width 0.3s;
-		
+
 		-webkit-animation: bgcolours 5s ease infinite normal;
 		-moz-animation: bgcolours 5s ease infinite normal;
 	}
@@ -535,8 +535,8 @@ p, .fade-in {
 }
 
 .highlight {
-    // 2Do... cooler :) 
-    font-weight: bold; 
+    // 2Do... cooler :)
+    font-weight: bold;
 }
 
 .bubbles {
@@ -587,7 +587,7 @@ p, .fade-in {
 	padding-bottom:143%;
 }
 
-/* menu */ 
+/* menu */
 .navbar-inverse {
     background: rgba(red(@nav-bg-color-to), green(@nav-bg-color-to), blue(@nav-bg-color-to), @nav-bg-alpha);
     background: -moz-linear-gradient(
@@ -622,20 +622,20 @@ p, .fade-in {
             background: rgba(0, 0, 0, 0.45);
         }
     }
-    
+
     border-radius: 4px 4px 0 0;
     margin-top: 60px;
     border-color: @nav-bg-color-from;
     border-bottom-color: #fff;
-    border-top: 0; 
+    border-top: 0;
     @media (max-width: 768px) {
         margin-top: 0;
     }
-    
+
     .logo {
-        margin-top: 4px; 
+        margin-top: 4px;
     }
-	
+
 	/* jump fix on fast refresh */
 	span.material-icons {
 		max-width: 14px;
@@ -727,7 +727,7 @@ p, .fade-in {
         0px 60px 10px 10px orange, 15px 60px 10px 10px darkturquoise, 30px 60px 10px 10px pink, 45px 60px 10px 10px steelblue, 60px 60px 10px 10px turquoise,
         75px 60px 10px 10px coral, 100px 60px 10px 10px skyblue, 105px 60px 10px 10px darkviolet, 135px 60px 10px 10px gold, 160px 60px 10px 10px darkslateblue;
     -webkit-animation: color-shadows 2.5s linear infinite;
-    animation: color-shadows 2.5s linear infinite; 
+    animation: color-shadows 2.5s linear infinite;
     filter: blur(6px);
 }
 .animated-logo:after {
@@ -743,13 +743,13 @@ p, .fade-in {
     position: relative;
     display: block;
     color: white;
-    mix-blend-mode: darken; 
+    mix-blend-mode: darken;
     padding-top: 4px;
     background: rgba(48, 48, 48, 0.85);
     @media (max-width: 768px) {
         background: rgba(48, 48, 48, 1);
     }
-}    
+}
 @-webkit-keyframes color-shadows {
     25% {
         box-shadow: 0px 0px 10px 10px coral, 15px 0px 10px 10px skyblue, 30px 0px 10px 10px darkviolet, 45px 0px 10px 10px gold, 60px 0px 10px 10px purple,
@@ -827,14 +827,14 @@ p, .fade-in {
     }
 }
 /* end fancy wuza logo */
-/* end menu */ 
+/* end menu */
 
 /* layout */
 html {
     background-color: #c4c4c4;
-    background-image: url('../img/bg.jpg'); 
-    background-repeat: repeat; 
-    background-position: top center; 
+    background-image: url('../img/bg.jpg');
+    background-repeat: repeat;
+    background-position: top center;
     background-attachment: fixed;
 }
 body {
@@ -846,7 +846,7 @@ body {
 body, .navbar-inverse {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     max-width: 1000px;
 }
 
@@ -860,7 +860,7 @@ body, .navbar-inverse {
 }
 .container {
     background-color: #fff;
-    min-height: 400px; 
+    min-height: 400px;
     border-bottom: 2px solid #ccc;
     border-radius: 5px;
     padding: 0.5em 5% 2em;
@@ -870,14 +870,14 @@ body, .navbar-inverse {
     font-size: 12px;
 }
 
-/* layout small screen */ 
+/* layout small screen */
 @media (max-width: 768px) {
     html {
         background-color: #fff;
         background-image: none;
     }
     .navbar-inverse {
-        border-radius: 0; 
+        border-radius: 0;
     }
     .container {
         border: 0;
@@ -898,17 +898,17 @@ body, .navbar-inverse {
         background-color: #fff;
     }
     .footer {
-        padding: 2px 5px; 
+        padding: 2px 5px;
         background-color: rgba(red(@nav-bg-color-to), green(@nav-bg-color-to), blue(@nav-bg-color-to), @nav-bg-alpha);
         color: #FFFFFF;
         overflow:auto;
     }
 }
-/* end layout*/ 
+/* end layout*/
 
 /* 404 */
 #main_404 {
-    height: 400px; 
+    height: 400px;
     background:url(../img/404.jpg) no-repeat left bottom;
     background-size: 100% 100%;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -921,7 +921,7 @@ body, .navbar-inverse {
         color: #8e8fc9;
         text-align: center;
         text-transform: capitalize;
-        letter-spacing: -2px;   
+        letter-spacing: -2px;
         span {
             display:block;
             font-size:24px;
@@ -964,8 +964,8 @@ body, .navbar-inverse {
   white-space:nowrap;
   display: inline-block;
   width: 220px;
-  margin-right: 10px; 
-  
+  margin-right: 10px;
+
   &:before {
 	content: "";
 	display: inline-block;
@@ -973,7 +973,7 @@ body, .navbar-inverse {
 	height: 10px;
 	margin-right: 5px;
   }
-  
+
   &.green:before {
 	background: #97BE0D;
   }
@@ -1068,7 +1068,7 @@ body, .navbar-inverse {
   background: rgb(248,248,248);
   padding: 6px 10px;
   border-radius: 5px;
-  
+
   font-weight: 600;
   text-align: left;
 }
@@ -1113,7 +1113,7 @@ body, .navbar-inverse {
   border: solid transparent;
   border-width: 8px;
   pointer-events: none;
-}	
+}
 .direction-l .flag:after {
   left: 100%;
   top: 50%;
@@ -1158,32 +1158,32 @@ body, .navbar-inverse {
 }
 
 @media screen and (max-width: 660px) {
-	
+
 	.timeline {
 		width: 100%;
 		padding: 4em 0 1em 0;
 	}
-	
+
 	.timeline li {
 		padding: 2em 0;
 	}
-	
+
 	.direction-l,
 	.direction-r {
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.flag-wrapper {
 		text-align: center;
 	}
-	
+
 	.flag {
 		background: rgb(255,255,255);
 		z-index: 15;
 	}
-	
+
 	.direction-l .flag:before,
 	.direction-r .flag:before {
 		position: absolute;
@@ -1200,7 +1200,7 @@ body, .navbar-inverse {
 		border: 4px solid #003866;
 		z-index: 10;
 	}
-	
+
 	.direction-l .flag:after,
 	.direction-r .flag:after {
 		content: "";
@@ -1215,21 +1215,21 @@ body, .navbar-inverse {
 		border-width: 8px;
 		pointer-events: none;
 	}
-	
+
 	.time-wrapper {
 		display: block;
 		position: relative;
 		margin: 4px 0 0 0;
 		z-index: 14;
 	}
-	
+
 	.direction-l .time-wrapper {
 		float: none;
 	}
 	.direction-r .time-wrapper {
 		float: none;
 	}
-	
+
 	.desc {
 		position: relative;
 		margin: 1em 0 0 0;
@@ -1240,7 +1240,7 @@ body, .navbar-inverse {
 		box-shadow: 0 0 1px rgba(0,0,0,0.20);
 		z-index: 15;
 	}
-	
+
 	.direction-l .desc,
 	.direction-r .desc {
 		position: relative;
@@ -1260,7 +1260,7 @@ body, .navbar-inverse {
 	width: 80px;
 	height: 80px;
 	border-top-right-radius: 5px;
-	
+
 	@media (max-width: 768px) {
 		border-top-right-radius: 0;
 		margin-right: 0;
@@ -1328,43 +1328,43 @@ body, .navbar-inverse {
             max-width: 250px;
 			@media (max-width: 500px) {
 				float: none;
-				margin-left: auto; 
-				margin-right: auto; 
+				margin-left: auto;
+				margin-right: auto;
 			}
         }
         #middle_screens {
             max-width: 450px;
         }
     }
-    
+
     // easy mech
     #main_project_easymech {
         #architecture_slider {
             max-width: 450px;
         }
     }
-	
+
 	// ipa
 	#main_project_ipa {
 		#register_screen {
 			max-width: 340px;
 		}
-		
+
 	}
 	// wuza
 	#main_project_wuza {
 		#easteregg {
             width: 100%;
 		}
-        #easteregg, 
+        #easteregg,
         #wuza_slider,
         #admin_slider,
         #color_slider, {
             max-width: 340px;
             @media (max-width: 700px) {
 				float: none;
-				margin-left: auto; 
-				margin-right: auto; 
+				margin-left: auto;
+				margin-right: auto;
 			}
         }
 	}
@@ -1374,8 +1374,8 @@ body, .navbar-inverse {
             max-width: 440px;
             @media (max-width: 770px) {
 				float: none;
-				margin-left: auto; 
-				margin-right: auto; 
+				margin-left: auto;
+				margin-right: auto;
 			}
         }
     }
@@ -1385,30 +1385,30 @@ body, .navbar-inverse {
             max-width: 440px;
             @media (max-width: 770px) {
 				float: none;
-				margin-left: auto; 
-				margin-right: auto; 
+				margin-left: auto;
+				margin-right: auto;
 			}
         }
     }
     // addons
     #rez_slider,
     #raid_slider {
-        max-width: 400px; 
+        max-width: 400px;
     }
     #heal_slider {
-        max-width: 310px; 
+        max-width: 310px;
     }
     #rez_slider,
     #heal_slider,
     #raid_slider {
         @media (max-width: 700px) {
-            max-width: 400px; 
+            max-width: 400px;
             float: none;
-            margin-left: auto; 
-            margin-right: auto; 
+            margin-left: auto;
+            margin-right: auto;
         }
     }
-	
+
 /* end projects */
 
 /* recipes */
@@ -1420,11 +1420,11 @@ body, .navbar-inverse {
     justify-content: center;
     span {
         display: block;
-        line-height: 1; 
+        line-height: 1;
         padding: 5px 10px;
         margin: 0 auto 10px auto;
         border-radius: 20px;
-        color: #ffffff; 
+        color: #ffffff;
         background-color: #585858;
         &.shuffle {
             padding: 6px 6px 4px 6px ;
@@ -1440,7 +1440,7 @@ body, .navbar-inverse {
     min-height: 350px;
     & > div {
         padding-bottom: 20px;
-        padding-top: 20px; 
+        padding-top: 20px;
     }
     img {
         border-radius: 10px;
@@ -1473,12 +1473,12 @@ body, .navbar-inverse {
         }
         img {
             filter: grayscale(0%);
-            opacity: 1; 
+            opacity: 1;
         }
     }
 }
-/* IE Hack, fix gallery view */ 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+/* IE Hack, fix gallery view */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .filtr-filters {
         justify-content: flex-start;
     }
@@ -1487,13 +1487,13 @@ body, .navbar-inverse {
 /* ingredients list in recipes */
 .ingredients {
     white-space: pre-line;
-    margin-top: -25px; 
+    margin-top: -25px;
     li {
         border-bottom: 1px solid rgba(red(@color-touch), green(@color-touch), blue(@color-touch), 0.4);
         padding: 4px 0 2px 0;
         display: inline-block;
         vertical-align: top;
-        width: 100%; 
+        width: 100%;
     }
     li:before {
         color: @color-touch;
@@ -1516,7 +1516,7 @@ body, .navbar-inverse {
     .highlight {
         text-shadow: 1px -1px 1px rgba(253, 241, 255, 1);
     }
-    
+
     /* slider */
     .recip_wrapper {
         overflow: hidden;
@@ -1527,4 +1527,3 @@ body, .navbar-inverse {
     }
 }
 /* end recipes */
-
