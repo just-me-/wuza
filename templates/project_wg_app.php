@@ -7,6 +7,8 @@
         Dank dem WebSocket-Protokoll werden Änderungen live bei allen Benutzern sofort angezeigt. 
     </p>
     
+    <img class="img-responsive img-rounded" src="<?php echo $this->_['url']; ?>img/projects/wg_app.jpg" alt="WG App Übersicht" />
+    
     <h2>Einkaufsliste</h2>
     <p>
         Produkte für den wöchentlichen WG-Einkauf können in der Einkaufsliste eingetragen werden.
@@ -41,4 +43,5 @@
         Damit neu heruntergeladene Filme komfortabel der Liste hinzugefügt werden können, wurde eine REST API implementiert.
         Mit einem lokalen Script können die Filmtitel so direkt dem Onlinetool hinzugefügt werden. 
     </p>
+    
 </div>
