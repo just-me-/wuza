@@ -11,4 +11,8 @@
         an alle jeweils eine Mail verschickt werden muss. 
     </p>
     
+    <video poster="<?php echo $this->_['url']; ?>img/projects/antenne_cover.jpg" controls muted autoplay loop class="img-responsive">
+        <source src="<?php echo $this->_['url']; ?>img/projects/antenne.mp4" type="video/mp4"> 
+        Leider kann das Video nicht abgespielt werden. 
+    </video>
 </div>
