@@ -6,6 +6,30 @@
         Das Frontend wurde mit dem Framework React realisiert und das Backend mit C# in ASP.NET.
     </p>
     
+    <div class="swiper-slider swiper-container noselect fade-in-move-down">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/easymech_1.jpg" alt="Service bearbeiten" />
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/easymech_2.jpg" alt="Transaktion bearbeiten" />
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/easymech_3.jpg" alt="Vermietung erfassen" />
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/easymech_4.jpg" alt="Übersicht" />
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    
     <h2>Ausgangslage und Ziel</h2>
     <p>
         Die Firma DuKoStapler GmbH verwaltet ihre Baumaschinen und Wartungspläne per Papieragenda.
@@ -43,6 +67,23 @@
     </p>
     
     <h3>Architektonische Ziele</h3>
+    <div id="architecture_slider" class="swiper-slider swiper-container right small-margin-left noselect fade-in-move-down">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/easymech_deployment.jpg" alt="Deployment" />
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo $this->_['url']; ?>img/projects/easymech_sequenz.jpg" alt="Sequenz" />
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
     <h4>Scalability</h4>
     <p>
        Um im Backend den Data-Access-Layer von der Schnittstelle zum Frontend zu trennen,
